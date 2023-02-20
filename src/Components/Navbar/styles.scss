@@ -9,27 +9,45 @@
     border: 1px solid rgba(255, 255, 255, 0.18);
     position: fixed;
     z-index: 2;
+
+    @media screen and (min-width: 900px) {
+        border-bottom: 1px solid lightblue;
+    }
+
 }
 
 .app__navbar-links {
+    margin-top: 0;
+    margin-bottom: 0;
     flex: 1;
     display: flex;
     justify-content: flex-start;
-    align-items: center;
     list-style: none;
 
     li {
-        margin: 0 1rem;
+        margin: 0rem 0.5rem;
+        padding: 0.3rem 0.5rem 0.5rem 0.5rem;
         cursor: pointer;
+        border-radius: 3px 3px 0px 0px;
 
         a {
             text-decoration: none;
             color: rgb(117, 201, 230);
+            display: block;
+            padding-block: inherit;
+        }
+
+        &:hover {
+            background-color: lightblue;
+
+            a {
+                color: white;
+            }
         }
 
     }
 
-    @media screen and (max-width: 900px) {
+    @media screen and (max-width: 899px) {
         display: none;
     }
 }
@@ -46,14 +64,14 @@
     align-items: center;
     background: lightblue;
     margin-left: 1rem;
-    
+
     svg {
         width: 70%;
         height: 70%;
         color: white;
         cursor: pointer;
 
-        &:hover{
+        &:hover {
             color: gray;
         }
     }
@@ -100,7 +118,8 @@
 
             li {
                 margin: 0.75rem 0rem 0.75rem 0rem;
-                
+                padding: 0;
+
                 a {
                     color: white;
                     text-decoration: none;
@@ -127,11 +146,13 @@
     align-items: center;
     padding: 0.5rem;
     margin-right: 5rem;
+    margin-bottom: 0.5rem;
     border: 1px solid lightblue;
     color: rgb(117, 201, 230);
 
-    
-    @media screen and (max-width: 900px) {
-        margin-right: 3rem;
+
+    @media screen and (max-width: 899px) {
+        margin: 0rem 3rem 0rem 0rem;
+        ;
     }
 }
