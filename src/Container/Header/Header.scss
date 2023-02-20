@@ -1,0 +1,22 @@
+.app__header {
+    background-image: url('../../Assets/TSLimg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    flex: 1;
+    height: 100%;
+    width: 100%;
+}
+
+.app__header-top {
+    display: flex;
+    height: 50vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.app__header-bottom {
+    display: flex;
+    height: 50vh;
+    justify-content: center;
+    align-items: center;
+}
