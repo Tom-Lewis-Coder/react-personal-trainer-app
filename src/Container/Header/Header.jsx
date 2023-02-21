@@ -4,9 +4,17 @@ import './Header.scss'
 
 const Header = () => {
     return (
-        <div className='app__header'>
-            <div className='app__header-top'>Top</div>
-            <div className='app__header-bottom'>Bottom</div>
+        <div className='app__header app-flex' id='home'>
+            <div className='app__header-top app-flex'>
+                <div className='app__header-top-badge'>
+                    TSL Fitness Inspirational Quote
+                </div>
+            </div>
+            <div className='app__header-bottom app-flex'>
+                <div className='app__header-bottom-sign-up'>
+                    Sign up now ..
+                </div>
+            </div>
         </div>
     )
 }

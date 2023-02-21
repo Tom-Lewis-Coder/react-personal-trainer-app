@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { HiMenuAlt4, HiX } from 'react-icons/hi'
 
-import './styles.scss'
+import './Navbar.scss'
 
 const Navbar = () => {
     const [toggle, setToggle] = useState(false)
@@ -9,7 +9,7 @@ const Navbar = () => {
     return (
         <nav className='app__navbar'>
             <ul className='app__navbar-links'>
-                {['Home', 'About', 'Services', 'Fitness Tips', 'Contact', 'Follow'].map(item => (
+                {['home', 'about', 'services', 'fitness tips', 'contact', 'follow'].map(item => (
                     <li
                         className='app-flex p-text'
                         key={item}
@@ -26,12 +26,12 @@ const Navbar = () => {
                     <div>
                         <HiX onClick={() => setToggle(false)} />
                         <ul className='app__navbar-links'>
-                            {['Home', 'About', 'Services', 'Fitness Tips', 'Contact', 'Follow'].map(item => (
+                            {['home', 'about', 'services', 'fitness tips', 'contact', 'follow'].map(item => (
                                 <li
                                     className='app-flex p-text'
                                     key={item}
                                 >
-                                    <a href={`#${item}`}>{item}</a>
+                                    <a href={`#${item}`} onClick={() => setToggle(false)}>{item}</a>
                                 </li>
                             ))}
                         </ul>
