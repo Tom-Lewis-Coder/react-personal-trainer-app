@@ -4,29 +4,28 @@
 
 .app__header {
     height: 100vh;
+    position: relative;
 }
 
-.app__header-container {
-    background-image: url('../../Assets/TSLimg.jpg');
+img {
     background-repeat: no-repeat;
     background-size: cover;
     border: 1px solid black;
+    object-fit: cover;
     margin: 7rem 4rem;
     flex: 1;
     height: 50vh;
     width: 90%;
-
-    padding: 6rem 2rem 2rem;
 }
 
 .app__header-top {
     flex: 0.65;
-    display: flex;
-    justify-content: flex-end;
-    align-items: flex-end;
+    position: absolute;
     font-size: 48px;
     font-weight: bolder;
-    color: black;
+    color: white;
+    top: 10rem;
+    right: 6rem;
 }
 
 .app__header-top-badge {
@@ -35,11 +34,11 @@
 }
 
 .app__header-bottom {
-    display: flex;
-    justify-content: flex-end;
-    align-items: flex-start;
+    position: absolute;
     font-size: 36px;
     color: white;
+    top: 17rem;
+    right: 7rem;
 }
 
 .app__header-bottom-sign-up {
