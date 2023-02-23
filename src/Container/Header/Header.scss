@@ -3,6 +3,10 @@
 }
 
 .app__header {
+    height: 100vh;
+}
+
+.app__header-container {
     background-image: url('../../Assets/TSLimg.jpg');
     background-repeat: no-repeat;
     background-size: cover;
