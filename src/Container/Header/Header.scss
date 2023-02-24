@@ -5,6 +5,7 @@
 .app__header {
     height: 100vh;
     position: relative;
+    flex-direction: column;
 }
 
 img {
@@ -12,7 +13,8 @@ img {
     background-size: cover;
     border: 1px solid black;
     object-fit: cover;
-    margin: 7rem 4rem;
+    margin-top: 6rem;
+    margin-bottom: 1rem;
     flex: 1;
     height: 50vh;
     width: 90%;
@@ -44,4 +46,27 @@ img {
 .app__header-bottom-sign-up {
     border: 1px solid white;
     padding: 1rem;
+}
+
+.app__header-lower {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 90%;
+    height: 30vh;
+    margin: 0rem 4rem 4rem 4rem;
+}
+
+.app__header-lower-left {
+    background-color: lightsteelblue;
+    border: 1px solid black;
+    height: 100%;
+    width: 49%;
+}
+
+.app__header-lower-right {
+    background-color: lightblue;
+    border: 1px solid black;
+    height: 100%;
+    width:49%;
 }

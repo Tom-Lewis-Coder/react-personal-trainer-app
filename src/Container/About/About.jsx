@@ -5,7 +5,7 @@ import './About.scss'
 const About = () => {
     return (
         <div className='app__about app__flex' id='about'>
-            <div className='app__about-title'>The Tom Lewis System</div>
+            <div className='app__about-title'>The TSL System</div>
             <div className='app__about-system'>Lorem Ipsum spiel spiel, the quick brown fox jumps over the lazy dog</div>
             <div className='app__about-split-container app__flex'>
                 <div className='app__about-left app__flex'>
