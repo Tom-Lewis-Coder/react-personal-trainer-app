@@ -7,7 +7,7 @@ const About = () => {
         <div className='app__about app__flex' id='about'>
             <div className='app__about-title'>The TSL System</div>
             <div className='app__about-system'>The quick brown fox jumps over the lazy dog</div>
-            <div className='app__about-split-container app__flex'>
+            <div className='app__about-split-container'>
                 <div className='app__about-left app__flex'>
                     <div className='app__about-image'>
                         <p>Big Image Text</p> {/* text within pic */}
