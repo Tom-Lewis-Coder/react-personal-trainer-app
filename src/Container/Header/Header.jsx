@@ -28,7 +28,7 @@ const Header = () => {
             </div>
             <div className='app__header-bottom app__flex'>
                 <div className='app__header-bottom-sign-up'>
-                    Sign up now ..
+                    Sign up now ...
                 </div>
             </div>
             <div className='app__header-lower'>

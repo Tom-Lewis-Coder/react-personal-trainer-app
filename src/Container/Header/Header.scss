@@ -3,9 +3,10 @@
 }
 
 .app__header {
-    height: 100vh;
+    height: 95vh;
     position: relative;
     flex-direction: column;
+    margin-bottom: 6rem;
 }
 
 img {
@@ -21,7 +22,6 @@ img {
 }
 
 .app__header-top {
-    flex: 0.65;
     position: absolute;
     font-size: 48px;
     font-weight: bolder;
@@ -54,7 +54,6 @@ img {
     justify-content: space-between;
     width: 90%;
     height: 30vh;
-    margin: 0rem 4rem 4rem 4rem;
 }
 
 .app__header-lower-left {

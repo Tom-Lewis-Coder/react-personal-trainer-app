@@ -6,14 +6,17 @@ const About = () => {
     return (
         <div className='app__about app__flex' id='about'>
             <div className='app__about-title'>The TSL System</div>
-            <div className='app__about-system'>Lorem Ipsum spiel spiel, the quick brown fox jumps over the lazy dog</div>
+            <div className='app__about-system'>The quick brown fox jumps over the lazy dog</div>
             <div className='app__about-split-container app__flex'>
                 <div className='app__about-left app__flex'>
-                    <div className='app__about-image'>Big image</div>
-                    <div className='app__about-caption'>Image chat</div>
+                    <div className='app__about-image'>
+                        <p>Big Image Text</p> {/* text within pic */}
+                    </div>
+                    <p className='app__about-caption'><span>Title</span><br /><br />Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent fermentum sem odio, facilisis mollis sapien eleifend eu. Aliquam vehicula, elit et accumsan congue, elit risus viverra sapien, quis molestie magna felis in erat. Phasellus ligula turpis, volutpat ac justo id, cursus bibendum nunc. </p>
                 </div>
                 <div className='app__about-right app__flex'>
-                    <div className='app__about-hero-img'>Big me</div>
+                    <div className='app__about-hero-img'></div>
+                    <p>Big Me Text</p> {/* text underneath */}
                 </div>
             </div>
         </div>
