@@ -21,31 +21,53 @@ img {
     width: 90%;
 }
 
-.app__header-top {
+.app__header-top-upper {
     position: absolute;
     font-size: 48px;
     font-weight: bolder;
     color: white;
     top: 10rem;
     right: 6rem;
-}
-
-.app__header-top-badge {
+    border: 1px solid white;
     padding: 1rem;
-    margin-bottom: 1rem;
+
+    @media screen and (max-width: 900px) {
+        font-size: 36px;
+        right: 5rem;
+    }
+
+    @media screen and (max-width: 700px) {
+        font-size: 30px;
+        right: 4rem;
+    }
+
+    @media screen and (max-width: 590px) {
+        visibility: hidden;
+    }
 }
 
-.app__header-bottom {
+.app__header-top-bottom {
+    border: 1px solid white;
     position: absolute;
     font-size: 36px;
     color: white;
     top: 17rem;
-    right: 7rem;
-}
-
-.app__header-bottom-sign-up {
-    border: 1px solid white;
+    right: 6rem;
     padding: 1rem;
+
+    @media screen and (max-width: 900px) {
+        font-size: 24px;
+        right: 5rem;
+    }
+
+    @media screen and (max-width: 700px) {
+        font-size: 20px;
+        right: 4rem;
+    }
+
+    @media screen and (max-width: 590px) {
+        visibility: hidden;
+    }
 }
 
 .app__header-lower {
@@ -54,6 +76,10 @@ img {
     justify-content: space-between;
     width: 90%;
     height: 30vh;
+
+    @media screen and (max-width: 500px) {
+        flex-direction: column;
+    }
 }
 
 .app__header-lower-left {
@@ -61,11 +87,22 @@ img {
     border: 1px solid black;
     height: 100%;
     width: 49%;
+    font-size: xx-large;
+
+    @media screen and (max-width: 500px) {
+        width: 100%;
+    }
 }
 
 .app__header-lower-right {
     background-color: lightblue;
     border: 1px solid black;
     height: 100%;
-    width:49%;
+    width: 49%;
+    font-size: xx-large;
+
+    @media screen and (max-width: 500px) {
+        width: 100%;
+        margin-top: 0.5rem;
+    }
 }

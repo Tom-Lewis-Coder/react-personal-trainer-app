@@ -21,22 +21,18 @@ const Header = () => {
     return (
         <div className='app__header app__flex' id='home'>
             <img src={headerImg} alt='fitness' />
-            <div className='app__header-top app__flex'>
-                <div className='app__header-top-badge'>
-                    TSL Fitness Inspirational Quote
-                </div>
+            <div className='app__header-top-upper app__flex'>
+                TSL Fitness Inspirational Quote
             </div>
-            <div className='app__header-bottom app__flex'>
-                <div className='app__header-bottom-sign-up'>
-                    Sign up now ...
-                </div>
+            <div className='app__header-top-bottom app__flex'>
+                Sign up now ...
             </div>
             <div className='app__header-lower'>
                 <div className='app__header-lower-left app__flex'>
-                    <h1 className='app__header-lower-left-text'>Left</h1>
+                    Left
                 </div>
                 <div className='app__header-lower-right app__flex'>
-                    <h1 className='app__header-lower-right-text'>Right</h1>
+                    Right
                 </div>
             </div>
         </div>
