@@ -1,0 +1,50 @@
+.app__services {
+    flex-direction: column;
+    background-color: #78857f;
+    padding-bottom: 5rem;
+}
+
+.app__services-title {
+    font-size: xx-large;
+    margin: 8rem 0 5rem 0;
+    color: white;
+}
+
+.app__services-split-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 90%;
+    height: 100vh;
+    border: 1px solid white;
+}
+
+.app__services-left{
+    height: 100%;
+    width: 50%;
+    padding: 2rem;
+    color: white;
+}
+
+.app__services-img-121 {
+    background-image: url(../../Assets/TSLimg121.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 60%;
+    border: 1px solid white;
+}
+
+.app__services-right{
+    height: 100%;
+    width: 50%;
+    padding: 2rem;
+    color: white;
+}
+
+.app__services-img-stretch {
+    background-image: url(../../Assets/TSLimggroup.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 60%;
+    border: 1px solid white;
+}
