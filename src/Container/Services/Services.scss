@@ -17,6 +17,10 @@
     width: 90%;
     height: 100vh;
     border: 1px solid white;
+
+    @media screen and (max-width: 850px) {
+        flex-direction: column;
+    }
 }
 
 .app__services-left{
@@ -24,6 +28,11 @@
     width: 50%;
     padding: 2rem;
     color: white;
+
+    @media screen and (max-width: 850px) {
+        width: 100%;
+        padding: 1rem;
+    }
 }
 
 .app__services-img-121 {
@@ -32,6 +41,10 @@
     background-size: cover;
     height: 60%;
     border: 1px solid white;
+
+    @media screen and (max-width: 850px) {
+        height: 80%;
+     }
 }
 
 .app__services-right{
@@ -39,6 +52,11 @@
     width: 50%;
     padding: 2rem;
     color: white;
+
+    @media screen and (max-width: 850px) {
+        width: 100%;
+        padding: 1rem;
+    }
 }
 
 .app__services-img-stretch {
@@ -47,4 +65,8 @@
     background-size: cover;
     height: 60%;
     border: 1px solid white;
+
+    @media screen and (max-width: 850px) {
+       height: 80%;
+    }
 }
