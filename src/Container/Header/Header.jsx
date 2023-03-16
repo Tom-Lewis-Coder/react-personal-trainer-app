@@ -1,16 +1,16 @@
 import React, { useState, useEffect } from 'react'
-import { images } from '../../Constants'
+import { headerImages } from '../../Constants'
 
 import './Header.scss'
 
 const Header = () => {
-    const [headerImg, setHeaderImg] = useState(images[0])
+    const [headerImg, setHeaderImg] = useState(headerImages[0])
 
     useEffect(() => {
         let count = 0
         const timer = setInterval(() => {
-            count === images.length - 1 ? count = 0 : count++
-            setHeaderImg(images[count])
+            count === headerImages.length - 1 ? count = 0 : count++
+            setHeaderImg(headerImages[count])
         }, 6000)
 
         return () => {

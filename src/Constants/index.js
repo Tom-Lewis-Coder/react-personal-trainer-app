@@ -1,3 +1,3 @@
-import images from './images'
+import { headerImages, images } from './images'
 
-export { images } 
+export { headerImages, images } 

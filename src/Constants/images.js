@@ -4,12 +4,15 @@ import TSLimg2 from '../Assets/TSLimg2.jpg';
 import email from '../Assets/email.png';
 import mobile from '../Assets/mobile.png';
 
-const images = [
+const headerImages = [
     TSLimg,
     TSLimg1,
     TSLimg2,
+]
+
+const images = [
     email,
     mobile
 ]
 
-export default images
+export { headerImages, images } 
