@@ -47,9 +47,7 @@ textarea {
 }
 
 .app__contact-form-button:hover {
-    background-color: white;
-    color: #78857f;
-    border: 1px solid #68746f;
+    background-color: #424946;
 }
 
 .app__contact-direct {
@@ -94,5 +92,12 @@ textarea {
 
     @media screen and (max-width: 700px) {
         margin: 1rem;
+    }
+}
+
+.app__contact-card-item:hover {
+ background-color: #424946;
+    img{
+        border: 1px solid #424946;  
     }
 }
