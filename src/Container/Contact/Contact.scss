@@ -4,9 +4,12 @@
 }
 
 .app__contact-title {
+    background-color: #78857f;
+    color: white;
     font-size: xx-large;
     margin: 7rem 0 4rem 0;
-    color: #424946;
+    border-radius: 2rem;
+    padding: 0.65rem 1.5rem;
 }
 
 .app__contact-name {
@@ -38,7 +41,7 @@ textarea {
 }
 
 .app__contact-form-button {
-    padding: 0.75rem 2rem;
+    padding: 0.75rem 1.5rem;
     border-radius: 2rem;
     font-size: large;
     background-color: #78857f;
@@ -73,11 +76,11 @@ textarea {
 
     min-width: 290px;
     max-width: 290px;
-    margin: 1rem 1rem 4rem 1rem;
+    margin: 0rem 1rem 4rem 1rem;
     padding: 1rem;
-    border-radius: 0.375rem;
+    border-radius: 2rem;
     cursor: pointer;
-    border: 1px solid #424946;
+    //border: 1px solid #424946;
     background-color: #78857f;
 
     img {

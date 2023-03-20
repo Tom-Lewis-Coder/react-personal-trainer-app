@@ -9,13 +9,17 @@
 }
 
 .app__about-title {
+    background-color: #78857f;
+    color: white;
     font-size: xx-large;
     margin: 7rem 0 0 0;
+    border-radius: 2rem;
+    padding: 0.65rem 1.5rem;
 }
 
 .app__about-system {
     font-size: x-large;
-    margin: 4rem;
+    margin: 3rem;
     text-align: center;
 
     @media screen and (max-width: 523px) {
