@@ -73,7 +73,7 @@ const Contact = () => {
                     </a>
                     <a className='app__contact-card-item' href='tel:07376 265677'>
                         <img src={images[1]} alt='mobile' />
-                        <div>Mobile: 07376 265677 </div>
+                        <div>07376 265677 </div>
                     </a>
                 </div>
             </div>
