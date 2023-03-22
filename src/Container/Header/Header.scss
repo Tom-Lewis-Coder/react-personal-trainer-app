@@ -72,7 +72,7 @@ img {
     flex-direction: row;
     justify-content: space-between;
     width: 90%;
-    height: 30vh;
+    height: 50vh;
 
     @media screen and (max-width: 500px) {
         flex-direction: column;
@@ -83,7 +83,7 @@ img {
     background-color: lightsteelblue;
     border: 1px solid white;
     height: 100%;
-    width: 49%;
+    width: 32%;
     font-size: xx-large;
 
     @media screen and (max-width: 500px) {
@@ -91,11 +91,24 @@ img {
     }
 }
 
+.app__header-lower-middle {
+    background-color: lightgray;
+    border: 1px solid white;
+    height: 100%;
+    width: 32%;
+    font-size: xx-large;
+
+    @media screen and (max-width: 500px) {
+        width: 100%;
+        margin-top: 0.5rem;
+    }
+}
+
 .app__header-lower-right {
     background-color: lightblue;
     border: 1px solid white;
     height: 100%;
-    width: 49%;
+    width: 32%;
     font-size: xx-large;
 
     @media screen and (max-width: 500px) {

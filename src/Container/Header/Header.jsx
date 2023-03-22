@@ -31,6 +31,9 @@ const Header = () => {
                 <div className='app__header-lower-left app__flex'>
                     Left
                 </div>
+                <div className='app__header-lower-middle app__flex'>
+                    Middle
+                </div>
                 <div className='app__header-lower-right app__flex'>
                     Right
                 </div>
