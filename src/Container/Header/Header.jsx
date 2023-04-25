@@ -29,13 +29,13 @@ const Header = () => {
             </div>
             <div className='app__header-lower'>
                 <div className='app__header-lower-left app__flex'>
-                    Left
+                    BMI Calculator
                 </div>
                 <div className='app__header-lower-middle app__flex'>
-                    Middle
+                    Blog
                 </div>
                 <div className='app__header-lower-right app__flex'>
-                    Right
+                    Videos
                 </div>
             </div>
         </div>
