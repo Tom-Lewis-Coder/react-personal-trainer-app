@@ -25,7 +25,7 @@ function Workout() {
   return (
     <div className='app__workout' id='workout'>
       <div className='container' >
-        <Header title={'Workout Generator'} />
+        <Header title={'Home Workout Generator'} />
         <Form title={'Choose Difficulty'} onChange={getDifficulty} />
         <Button title={'Workout'} onClick={getWorkout} />
         <WorkoutDisplay workout={workout} />
