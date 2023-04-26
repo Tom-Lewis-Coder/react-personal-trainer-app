@@ -1,7 +1,7 @@
 const Button = ( props ) => {
     return(
         <button 
-            className='btn-default' 
+            className={props.className}
             onClick={props.onClick}>
             {props.title}
         </button>

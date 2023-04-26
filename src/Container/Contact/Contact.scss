@@ -7,9 +7,31 @@
     background-color: #78857f;
     color: white;
     font-size: xx-large;
-    margin: 7rem 0 4rem 0;
+    margin: 7rem 0 5rem 0;
     border-radius: 2rem;
     padding: 0.65rem 1.5rem;
+}
+
+.app__contact-title-resp {
+    background-color: #78857f;
+    color: white;
+    font-size: xx-large;
+    margin: 7rem 7rem 4rem 7rem;
+    border-radius: 2rem;
+    padding: 0.65rem 1.5rem;
+}
+
+@media screen and (max-width: 720px) {
+    .app__contact-title-resp {
+        font-size: x-large;
+    }
+}
+
+@media screen and (max-width: 610px) {
+    .app__contact-title-resp {
+        font-size: large;
+        margin: 7rem 2rem;
+    }
 }
 
 .app__contact-name {
@@ -64,9 +86,11 @@ textarea {
 .app__contact-card {
     display: flex;
     justify-content: center;
+    margin-bottom: 3rem;
 
     @media screen and (max-width: 700px) {
         flex-direction: column;
+        margin-bottom: 5rem;
     }
 }
 
@@ -86,6 +110,7 @@ textarea {
     cursor: pointer;
     //border: 1px solid #424946;
     background-color: #78857f;
+    border: 1px solid #424946;
 
     img {
         min-width: 40px;

@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 
 import { images } from '../../Constants'
 import './Contact.scss'
+import Button from '../../Components/Button'
 
 const Contact = () => {
     const [formData, setFormData] = useState({ firstname: '', lastname: '', email: '', area: '', dob: '', requirements: '', message: '' })
@@ -27,7 +28,7 @@ const Contact = () => {
             requirements: requirements,
             message: message,
         }
-        console.log(contact)
+        console.log(contact) // send to db functionality here
         setIsFormSubmitted(true)
     }
 
@@ -56,12 +57,12 @@ const Contact = () => {
                         <textarea className='app__contact-item p-text' placeholder='Your Message..' name='message' value={message} onChange={handleChangeInput} ></textarea>
                     </div>
                     <div>
-                        <button className='app__contact-form-button app__flex' type='button' onClick={handleSubmit}>{loading ? 'Sending' : 'Send >>'}</button>
+                        <Button className={'app__contact-form-button app__flex'} onClick={handleSubmit} title={loading ? 'Sending' : 'Send >>'} />
                     </div>
                 </div>
                 :
                 <div>
-                    <h3 className='app__contact-title app__flex'>Thank you for getting in touch.</h3>
+                    <h3 className='app__contact-title-resp app__flex'>Thank you for getting in touch.</h3>
                 </div>
             }
             <div className='app__contact-direct app__flex'>
