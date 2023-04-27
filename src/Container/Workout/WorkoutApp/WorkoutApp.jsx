@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import Header from '../../../Components/Header'
-import WorkoutForm from '../../../Components/WorkoutForm'
+import WorkoutForm from '../../../Forms/WorkoutForm'
 import Button from '../../../Components/Button'
 import WorkoutDisplay from '../../../Components/WorkoutDisplay'
 import ExerciseList from '../../../Constants/ExerciseList'
@@ -24,7 +24,7 @@ function WorkoutApp() {
 
   return (
       <div className='container' >
-        <Header title={'Home Workout Generator'} />
+        <Header title={'Home Workout Generator'} className={'headTitle'} />
         <WorkoutForm title={'Choose Difficulty'} onChange={getDifficulty} />
         <Button title={'Workout'} onClick={getWorkout} className={'btn-default'} />
         <WorkoutDisplay workout={workout} />

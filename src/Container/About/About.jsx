@@ -1,11 +1,12 @@
 import React from 'react'
 
 import './About.scss'
+import Header from '../../Components/Header'
 
 const About = () => {
     return (
         <div className='app__about app__flex' id='about'>
-            <div className='app__about-title'>The TSL System</div>
+            <Header title={'The TSL System'} className={'app__about-title'}/>
             <div className='app__about-system'>The quick brown fox jumps over the lazy dog</div>
             <div className='app__about-split-container'>
                 <div className='app__about-left app__flex'>

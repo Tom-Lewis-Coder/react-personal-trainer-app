@@ -1,11 +1,12 @@
 import React from 'react'
 
 import './Services.scss'
+import Header from '../../Components/Header'
 
 const Services = () => {
   return (
     <div className='app__services app__flex' id='services'>
-      <div className='app__services-title'>Programmes</div>
+      <Header title={'Programmes'} className={'app__services-title'}/>
       <div className='app__services-split-container app__flex'>
         <div className='app__services-left'>
           <div className='app__services-img-121'></div>

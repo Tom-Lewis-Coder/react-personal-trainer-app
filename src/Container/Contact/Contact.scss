@@ -1,6 +1,7 @@
 .app__contact-form {
     flex-direction: column;
     color: #424946;
+    width: 100%;
 }
 
 .app__contact-title {
@@ -64,7 +65,6 @@ textarea {
 
 .app__contact-form-button {
     padding: 0.75rem 1.5rem;
-
     font-size: large;
     background-color: #78857f;
     color: white;
