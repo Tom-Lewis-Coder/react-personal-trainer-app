@@ -23,14 +23,12 @@ function WorkoutApp() {
   }
 
   return (
-    <div >
       <div className='container' >
         <Header title={'Home Workout Generator'} />
         <WorkoutForm title={'Choose Difficulty'} onChange={getDifficulty} />
         <Button title={'Workout'} onClick={getWorkout} className={'btn-default'} />
         <WorkoutDisplay workout={workout} />
       </div>
-    </div>
   )
 }
 
