@@ -1,7 +1,48 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Button from '../Components/Button'
 
-const CalorieForm = ( props ) => {
+const CalorieForm = () => {
+    
+    const [form1Data, setForm1Data] = useState({ age: '', gender: '', height: '', weight: '', activity: '' })
+    const [form2Data, setForm2Data] = useState({ weightGoal: '', timeFrame: '' })
+
+    const { age, gender, height, weight, activity } = form1Data
+    const { weightGoal, timeFrame } = form2Data
+
+    const handleForm1Change = e => {
+        const { name, value } = e.target
+
+        setForm1Data({ ...form1Data, [name]: value })
+    }
+
+    const handleForm1Submit = () => {
+        const data1 = {
+            age: age,
+            gender: gender,
+            height: height,
+            weight: weight,
+            activity: activity,
+        }
+        console.log(data1)
+        setForm1Data({ age: '', gender: '', height: '', weight: '', activity: '' })
+    }
+
+    const handleForm2Change = e => {
+        const { name, value } = e.target
+
+        setForm2Data({ ...form2Data, [name]: value })
+    }
+
+    const handleForm2Submit = e => {
+        e.preventDefault()
+        const data2 = {
+            weightGoal: weightGoal,
+            timeFrame: timeFrame,
+        }
+        console.log(data2)
+        setForm2Data({ weightGoal: '', timeFrame: '' })
+    }
+
     return (
         <>
             <form className='calorie-form1'>
@@ -11,8 +52,8 @@ const CalorieForm = ( props ) => {
                     name="age"
                     min="15"
                     max="80"
-                    value={props.age}
-                    onChange={props.handleForm1Change}
+                    value={age}
+                    onChange={handleForm1Change}
                 />
                 <label>15 - 80</label><br />
 
@@ -21,7 +62,7 @@ const CalorieForm = ( props ) => {
                     type="radio"
                     name="gender"
                     value='m'
-                    onChange={props.handleForm1Change}
+                    onChange={handleForm1Change}
                 />
                 <label>Male</label><br />
 
@@ -29,7 +70,7 @@ const CalorieForm = ( props ) => {
                     type="radio"
                     name="gender"
                     value='f'
-                    onChange={props.handleForm1Change}
+                    onChange={handleForm1Change}
                 />
                 <label>Female</label><br />
 
@@ -37,8 +78,8 @@ const CalorieForm = ( props ) => {
                 <input
                     type="text"
                     name="height"
-                    value={props.height}
-                    onChange={props.handleForm1Change}
+                    value={height}
+                    onChange={handleForm1Change}
                 />
                 <label>cm</label><br />
 
@@ -46,13 +87,13 @@ const CalorieForm = ( props ) => {
                 <input
                     type="text"
                     name="weight"
-                    value={props.weight}
-                    onChange={props.handleForm1Change}
+                    value={weight}
+                    onChange={handleForm1Change}
                 />
                 <label>kg</label><br />
 
                 <label>Activity</label>
-                <select name="activity" onChange={props.handleForm1Change} value={props.activity}>
+                <select name="activity" onChange={handleForm1Change} value={activity}>
                     <option value="1">BMR (Basal Metabolic Rate)</option>
                     <option value="1.2">Sedentary: little to no activity</option>
                     <option value="1.375">Lightly Active: exercise 1/3 x per week</option>
@@ -63,7 +104,7 @@ const CalorieForm = ( props ) => {
                 </select>
             </form><br />
 
-            <Button title={'Calculate'} onClick={props.handleForm1Submit} />
+            <Button title={'Calculate'} onClick={handleForm1Submit} />
 
             <div className="results-container hidden">
                 <p className="finalNumberStyling"></p>
@@ -75,8 +116,8 @@ const CalorieForm = ( props ) => {
                     <input
                         type="text"
                         name="weightGoal"
-                        value={props.weightGoal}
-                        onChange={props.handleForm2Change}
+                        value={weightGoal}
+                        onChange={handleForm2Change}
                     />
                     <label>kg</label><br />
 
@@ -85,12 +126,12 @@ const CalorieForm = ( props ) => {
                         type="number"
                         name="timeFrame"
                         min="2"
-                        value={props.timeFrame}
-                        onChange={props.handleForm2Change}
+                        value={timeFrame}
+                        onChange={handleForm2Change}
                     />
                     <label>Months</label><br />
 
-                    <Button title={'Calculate'} onClick={props.handleForm2Submit} /><br />
+                    <Button title={'Calculate'} onClick={handleForm2Submit} /><br />
                 </form>
 
                 <div className="results-container2 hidden">

@@ -5,37 +5,13 @@ import './Contact.scss'
 import ContactForm from '../../Forms/ContactForm'
 
 const Contact = () => {
-    const [formData, setFormData] = useState({ firstname: '', lastname: '', email: '', area: '', dob: '', requirements: '', message: '' })
+
     const [isFormSubmitted, setIsFormSubmitted] = useState(false)
-    const [loading, setLoading] = useState(false)
-
-    const { firstname, lastname, email, area, dob, requirements, message } = formData
-
-    const handleChangeInput = e => {
-        const { name, value } = e.target
-
-        setFormData({ ...formData, [name]: value })
-    }
-
-    const handleSubmit = () => {
-        setLoading(true)
-        const contact = {
-            firstname: firstname,
-            lastname: lastname,
-            email: email,
-            area: area,
-            dob: dob,
-            requirements: requirements,
-            message: message,
-        }
-        console.log(contact) // send to db functionality here
-        setIsFormSubmitted(true)
-    }
 
     return (
         <div id='contact'>
             {!isFormSubmitted ?
-                <ContactForm handleChangeInput={handleChangeInput} handleSubmit={handleSubmit} formData={formData} loading={loading} />
+                <ContactForm setIsFormSubmitted={setIsFormSubmitted} />
                 :
                 <div>
                     <h3 className='app__contact-title-resp app__flex'>Thank you for getting in touch.</h3>
