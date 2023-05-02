@@ -2,11 +2,13 @@ import React from 'react'
 import CalorieForm from '../../../Forms/CalorieForm'
 import Header from '../../../Components/Header'
 
+import './CalorieCalc.scss'
+
 const CalorieCalc = () => {
     return (
         <div>
-            <div className='container' >
-                <Header title={'Calorie Calculator'} />
+            <div className='app__cal-Container' >
+                <Header title={'Calorie Calculator'} className={'app__headTitle'} />
                 <CalorieForm />
             </div>
         </div>
