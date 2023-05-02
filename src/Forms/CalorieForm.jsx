@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import Button from '../Components/Button'
 
 const CalorieForm = () => {
-    
+
     const [form1Data, setForm1Data] = useState({ age: '', gender: '', height: '', weight: '', activity: '' })
     const [form2Data, setForm2Data] = useState({ weightGoal: '', timeFrame: '' })
 
@@ -24,6 +24,13 @@ const CalorieForm = () => {
             activity: activity,
         }
         console.log(data1)
+
+        if (age === '' || height === '' || weight === '') {
+            alert('Please ensure all fields are entered')
+        } else {
+            console.log(Math.floor(((weight * 10) + (height * 6.25) - (age * 5) + (gender === 'm' ? 5 : - 161)) * activity))
+        }
+
         setForm1Data({ age: '', gender: '', height: '', weight: '', activity: '' })
     }
 
@@ -93,8 +100,9 @@ const CalorieForm = () => {
                 <label>kg</label><br />
 
                 <label>Activity</label>
-                <select name="activity" onChange={handleForm1Change} value={activity}>
-                    <option value="1">BMR (Basal Metabolic Rate)</option>
+                <select name="activity" onChange={handleForm1Change}>
+                    <option>Pick your activity level</option>
+                    <option value="1">BMR (Basal Metabolic Rate) No activity</option>
                     <option value="1.2">Sedentary: little to no activity</option>
                     <option value="1.375">Lightly Active: exercise 1/3 x per week</option>
                     <option value="1.465">Moderate Activity: exercise 4/5 x per week</option>
