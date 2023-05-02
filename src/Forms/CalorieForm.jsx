@@ -1,19 +1,29 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import Button from '../Components/Button'
 
 const CalorieForm = () => {
 
-    const [form1Data, setForm1Data] = useState({ age: '', gender: '', height: '', weight: '', activity: '' })
+    const [form1Data, setForm1Data] = useState({ age: '', gender: 'm', height: '', weight: '', activity: '' })
     const [form2Data, setForm2Data] = useState({ weightGoal: '', timeFrame: '' })
+    const [form1Result, setForm1Result] = useState(0)
+    const [form2Result, setForm2Result] = useState(0)
+
 
     const { age, gender, height, weight, activity } = form1Data
     const { weightGoal, timeFrame } = form2Data
+
+
+    useEffect(() => {
+        console.log(form1Result, form2Result)
+    }, [form1Result, form2Result])
+
 
     const handleForm1Change = e => {
         const { name, value } = e.target
 
         setForm1Data({ ...form1Data, [name]: value })
     }
+
 
     const handleForm1Submit = () => {
         const data1 = {
@@ -25,20 +35,21 @@ const CalorieForm = () => {
         }
         console.log(data1)
 
-        if (age === '' || height === '' || weight === '') {
+        if (age === '' || height === '' || weight === '' || gender === '' || activity === '') {
             alert('Please ensure all fields are entered')
         } else {
-            console.log(Math.floor(((weight * 10) + (height * 6.25) - (age * 5) + (gender === 'm' ? 5 : - 161)) * activity))
+            let result1 = Math.floor(((weight * 10) + (height * 6.25) - (age * 5) + (gender === 'm' ? 5 : - 161)) * activity)
+            setForm1Result(result1)
         }
-
-        setForm1Data({ age: '', gender: '', height: '', weight: '', activity: '' })
     }
+
 
     const handleForm2Change = e => {
         const { name, value } = e.target
 
         setForm2Data({ ...form2Data, [name]: value })
     }
+
 
     const handleForm2Submit = e => {
         e.preventDefault()
@@ -47,8 +58,14 @@ const CalorieForm = () => {
             timeFrame: timeFrame,
         }
         console.log(data2)
-        setForm2Data({ weightGoal: '', timeFrame: '' })
+        if (weightGoal === '' || timeFrame === '' || form1Result === '') {
+            alert('Please ensure all fields are entered and the first form is completed')
+        } else {
+            let result2 = Math.round(((weightGoal - weight) * 7700) / (timeFrame * 30)) + form1Result
+            setForm2Result(result2)
+        }
     }
+    
 
     return (
         <>
@@ -70,6 +87,7 @@ const CalorieForm = () => {
                     name="gender"
                     value='m'
                     onChange={handleForm1Change}
+                    checked
                 />
                 <label>Male</label><br />
 
@@ -100,7 +118,7 @@ const CalorieForm = () => {
                 <label>kg</label><br />
 
                 <label>Activity</label>
-                <select name="activity" onChange={handleForm1Change}>
+                <select name="activity" onChange={handleForm1Change} value={activity}>
                     <option>Pick your activity level</option>
                     <option value="1">BMR (Basal Metabolic Rate) No activity</option>
                     <option value="1.2">Sedentary: little to no activity</option>
