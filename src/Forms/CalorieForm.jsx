@@ -9,15 +9,8 @@ const CalorieForm = () => {
     const [form2Result, setForm2Result] = useState(0)
     const [gender, setGender] = useState('')
 
-
     const { age, height, weight, activity } = form1Data
     const { weightGoal, timeFrame } = form2Data
-
-
-    useEffect(() => {
-        console.log(form1Result, form2Result)
-    }, [form1Result, form2Result])
-
 
     const handleForm1Change = e => {
         const { name, value } = e.target
@@ -30,7 +23,6 @@ const CalorieForm = () => {
 
     const handleForm1Submit = e => {
         e.preventDefault()
-        console.log(gender)
         if (age === '' || gender === '' || height === '' || weight === '' || activity === '') {
             alert('Please ensure all fields are entered')
         } else {
@@ -86,7 +78,7 @@ const CalorieForm = () => {
                     <input
                         className='app__input'
                         placeholder='cm'
-                        type="text"
+                        type="number"
                         name="height"
                         value={height}
                         onChange={handleForm1Change}
@@ -95,7 +87,7 @@ const CalorieForm = () => {
                     <input
                         className='app__input'
                         placeholder='KG'
-                        type="text"
+                        type="number"
                         name="weight"
                         value={weight}
                         onChange={handleForm1Change}
@@ -114,21 +106,21 @@ const CalorieForm = () => {
                 </div>
                 <Button title={'Calculate'} onClick={handleForm1Submit} className={'btn-default'} />
                 <div className="results-container">
-                    <p>{form1Result ? `Maintain weight with ${form1Result} kcals per day` : ''} </p>
+                    <p>{form1Result ? `Maintain weight with ${form1Result} kcals a day.` : ''} </p>
                 </div>
             </form>
             <form>
                 <div className='app__calorieCalc-2'>
-                    <label>Weight Goal </label>
+                    <label>Weight Goal: </label>
                     <input
                         className='app__input'
-                        type="text"
+                        type="number"
                         placeholder='KG'
                         name="weightGoal"
                         value={weightGoal}
                         onChange={handleForm2Change}
                     /><br />
-                    <label>Time Frame </label>
+                    <label>Time Frame: </label>
                     <input
                         className='app__input'
                         type="number"
@@ -141,7 +133,7 @@ const CalorieForm = () => {
                 </div>
                 <Button title={'Calculate'} onClick={handleForm2Submit} className={'btn-default'} />
                 <div className="results-container">
-                    <p>{form2Result ? `Eat ~ ${form2Result} kcals per day to achieve your goal` : ''} </p>
+                    <p>{form2Result ? `Eat ~ ${form2Result} kcals a day to achieve your goal.` : ''} </p>
                 </div>
             </form>
         </>

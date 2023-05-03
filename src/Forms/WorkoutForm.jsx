@@ -25,7 +25,7 @@ const WorkoutForm = ( props ) => {
                     value='high' 
                     onChange={props.onChange} 
                 /><label className='app__workoutRadio' htmlFor='high' >High</label> 
-            <p>Complete one circuit 3 times or change each time for a variation. Rest 1 min between circuits</p>
+            <p>Complete one circuit 3 times or change each time for a variation. Rest 1 min between circuits.</p>
         </form>
         )}
 
