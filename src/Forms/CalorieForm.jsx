@@ -56,11 +56,11 @@ const CalorieForm = () => {
 
     return (
         <>
-            <form className='app__calorie-form1'>
-                <div className='app__calCalc'>
-                    <label>Age </label>
+            <form>
+                <div className='app__calCalc-1'>
+                    <label>Age: </label>
                     <input
-                        className="app__age-input"
+                        className="app__input"
                         type="number"
                         name="age"
                         min="15"
@@ -82,25 +82,25 @@ const CalorieForm = () => {
                         value='female'
                         onChange={getGender}
                     /><label className='app__gender-input' htmlFor='female'> Female</label>
-                    <label>Height </label>
+                    <label>Height: </label>
                     <input
-                        className='app__height-input'
-                        placeholder='CM'
+                        className='app__input'
+                        placeholder='cm'
                         type="text"
                         name="height"
                         value={height}
                         onChange={handleForm1Change}
                     /><br />
-                    <label>Weight </label>
+                    <label>Weight: </label>
                     <input
-                        className='app__weight-input'
+                        className='app__input'
                         placeholder='KG'
                         type="text"
                         name="weight"
                         value={weight}
                         onChange={handleForm1Change}
                     /><br />
-                    <label>Activity</label>
+                    <label>Activity level:</label>
                     <select name="activity" onChange={handleForm1Change} value={activity} className='app__activity-input'>
                         <option>Choose activity level</option>
                         <option value="1">BMR (Basal Metabolic Rate) No activity</option>
@@ -111,43 +111,39 @@ const CalorieForm = () => {
                         <option value="1.725">Very: intense exercise 6/7 x per week</option>
                         <option value="1.9">Extremely: intense exercise/job daily</option>
                     </select>
-                    <div className="results-container hidden">
-                        <p className="finalNumberStyling"></p>
-                    </div>
                 </div>
                 <Button title={'Calculate'} onClick={handleForm1Submit} className={'btn-default'} />
-            </form><br />
-
-
-            <div>
-                <form className='calorie-form2'>
-                    <label>Weight Goal</label>
+                <div className="results-container">
+                    <p>{form1Result ? `Maintain weight with ${form1Result} kcals per day` : ''} </p>
+                </div>
+            </form>
+            <form>
+                <div className='app__calorieCalc-2'>
+                    <label>Weight Goal </label>
                     <input
+                        className='app__input'
                         type="text"
+                        placeholder='KG'
                         name="weightGoal"
                         value={weightGoal}
                         onChange={handleForm2Change}
-                    />
-                    <label>kg</label><br />
-
-                    <label>Time Frame</label>
+                    /><br />
+                    <label>Time Frame </label>
                     <input
+                        className='app__input'
                         type="number"
+                        placeholder='Months'
                         name="timeFrame"
                         min="2"
                         value={timeFrame}
                         onChange={handleForm2Change}
                     />
-                    <label>Months</label><br />
-
-                    <Button title={'Calculate'} onClick={handleForm2Submit} className={'btn-default'} /><br />
-                </form>
-
-                <div className="results-container2 hidden">
-                    <p></p>
                 </div>
-
-            </div>
+                <Button title={'Calculate'} onClick={handleForm2Submit} className={'btn-default'} />
+                <div className="results-container">
+                    <p>{form2Result ? `Eat ~ ${form2Result} kcals per day to achieve your goal` : ''} </p>
+                </div>
+            </form>
         </>
     )
 }
