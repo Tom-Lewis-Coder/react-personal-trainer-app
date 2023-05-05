@@ -1,9 +1,9 @@
-import React, { useEffect, useState } from 'react'
+import React, { useState } from 'react'
 import Button from '../Components/Button'
 
 const CalorieForm = () => {
 
-    const [form1Data, setForm1Data] = useState({ age: '', height: '', weight: '', activity: '' })
+    const [form1Data, setForm1Data] = useState({ age: '', height: '', weight: '', activity: '1' })
     const [form2Data, setForm2Data] = useState({ weightGoal: '', timeFrame: '' })
     const [form1Result, setForm1Result] = useState(0)
     const [form2Result, setForm2Result] = useState(0)
@@ -23,7 +23,7 @@ const CalorieForm = () => {
 
     const handleForm1Submit = e => {
         e.preventDefault()
-        if (age === '' || gender === '' || height === '' || weight === '' || activity === '') {
+        if (age === '' || gender === '' || height === '' || weight === '') {
             alert('Please ensure all fields are entered')
         } else {
             let result1 = Math.floor(((weight * 10) + (height * 6.25) - (age * 5) + (gender === 'male' ? 5 : - 161)) * activity)
@@ -94,7 +94,6 @@ const CalorieForm = () => {
                     /><br />
                     <label>Activity level:</label>
                     <select name="activity" onChange={handleForm1Change} value={activity} className='app__activity-input'>
-                        <option>Choose activity level</option>
                         <option value="1">BMR (Basal Metabolic Rate) No activity</option>
                         <option value="1.2">Sedentary: little to no activity</option>
                         <option value="1.375">Light: exercise 1/3 x per week</option>
@@ -106,7 +105,7 @@ const CalorieForm = () => {
                 </div>
                 <Button title={'Calculate'} onClick={handleForm1Submit} className={'btn-default'} />
                 <div className="results-container">
-                    <p>{form1Result ? `Maintain weight with ${form1Result} kcals a day.` : ''} </p>
+                    <p>{form1Result ? `Maintain weight with ~ ${form1Result} kcals a day.` : ''} </p>
                 </div>
             </form>
             <form>
@@ -133,7 +132,7 @@ const CalorieForm = () => {
                 </div>
                 <Button title={'Calculate'} onClick={handleForm2Submit} className={'btn-default'} />
                 <div className="results-container">
-                    <p>{form2Result ? `Eat ~ ${form2Result} kcals a day to achieve your goal.` : ''} </p>
+                    <p>{form2Result ? `Reach ~ ${form2Result} kcals a day to achieve goal.` : ''} </p>
                 </div>
             </form>
         </>
