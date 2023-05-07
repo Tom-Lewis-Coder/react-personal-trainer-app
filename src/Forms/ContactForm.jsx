@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import Header from '../Components/Header'
 import Button from '../Components/Button'
 
 const ContactForm = ( props ) => {
@@ -33,7 +34,7 @@ const ContactForm = ( props ) => {
     return (
         <div>
             <div className='app__contact-form app__flex'>
-                <div className='app__contact-title'>How can I help you</div>
+                <Header className={'app__contact-title'} title={'How can I help you'} />
                 <div className='app__contact-name'>
                     <input className='app__contact-name-item p-text' type='text' placeholder='Firstname...' name='firstname' value={firstname} onChange={handleChangeInput} />
                     <input className='app__contact-name-item p-text' type='text' placeholder='Lastname...' name='lastname' value={lastname} onChange={handleChangeInput} />

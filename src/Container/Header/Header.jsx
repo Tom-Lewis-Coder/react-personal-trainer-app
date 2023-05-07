@@ -20,7 +20,7 @@ const Header = () => {
 
     return (
         <div className='app__header app__flex' id='home'>
-            <img src={headerImg} alt='fitness' />
+            <img src={headerImg} alt='fitness' className='app__header-img' />
             <div className='app__header-top-upper app__flex'>
                 TSL Fitness Inspirational Quote
             </div>

@@ -1,0 +1,43 @@
+.app__blog-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.app__blog-container {
+    display: flex;
+    justify-content: space-around;
+    margin: 5rem 3rem;
+    flex-wrap: wrap;
+}
+
+.app__blog-title {
+    background-color: #78857f;
+    color: white;
+    font-size: xx-large;
+    margin: 7rem 0 0 0;
+    border-radius: 2rem;
+    padding: 0.65rem 1.5rem;
+}
+
+.app__blogPost-component {
+    display: flex;
+    max-width: 300px;
+    max-height: 300px;
+    min-width: 200px;
+    min-height: 200px;
+    overflow: hidden;
+    margin: 2rem;
+}
+
+.app__component-img{
+    border-radius: 5px;
+    height: 200px;
+    width: 300px;
+}
+
+.app__component-title {
+    margin: 0.5rem 0 1rem 0;
+    font-size: x-large;
+}

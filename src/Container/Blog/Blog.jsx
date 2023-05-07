@@ -1,6 +1,9 @@
 import React, { useState, useEffect } from 'react'
 import { GraphQLClient, gql } from 'graphql-request'
 import BlogPost from '../../Components/BlogPost'
+import Header from '../../Components/Header'
+
+import './Blog.scss'
 
 const graphcms = new GraphQLClient('https://api-eu-west-2.hygraph.com/v2/clh942quu0a2m01tab5da0g2b/master')
 
@@ -47,19 +50,22 @@ const Blog = () => {
     }, [])
 
     return (
-        <div>
-           {posts?.posts?.map(post => {
-                return <BlogPost
-                            title={post.title}
-                            author={post.author}
-                            coverPhoto={post.coverPhoto}
-                            key={post.id}
-                            datePublished={post.datePublished}
-                            slug={post.slug}
-                        />
-            })} 
+        <div className='app__blog-section' id='articles'>
+            <Header title={'Blog Posts'} className={'app__blog-title'} />
+            <div className='app__blog-container'>
+                {posts?.posts?.map(post => {
+                    return <BlogPost
+                        title={post.title}
+                        content={post.content}
+                        author={post.author}
+                        coverPhoto={post.coverPhoto}
+                        key={post.id}
+                        datePublished={post.datePublished}
+                        slug={post.slug}
+                    />
+                })}
+            </div>
         </div>
-
     )
 }
 
