@@ -14,9 +14,6 @@ const QUERY = gql`
             title
             datePublished
             slug
-            content {
-                html
-        }
             author {
                 name
                     avatar {

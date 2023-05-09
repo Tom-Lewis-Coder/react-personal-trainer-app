@@ -25,7 +25,7 @@
     display: flex;
     overflow: hidden;
     margin: 2rem;
-    box-shadow: -7px 7px 10px #78857f;
+    box-shadow: -6px 6px 10px #78857f;
     border-radius: 5px;
 }
 
@@ -55,4 +55,8 @@
     font-size: x-large;
     padding: 0 0.5rem;
     color:#78857f;
+}
+
+.app__blog-link {
+    text-decoration: none;
 }
