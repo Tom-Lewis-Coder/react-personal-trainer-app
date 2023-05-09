@@ -21,7 +21,7 @@ function App() {
             <Workout />
             <Blog />
           </>} />
-        <Route exact path={'/posts/:slug' } element={
+        <Route exact path={'/posts/:slug'} element={
           <BlogPage />
         } />
       </Routes>

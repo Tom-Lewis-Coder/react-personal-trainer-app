@@ -60,3 +60,43 @@
 .app__blog-link {
     text-decoration: none;
 }
+
+.app__blogPage-container {
+    margin: 3rem;
+    box-shadow: 0px 0px 10px #78857f;
+}
+
+.app__blogPage-img{
+    height: 50vh;
+    margin: 3rem 3rem 2rem 3rem;
+}
+
+.app__blogPage-content{
+    height: 50vh;
+    margin: 0 3rem;
+    line-height: 2rem;
+    color: #424946;
+}
+
+.app__blogPage-content{
+    h1{
+        margin: 1rem 0;
+    }
+}
+
+.app__blog-back{
+    display: flex;
+    justify-content: flex-end;
+    padding: 2rem 2rem 0 0;
+}
+
+.app__blog-backbutton{
+    position: absolute;
+    width: 4rem;
+    height: 2rem;
+    border: 1px solid #a8b8b0;
+}
+
+.app__blog-backbutton:hover{
+    cursor: pointer;
+}
