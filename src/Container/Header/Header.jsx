@@ -20,12 +20,14 @@ const Header = () => {
 
     return (
         <div className='app__header app__flex' id='home'>
-            <img src={headerImg} alt='fitness' className='app__header-img' />
-            <div className='app__header-top-upper app__flex'>
-                TSL Fitness Inspirational Quote
-            </div>
-            <div className='app__header-top-bottom app__flex'>
-                Sign up now ...
+            <div className='app__header-top app__flex'>
+                <img src={headerImg} alt='fitness' className='app__header-img' />
+                <div className='app__header-pic-text-upper app__flex'>
+                    TSL Fitness Inspirational Quote
+                </div>
+                <div className='app__header-pic-text-lower app__flex'>
+                    Sign up now ...
+                </div>
             </div>
             <div className='app__header-lower'>
                 <div className='app__header-lower-left app__flex'>

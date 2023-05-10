@@ -51,21 +51,20 @@ const BlogPage = () => {
         const fetchPost = async () => {
             const data = await graphcms.request(QUERY)
             setBlog(data?.posts?.filter((post) => post.slug === slug))
+            window.scrollTo(0, 0)
         }
         fetchPost()
             .catch(console.error)
     }, [slug])
 
     return (
-        <div>
-            <div className='app__blogPage-container'>
-                <div className='app__blog-back'>
-                    <Button onClick={goBack} title={'Back'} className={'app__blog-backbutton'} />
-                </div>
-                <div>
-                    <img src={blog[0]?.coverPhoto?.url} alt='' className='app__blogPage-img' />
-                    <div dangerouslySetInnerHTML={{ __html: blog[0]?.content?.html }} className='app__blogPage-content' />
-                </div>
+        <div className='app__blogPage-container'>
+            <div className='app__blog-back'>
+                <Button onClick={goBack} title={'Back'} className={'app__blog-backbutton'} />
+            </div>
+            <div>
+                <img src={blog[0]?.coverPhoto?.url} alt='' className='app__blogPage-img' />
+                <div dangerouslySetInnerHTML={{ __html: blog[0]?.content?.html }} className='app__blogPage-content' />
             </div>
         </div>
     )

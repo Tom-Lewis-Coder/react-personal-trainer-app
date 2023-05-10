@@ -9,7 +9,7 @@ const About = () => {
             <Header title={'The TSL System'} className={'app__about-title'}/>
             <div className='app__about-system'>The quick brown fox jumps over the lazy dog</div>
             <div className='app__about-split-container'>
-                <div className='app__about-left app__flex'>
+                <div className='app__about-left'>
                     <div className='app__about-image'>
                         <p>Big Image Text</p> {/* text within pic */}
                     </div>

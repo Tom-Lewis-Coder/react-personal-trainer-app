@@ -1,9 +1,12 @@
 .app__header {
-    height: 110vh;
-    position: relative;
+    height: 100vh;
     flex-direction: column;
     background-color: #78857f;
-    padding-bottom: 5rem;
+    padding: 5rem 0 1rem 0;
+}
+
+.app__header-top{
+    width: 90%;
 }
 
 .app__header-img {
@@ -12,23 +15,26 @@
     background-size: cover;
     border: 1px solid white;
     object-fit: cover;
-    margin-top: 5.5rem;
     margin-bottom: 1rem;
     flex: 1;
-    max-height: 50vh;
-    min-height: 50vh;
+    max-height: 55vh;
+    min-height: 55vh;
     width: 90%;
 }
 
-.app__header-top-upper {
+.app__header-pic-text-upper {
     position: absolute;
     font-size: 48px;
     font-weight: bolder;
     color: white;
     top: 10rem;
-    right: 6rem;
+    right: 7rem;
     border: 1px solid white;
     padding: 1rem;
+
+    @media screen and (min-width: 1200px) {
+        right: 8rem;
+    }
 
     @media screen and (max-width: 900px) {
         font-size: 36px;
@@ -56,13 +62,19 @@
     }
 }
 
-.app__header-top-bottom {
+.app__header-pic-text-lower {
     border: 1px solid white;
     position: absolute;
     font-size: 36px;
     color: white;
-    right: 6rem;
+    top: 18rem;
+    right: 7rem;
     padding: 1rem;
+
+    @media screen and (min-width: 1200px) {
+        right: 8rem;
+    }
+
 
     @media screen and (max-width: 900px) {
         font-size: 24px;
@@ -94,9 +106,10 @@
     flex-direction: row;
     justify-content: space-between;
     width: 90%;
-    height: 50vh;
+    height: 20rem;
+    max-height: 20rem;
 
-    @media screen and (max-width: 700px) {
+    @media screen and (max-width: 768px) {
         flex-direction: column;
     }
 }
@@ -108,7 +121,7 @@
     width: 32%;
     font-size: xx-large;
 
-    @media screen and (max-width: 700px) {
+    @media screen and (max-width: 768px) {
         width: 100%;
     }
 }
@@ -120,7 +133,7 @@
     width: 32%;
     font-size: xx-large;
 
-    @media screen and (max-width: 700px) {
+    @media screen and (max-width: 768px) {
         width: 100%;
         margin-top: 0.5rem;
     }
@@ -133,7 +146,7 @@
     width: 32%;
     font-size: xx-large;
 
-    @media screen and (max-width: 700px) {
+    @media screen and (max-width: 768px) {
         width: 100%;
         margin-top: 0.5rem;
     }
