@@ -19,8 +19,8 @@ function App() {
             <Services />
             <Blog />
             <Workout />
-            <Reviews />
             <Contact />
+            <Reviews />
           </>} />
         <Route exact path={'/posts/:slug'} element={
           <BlogPage />
