@@ -7,7 +7,7 @@ const reviewList = [
     {
         Name: 'Row',
         Content: 'Tom is so good. The best even. Delivers everytime with a smile.',
-        Stars: 5,
+        Stars: 2.5,
     },
     {
         Name: 'Biscuits',

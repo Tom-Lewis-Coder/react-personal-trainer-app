@@ -23,7 +23,7 @@ const Reviews = () => {
 
     return (
         <div id='reviews'>
-            {<Testamonials name={review.Name} content={review.Content} stars={review.Stars}/>}
+            {<Testamonials name={review.Name} content={review.Content} stars={review.Stars} />}
         </div>
     )
 }
