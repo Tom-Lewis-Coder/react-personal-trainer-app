@@ -4,6 +4,7 @@ import './index.css';
 import App from './App';
 import { BrowserRouter } from 'react-router-dom';
 import "typeface-roboto";
+import "typeface-open-sans";
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(

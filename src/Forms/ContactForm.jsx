@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import PropTypes from 'prop-types'
 import Header from '../Components/Header'
 import Button from '../Components/Button'
 
@@ -60,6 +61,10 @@ const ContactForm = ( props ) => {
             </div>
         </div>
     )
+}
+
+ContactForm.propTypes = {
+    setIsFormSubmitted: PropTypes.bool.isRequired,
 }
 
 export default ContactForm

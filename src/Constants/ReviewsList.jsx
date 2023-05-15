@@ -7,17 +7,22 @@ const reviewList = [
     {
         Name: 'Row',
         Content: 'Tom is so good. The best even. Delivers everytime with a smile.',
-        Stars: 2.5,
-    },
-    {
-        Name: 'Biscuits',
-        Content: 'Tom is my favorite.',
-        Stars: 4.5,
+        Stars: 3.5,
     },
     {
         Name: 'Bruce',
         Content: 'Tom is the best!',
-        Stars: 4.5,
+        Stars: 5,
+    },
+    {
+        Name: 'Wilf',
+        Content: 'Tom is the best!',
+        Stars: 5,
+    },
+    {
+        Name: 'Biscuits',
+        Content: 'Tom is my favorite.',
+        Stars: 4,
     },
 ]
 

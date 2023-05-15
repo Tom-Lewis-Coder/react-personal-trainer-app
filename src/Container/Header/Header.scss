@@ -3,6 +3,10 @@
     flex-direction: column;
     background-color: #78857f;
     padding: 5rem 0 1rem 0;
+
+    @media screen and (max-width: 900px) {
+        padding: 6rem 0 1rem 0;
+    }
 }
 
 .app__header-top{
@@ -24,28 +28,28 @@
 
 .app__header-pic-text-upper {
     position: absolute;
-    font-size: 48px;
+    font-size: 40px;
     font-weight: bolder;
-    color: white;
-    top: 10rem;
-    right: 7rem;
-    border: 1px solid white;
+    //color: white;
+    top: 7rem;
+    left: 6rem;
+    //border: 1px solid white;
     padding: 1rem;
-
-    @media screen and (min-width: 1200px) {
-        right: 8rem;
-    }
+    align-content: center;
+    background: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
 
     @media screen and (max-width: 900px) {
-        font-size: 36px;
-        right: 5rem;
+        font-size: 32px;
+        left: 5rem;
     }
 
     @media screen and (max-width: 700px) {
-        font-size: 30px;
-        right: 4rem;
-        padding: 0.75rem;
-        top: 12rem;
+        font-size: 25px;
+        left: 4rem;
+        padding: 0.5rem;
+        top: 7rem;
     }
 
     @media screen and (max-width: 590px) {
@@ -53,8 +57,8 @@
     }
 
     @media screen and (max-height: 600px) {
-        font-size: 30px;
-        padding: 0.75rem;
+        font-size: 25px;
+        padding: 0.5rem;
     }
 
     @media screen and (max-height: 320px) {
@@ -63,28 +67,28 @@
 }
 
 .app__header-pic-text-lower {
-    border: 1px solid white;
+    //border: 1px solid white;
     position: absolute;
     font-size: 36px;
-    color: white;
+    //color: white;
     top: 18rem;
-    right: 7rem;
+    left: 6rem;
     padding: 1rem;
-
-    @media screen and (min-width: 1200px) {
-        right: 8rem;
-    }
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
 
 
     @media screen and (max-width: 900px) {
         font-size: 24px;
-        right: 5rem;
+        left: 5rem;
     }
 
     @media screen and (max-width: 700px) {
         font-size: 20px;
-        right: 4rem;
-        padding: 0.75rem;
+        left: 4rem;
+        top: 15rem;
+        padding: 0.5rem;
     }
 
     @media screen and (max-width: 590px) {
@@ -108,6 +112,7 @@
     width: 90%;
     height: 20rem;
     max-height: 20rem;
+    color: #424946;
 
     @media screen and (max-width: 768px) {
         flex-direction: column;
