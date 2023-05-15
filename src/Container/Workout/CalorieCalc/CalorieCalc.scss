@@ -7,6 +7,7 @@
     width: 350px;
     height: 600px;
     border-radius: 5px;
+    margin-right: 8rem;
 }
 
 @media screen and (max-width: 1000px) {
@@ -44,7 +45,7 @@
     border: 1px solid #424946;
     border-radius: 2.5px;
     background-color: #78857f;
-    padding: 0.85rem;
+    padding: 0.7rem;
     color: white;
     line-height: 1.87rem;
 }
@@ -110,5 +111,9 @@ input[type='radio']:checked+.app__gender-input:before {
     padding: 0.75rem;
     color: white;
     line-height: 1.78rem;
+}
+
+.app__activity-input {
+    width: 99%;
 }
 

@@ -8,10 +8,10 @@ import Header from '../../Components/Header'
 function Workout() {
     return (
         <div id='workout' className='app__workout'>
-            <Header title={'Train and Track'} className={'app__workout-title'} />
+            <Header title={'Track and Train'} className={'app__workout-title'} />
             <div className='app__workout-sections'>
-                <WorkoutApp />
                 <CalorieCalc />
+                <WorkoutApp />
             </div>
         </div>
     )

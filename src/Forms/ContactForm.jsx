@@ -64,7 +64,7 @@ const ContactForm = ( props ) => {
 }
 
 ContactForm.propTypes = {
-    setIsFormSubmitted: PropTypes.bool.isRequired,
+    setIsFormSubmitted: PropTypes.func.isRequired,
 }
 
 export default ContactForm

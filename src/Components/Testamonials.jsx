@@ -1,5 +1,6 @@
 import React from 'react'
 import { ImStarFull, ImStarHalf } from 'react-icons/im'
+import Header from './Header'
 
 const Testamonials = ({ name, content, stars, }) => {
 
@@ -8,7 +9,8 @@ const Testamonials = ({ name, content, stars, }) => {
 
     return (
         <div className='app__testamonial-component'>
-            <p className='app__reviews-content'>{content}</p>
+            <Header className={'app__testimonial-header'} title={'Testimonials'} />
+            <p className='app__reviews-content'>{`"${content}"`}</p>
             <div className='app__reviews-name'>- {name}</div>
             <div className='app__reviews-stars'>{starsArr}</div>
         </div>

@@ -24,10 +24,10 @@ const Header = () => {
         <div className='app__header app__flex' id='home'>
             <div className='app__header-top app__flex'>
                 <img src={headerImg} alt='fitness' className='app__header-img' />
-                <div className='app__header-pic-text-upper app__flex' style={lightImg === 0 ? { color: '#424946' } : { color: 'white' }}>
-                    <p>Transfom Your Life with TSL<br />Bringing the Gym to You!</p>
+                <div className='app__header-pic-text-upper app__flex' style={lightImg === 0 ? { color: '#424946', background: 'rgba(255, 255, 255, 0.5)' } : { color: 'white' }}>
+                    <p>Transfom Your Life with TSL,<br />Bringing the Gym to You!</p>
                 </div>
-                <div className='app__header-pic-text-lower app__flex' style={lightImg === 0 ? { color: '#303533' } : { color: 'white' }}>
+                <div className='app__header-pic-text-lower app__flex' style={lightImg === 0 ? { color: '#303533', background: 'rgba(255, 255, 255, 0.5)' } : { color: 'white' }}>
                     Sign up ...
                 </div>
             </div>
@@ -36,7 +36,7 @@ const Header = () => {
                     BMI Calculator
                 </div>
                 <div className='app__header-lower-middle app__flex'>
-                    Take a Fitness Test
+                    Fitness Test
                 </div>
                 <div className='app__header-lower-right app__flex'>
                     Blog

@@ -45,14 +45,14 @@
         left: 5rem;
     }
 
-    @media screen and (max-width: 700px) {
+    @media screen and (max-width: 655px) {
         font-size: 25px;
         left: 4rem;
         padding: 0.5rem;
         top: 7rem;
     }
 
-    @media screen and (max-width: 590px) {
+    @media screen and (max-width: 515px) {
         visibility: hidden;
     }
 
@@ -82,16 +82,17 @@
     @media screen and (max-width: 900px) {
         font-size: 24px;
         left: 5rem;
+        top: 16rem;
     }
 
-    @media screen and (max-width: 700px) {
+    @media screen and (max-width: 655px) {
         font-size: 20px;
         left: 4rem;
         top: 15rem;
         padding: 0.5rem;
     }
 
-    @media screen and (max-width: 590px) {
+    @media screen and (max-width: 515px) {
         visibility: hidden;
     }
 
