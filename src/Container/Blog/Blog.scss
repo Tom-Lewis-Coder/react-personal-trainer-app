@@ -53,19 +53,43 @@
     height: 16rem;
 }
 
-.app__blogPage-container {
+
+// BlogPage CSS
+
+.app__blogPage {
+    display: flex;
+    flex-direction: column;
     margin: 3rem;
     box-shadow: 0px 0px 10px #78857f;
     min-height: fit-content;
 }
 
+.app__blogPage-back {
+    display: flex;
+    justify-content: flex-end;
+    padding: 2rem 2rem 0 0;
+}
+
+.app__blogPage-backbutton {
+    position: absolute;
+    width: 4rem;
+    height: 2rem;
+    border: 1px solid #a8b8b0;
+    color:#424946;
+    border-radius: 2.5px;
+}
+
+.app__blog-backbutton:hover {
+    cursor: pointer;
+}
+
 .app__blogPage-img {
     height: 40vh;
+    max-width: 500px;
     margin: 3rem 3rem 2rem 3rem;
 }
 
 .app__blogPage-content {
-    height: 50vh;
     margin: 0 3rem;
     line-height: 2rem;
     color: #424946;
@@ -77,26 +101,36 @@
     }
 }
 
-.app__blog-back {
+.app__blogPage-footer {
     display: flex;
-    justify-content: flex-end;
-    padding: 2rem 2rem 0 0;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+    color: #424946;
+    margin: 3rem 0 1rem 0;
 }
 
-.app__blog-backbutton {
-    position: absolute;
-    width: 4rem;
-    height: 2rem;
-    border: 1px solid #a8b8b0;
-    border-radius: 2.5px;
+.app__blogPage-author {
+    font-size: small;
+    padding: 0.5rem 1rem;
 }
 
-.app__blog-backbutton:hover {
-    cursor: pointer;
+.app__blogPage-avatar {
+    margin-left: 1rem;
+    height: 2.2rem;
+    width: 2rem;
+    border-radius: 50%;
 }
+
+.app__blogPage-date {
+    font-size: medium;
+    align-self: center;
+    padding: 0.5rem 1rem;
+}
+
+
 
 @media screen and (max-width: 768px) {
-    .app__blogPage-container {
+    .app__blogPage {
         margin: 0;
         box-shadow: none;
         padding: 0.5rem;
@@ -108,13 +142,10 @@
     }
 
     .app__blogPage-content {
-        height: 50vh;
         margin: 1rem;
         line-height: 1.75rem;
         color: #424946;
-    }
 
-    .app__blogPage-content {
         h1 {
             margin: 0.75rem 0;
         }
@@ -122,5 +153,10 @@
 
     .app__blog-back {
         padding: 1rem 1rem 0 0;
+    }
+
+    .app__blogPage-footer {
+        margin: 3rem 0 1rem 0;
+        padding: 0;
     }
 }

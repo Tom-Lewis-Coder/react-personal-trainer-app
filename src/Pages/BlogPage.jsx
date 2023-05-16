@@ -58,13 +58,20 @@ const BlogPage = () => {
     }, [slug])
 
     return (
-        <div className='app__blogPage-container'>
-            <div className='app__blog-back'>
-                <Button onClick={goBack} title={'Back'} className={'app__blog-backbutton'} />
+        <div className='app__blogPage'>
+            <div className='app__blogPage-back'>
+                <Button onClick={goBack} title={'Back'} className={'app__blogPage-backbutton'} />
             </div>
-            <div>
+            <div className='app__blogPage-container'>
                 <img src={blog[0]?.coverPhoto?.url} alt='' className='app__blogPage-img' />
                 <div dangerouslySetInnerHTML={{ __html: blog[0]?.content?.html }} className='app__blogPage-content' />
+                <div className='app__blogPage-footer'>
+                    <div className='app__blogPage-author app__flex'>
+                        <div>{blog[0]?.author?.name}</div>
+                        <img src={blog[0]?.author?.avatar?.url} alt='' className='app__blogPage-avatar' />
+                    </div>
+                    <div className='app__blogPage-date'>{blog[0]?.coverPhoto?.publishedAt.slice(0, 10).split('-').reverse().join('-')}</div>
+                </div>
             </div>
         </div>
     )
