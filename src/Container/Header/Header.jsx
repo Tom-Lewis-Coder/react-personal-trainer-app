@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import { headerImages } from '../../Constants'
+import { Link } from 'react-router-dom'
 
 import './Header.scss'
 
@@ -32,15 +33,15 @@ const Header = () => {
                 </div>
             </div>
             <div className='app__header-lower'>
-                <div className='app__header-lower-left app__flex'>
+                <Link to={'./BMI'} className='app__header-lower-left app__flex'>
                     BMI Calculator
-                </div>
-                <div className='app__header-lower-middle app__flex'>
+                </Link>
+                <Link to={'/test'} className={'app__header-lower-middle app__flex'}>
                     Fitness Test
-                </div>
-                <div className='app__header-lower-right app__flex'>
-                    Blog
-                </div>
+                </Link>
+                <Link to={'./videos'} className='app__header-lower-right app__flex'>
+                    Videos
+                </Link>
             </div>
         </div>
     )

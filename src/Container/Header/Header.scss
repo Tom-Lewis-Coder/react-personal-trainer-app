@@ -2,10 +2,10 @@
     height: 100vh;
     flex-direction: column;
     background-color: #78857f;
-    padding: 5rem 0 1rem 0;
+    padding: 5rem 0 2rem 0;
 
     @media screen and (max-width: 900px) {
-        padding: 6rem 0 1rem 0;
+        padding: 6rem 0 2rem 0;
     }
 }
 
@@ -78,7 +78,6 @@
     backdrop-filter: blur(4px);
     -webkit-backdrop-filter: blur(4px);
 
-
     @media screen and (max-width: 900px) {
         font-size: 24px;
         left: 5rem;
@@ -126,6 +125,8 @@
     height: 100%;
     width: 32%;
     font-size: xx-large;
+    text-decoration: none;
+    color: #424946;
 
     @media screen and (max-width: 768px) {
         width: 100%;
@@ -138,6 +139,8 @@
     height: 100%;
     width: 32%;
     font-size: xx-large;
+    text-decoration: none;
+    color: #424946;
 
     @media screen and (max-width: 768px) {
         width: 100%;
@@ -151,6 +154,8 @@
     height: 100%;
     width: 32%;
     font-size: xx-large;
+    text-decoration: none;
+    color: #424946;
 
     @media screen and (max-width: 768px) {
         width: 100%;

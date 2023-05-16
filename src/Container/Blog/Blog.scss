@@ -10,7 +10,7 @@
     color: white;
     font-size: xx-large;
     margin: 7rem 0 0 0;
-    border-radius: 2rem;
+    border-radius: 0.5rem;
     padding: 0.65rem 1.5rem;
 }
 
@@ -22,43 +22,35 @@
 }
 
 .app__blogPost-component {
+    max-width: 300px;
+    min-width: 300px;
     display: flex;
     overflow: hidden;
     margin: 2rem;
-    box-shadow: -6px 6px 10px #78857f;
+    box-shadow: -3px 3px 10px #78857f;
     border-radius: 5px;
-}
 
-@media screen and (max-width: 1050px){
-    .app__blogPost-component{
+    @media screen and (max-width: 1050px) {
         max-width: 300px;
         min-width: 300px;
         min-height: fit-content;
-        box-shadow: -5px 5px 10px #78857f;
     }
 }
 
-.app__component-img{
-    height: 250px;
-    width: 400px;
-}
-
-    @media screen and (max-width: 1050px){
-        .app__component-img{
-            height: 200px;
-            width: 300px;
-        }
+.app__component-img {
+    height: 200px;
+    width: 300px;
 }
 
 .app__component-title {
-    margin: 0.5rem 0 1rem 0;
-    font-size: x-large;
+    font-size: large;
     padding: 0 0.5rem;
-    color:#78857f;
+    color: #424946;
 }
 
 .app__blog-link {
     text-decoration: none;
+    height: 16rem;
 }
 
 .app__blogPage-container {
@@ -67,31 +59,31 @@
     min-height: fit-content;
 }
 
-.app__blogPage-img{
-    height: 50vh;
+.app__blogPage-img {
+    height: 40vh;
     margin: 3rem 3rem 2rem 3rem;
 }
 
-.app__blogPage-content{
+.app__blogPage-content {
     height: 50vh;
     margin: 0 3rem;
     line-height: 2rem;
     color: #424946;
 }
 
-.app__blogPage-content{
-    h1{
+.app__blogPage-content {
+    h1 {
         margin: 1rem 0;
     }
 }
 
-.app__blog-back{
+.app__blog-back {
     display: flex;
     justify-content: flex-end;
     padding: 2rem 2rem 0 0;
 }
 
-.app__blog-backbutton{
+.app__blog-backbutton {
     position: absolute;
     width: 4rem;
     height: 2rem;
@@ -99,7 +91,7 @@
     border-radius: 2.5px;
 }
 
-.app__blog-backbutton:hover{
+.app__blog-backbutton:hover {
     cursor: pointer;
 }
 
@@ -110,25 +102,25 @@
         padding: 0.5rem;
     }
 
-    .app__blogPage-img{
+    .app__blogPage-img {
         height: 200px;
         margin: 3rem 1rem 1rem 1rem;
     }
 
-    .app__blogPage-content{
+    .app__blogPage-content {
         height: 50vh;
         margin: 1rem;
         line-height: 1.75rem;
         color: #424946;
     }
 
-    .app__blogPage-content{
+    .app__blogPage-content {
         h1 {
             margin: 0.75rem 0;
         }
     }
 
-    .app__blog-back{
+    .app__blog-back {
         padding: 1rem 1rem 0 0;
     }
 }
