@@ -1,16 +1,25 @@
-.app__FAQ-header {
-    text-align: center;
+.app__FAQ-container {
+    display: flex;
+    flex-direction: column;
+    background-color: #78857f;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.app__FAQ-header{
+    display: flex;
+    background-color: white;
+    color: #78857f;
     font-size: xx-large;
-    padding: 2rem;
-    color: #424946;
+    margin: 3rem 0;
+    border-radius: 0.5rem;
+    padding: 0.65rem 1.5rem;
 }
 
 .app__FAQ-component {
     display: flex;
     flex-direction: column;
-    margin: 2rem;
-    align-content: center;
-    border: none;
+    margin: 1.5rem;
 }
 
 .app__FAQ-align:hover {
@@ -23,9 +32,23 @@
     justify-content: flex-start;
     padding: 0.5rem;
     color: #424946;
-    background-color: #c8dbd2;
+    background-color: white;
 }
 
 h4 {
     padding: 0.25rem 0.5rem;
+}
+
+.app__FAQ-answer{
+    display: flex;
+    justify-content: flex-start;
+    align-content: flex-start;
+    line-height: 1.5rem;
+    padding: 0 1.5rem;
+    color: #424946;
+    background-color: white;
+}
+
+.app__FAQ-answer-hidden{
+    visibility: hidden;
 }

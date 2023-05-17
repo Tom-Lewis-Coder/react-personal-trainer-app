@@ -27,7 +27,7 @@ const FAQuestion = ({ question, answer }) => {
                     <div>
                         <div className="app__FAQ-align">
                             <FiPlus
-                                className={active ? `app__FAQ-icon rotate` : `app__FAQ-icon`}
+                                className={active ? `app__FAQ-icon` : `app__FAQ-icon`}
                             />
                             <h4 className="app__FAQ-style">
                                 {question}
@@ -35,7 +35,7 @@ const FAQuestion = ({ question, answer }) => {
                         </div>
                         <div
                             ref={contentRef}
-                            className={active ? `app__FAQ-answer answer-divider` : `app__FAQ-answer`}
+                            className={active ? `app__FAQ-answer` : `app__FAQ-answer-hidden`}
                         >
                             <p>{answer}</p>
                         </div>
