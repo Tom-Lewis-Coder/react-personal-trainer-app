@@ -9,21 +9,22 @@
 .app__FAQ-header{
     display: flex;
     background-color: white;
-    color: #78857f;
+    color: #424946;
     font-size: xx-large;
     margin: 3rem 0;
     border-radius: 0.5rem;
     padding: 0.65rem 1.5rem;
+
+    @media screen and (max-width: 515px){
+        font-size: large;
+    }
 }
 
 .app__FAQ-component {
     display: flex;
     flex-direction: column;
-    margin: 1.5rem;
-}
-
-.app__FAQ-align:hover {
-    cursor: pointer;
+    justify-content: flex-start;
+    margin: 1.25rem;
 }
 
 .app__FAQ-align {
@@ -33,10 +34,34 @@
     padding: 0.5rem;
     color: #424946;
     background-color: white;
+    box-shadow: -2px 2px 3px #424946;
+}
+
+.app__FAQ-align:hover {
+    cursor: pointer;
+} 
+
+.app__FAQ-align-active {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 0.5rem;
+    color: #424946;
+    background-color: white;
+}
+
+.app__FAQ-align-active:hover {
+    cursor: pointer;
 }
 
 h4 {
-    padding: 0.25rem 0.5rem;
+    padding: 0 0.5rem;
+    text-align: left;
+}
+
+p {
+    padding: 0 0.3rem;
+    text-align: left;
 }
 
 .app__FAQ-answer{
