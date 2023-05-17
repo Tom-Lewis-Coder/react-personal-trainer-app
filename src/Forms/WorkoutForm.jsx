@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import Button from '../Components/Button'
+import { Button } from '../Components'
 import ExerciseList from '../Constants/ExerciseList'
 import { v4 as uuidv4 } from 'uuid'
 

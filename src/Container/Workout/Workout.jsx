@@ -3,7 +3,7 @@ import WorkoutApp from './WorkoutApp/WorkoutApp'
 import CalorieCalc from './CalorieCalc/CalorieCalc'
 
 import './Workout.scss'
-import Header from '../../Components/Header'
+import { Header } from '../../Components'
 
 function Workout() {
     return (

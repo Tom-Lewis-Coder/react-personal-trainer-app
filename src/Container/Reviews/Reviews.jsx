@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react'
 
 import reviewList from '../../Constants/ReviewsList'
 import './Reviews.scss'
-import Testamonials from '../../Components/Testamonials'
+import { Testamonials } from '../../Components'
 
 const Reviews = () => {
 

@@ -33,8 +33,8 @@ const Header = () => {
                 </div>
             </div>
             <div className='app__header-lower'>
-                <Link to={'./BMI'} className='app__header-lower-left app__flex'>
-                    BMI Calculator
+                <Link to={'./FAQ'} className='app__header-lower-left app__flex'>
+                    FAQ
                 </Link>
                 <Link to={'/test'} className={'app__header-lower-middle app__flex'}>
                     Fitness Test

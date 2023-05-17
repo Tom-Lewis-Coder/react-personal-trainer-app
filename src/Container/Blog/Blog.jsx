@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import { GraphQLClient, gql } from 'graphql-request'
-import BlogPost from '../../Components/BlogPost'
-import Header from '../../Components/Header'
+import { Header, BlogPost } from '../../Components'
 
 import './Blog.scss'
 
@@ -53,11 +52,8 @@ const Blog = () => {
                 {posts?.posts?.map(post => {
                     return <BlogPost
                         title={post.title}
-                        content={post.content}
-                        author={post.author}
                         coverPhoto={post.coverPhoto}
                         key={post.id}
-                        datePublished={post.datePublished}
                         slug={post.slug}
                     />
                 })}

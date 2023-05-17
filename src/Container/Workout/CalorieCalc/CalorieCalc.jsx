@@ -1,6 +1,6 @@
 import React from 'react'
 import CalorieForm from '../../../Forms/CalorieForm'
-import Header from '../../../Components/Header'
+import { Header } from '../../../Components'
 
 import './CalorieCalc.scss'
 

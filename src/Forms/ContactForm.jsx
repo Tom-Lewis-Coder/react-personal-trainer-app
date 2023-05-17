@@ -1,9 +1,8 @@
 import React, { useState } from 'react'
 import PropTypes from 'prop-types'
-import Header from '../Components/Header'
-import Button from '../Components/Button'
+import { Header, Button } from '../Components'
 
-const ContactForm = ( props ) => {
+const ContactForm = (props) => {
 
     const [formData, setFormData] = useState({ firstname: '', lastname: '', email: '', area: '', dob: '', requirements: '', message: '' })
     const [loading, setLoading] = useState(false)

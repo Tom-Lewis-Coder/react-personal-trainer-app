@@ -1,0 +1,31 @@
+.app__FAQ-header {
+    text-align: center;
+    font-size: xx-large;
+    padding: 2rem;
+    color: #424946;
+}
+
+.app__FAQ-component {
+    display: flex;
+    flex-direction: column;
+    margin: 2rem;
+    align-content: center;
+    border: none;
+}
+
+.app__FAQ-align:hover {
+    cursor: pointer;
+}
+
+.app__FAQ-align {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 0.5rem;
+    color: #424946;
+    background-color: #c8dbd2;
+}
+
+h4 {
+    padding: 0.25rem 0.5rem;
+}
