@@ -6,6 +6,26 @@
     min-height: 100vh;
 }
 
+.app__FAQ-back {
+    display: flex;
+    padding: 2rem 2rem 0 0;;
+    width: 100%;
+    justify-content: flex-end;
+}
+
+.app__FAQ-backbutton {
+    width: 4rem;
+    height: 2rem;
+    border: 1px solid #a8b8b0;
+    color:#424946;
+    border-radius: 2.5px;
+    box-shadow: -2px 2px 3px #424946;
+}
+
+.app__FAQ-backbutton:hover {
+    cursor: pointer;
+}
+
 .app__FAQ-header{
     display: flex;
     background-color: white;
