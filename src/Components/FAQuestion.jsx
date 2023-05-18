@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react'
-import { FiPlus } from "react-icons/fi";
+import { FiMinus, FiPlus } from "react-icons/fi";
 
 const FAQuestion = ({ question, answer }) => {
 
@@ -9,9 +9,9 @@ const FAQuestion = ({ question, answer }) => {
 
     useEffect(() => {
         contentRef.current.style.maxHeight = active
-            ? `${contentRef.current.scrollHeight}px`
+            ? `${contentRef.current.scrollHeight}px `
             : "0px";
-    }, [contentRef, active])
+    }, [contentRef, active]) // if active ref={contentRef} in div sets div height to scrollheight to display answer
 
     const toggleAccordion = () => {
         setActive(!active)
@@ -20,23 +20,14 @@ const FAQuestion = ({ question, answer }) => {
     return (
         <>
             <div className="app__FAQ-component">
-                <button
-                    className={`app__FAQ-section ${active}`}
-                    onClick={toggleAccordion}
-                >
+                <button onClick={toggleAccordion} >
                     <div>
-                        <div className={active ? "app__FAQ-align-active": "app__FAQ-align"}>
-                            <FiPlus
-                                className={active ? 'app__FAQ-icon' : 'app__FAQ-icon'}
-                            />
-                            <h4 className="app__FAQ-style">
-                                {question}
-                            </h4>
+                        <div className={active ? "app__FAQ-align-active" : "app__FAQ-align"}>
+                            <FiPlus className={active ? 'app__FAQ-plus-hidden' : 'app__FAQ-plus'} />
+                            <FiMinus className={active ? 'app__FAQ-minus' : 'app__FAQ-minus-hidden'} />
+                            <h4 className="app__FAQ-style">{question}</h4>
                         </div>
-                        <div
-                            ref={contentRef}
-                            className={active ? 'app__FAQ-answer' : 'app__FAQ-answer-hidden'}
-                        >
+                        <div ref={contentRef} className={active ? 'app__FAQ-answer' : 'app__FAQ-answer-hidden'} >
                             <p>{answer}</p>
                         </div>
                     </div>
