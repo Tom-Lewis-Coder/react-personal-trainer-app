@@ -8,8 +8,8 @@ const FAQuestion = ({ question, answer }) => {
     const contentRef = useRef(null)
 
     useEffect(() => {
-        contentRef.current.style.maxHeight = active
-            ? `${contentRef.current.scrollHeight}px `
+        contentRef.current.style.height = active
+            ? `${contentRef.current.scrollHeight + 5}px `
             : "0px";
     }, [contentRef, active]) // if active ref={contentRef} in div sets div height to scrollheight to display answer
 

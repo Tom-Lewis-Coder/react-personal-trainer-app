@@ -9,7 +9,7 @@
     }
 }
 
-.app__header-top{
+.app__header-top {
     width: 90%;
 }
 
@@ -30,24 +30,20 @@
     position: absolute;
     font-size: 40px;
     font-weight: bolder;
-    //color: white;
     top: 7rem;
     left: 6rem;
-    //border: 1px solid white;
     padding: 1rem;
-    align-content: center;
     background: rgba(255, 255, 255, 0.3);
     backdrop-filter: blur(4px);
     -webkit-backdrop-filter: blur(4px);
 
     @media screen and (max-width: 900px) {
         font-size: 32px;
-        left: 5rem;
+        left: 4rem;
     }
 
     @media screen and (max-width: 655px) {
         font-size: 25px;
-        left: 4rem;
         padding: 0.5rem;
         top: 7rem;
     }
@@ -67,11 +63,9 @@
 }
 
 .app__header-pic-text-lower {
-    //border: 1px solid white;
     position: absolute;
     font-size: 36px;
-    //color: white;
-    top: 18rem;
+    top: 17rem;
     left: 6rem;
     padding: 1rem;
     background: rgba(255, 255, 255, 0.2);
@@ -80,14 +74,14 @@
 
     @media screen and (max-width: 900px) {
         font-size: 24px;
-        left: 5rem;
-        top: 16rem;
+        left: 4rem;
+        top: 15rem;
     }
 
     @media screen and (max-width: 655px) {
         font-size: 20px;
         left: 4rem;
-        top: 15rem;
+        top: 13rem;
         padding: 0.5rem;
     }
 
@@ -120,16 +114,25 @@
 }
 
 .app__header-lower-left {
-    background-color: lightsteelblue;
+    background-image: url('../../Assets/faqs.jpg');
+    background-size: cover;
+    background-position-x: center;
+    background-position-y:bottom;
+
     border: 1px solid white;
     height: 100%;
     width: 32%;
     font-size: xx-large;
     text-decoration: none;
-    color: #424946;
+    color: transparent;
 
     @media screen and (max-width: 768px) {
         width: 100%;
+        background-image: none;
+        background: rgba(255, 255, 255, 0.8);
+        backdrop-filter: blur(2px);
+        -webkit-backdrop-filter: blur(2px);
+        color: #424946;
     }
 }
 
