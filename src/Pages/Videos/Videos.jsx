@@ -5,7 +5,7 @@ import { useNavigate } from 'react-router-dom'
 
 import './Videos.scss'
 
-let query = `https://youtube.googleapis.com/youtube/v3/search?part=snippet&channelId=${process.env.REACT_APP_YOUTUBE_CHANNEL_ID}&key=${process.env.REACT_APP_YOUTUBE_API_KEY}`
+let query = `https://youtube.googleapis.com/youtube/v3/search?part=snippet&channelId=${process.env.REACT_APP_YOUTUBE_CHANNEL_ID}&key=${process.env.REACT_APP_YOUTUBE_API_KEY}&maxResults=20`
 
 
 export const Videos = () => {

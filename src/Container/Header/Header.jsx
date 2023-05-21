@@ -42,7 +42,7 @@ const Header = () => {
                     Fitness Test
                 </Link>
                 <Link to={'./videos'} className='app__header-lower-right app__flex'>
-                    Videos
+                    <p>Videos</p>
                 </Link>
             </div>
         </div>

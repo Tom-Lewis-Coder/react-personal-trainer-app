@@ -117,7 +117,7 @@
     background-image: url('../../Assets/faqs.jpg');
     background-size: cover;
     background-position-x: center;
-    background-position-y:bottom;
+    background-position-y: bottom;
 
     border: 1px solid white;
     height: 100%;
@@ -152,16 +152,34 @@
 }
 
 .app__header-lower-right {
-    background-color: lightblue;
+    background-image: url('../../Assets/videos.jpg');
+    background-size: cover;
+    background-position-x: center;
+    background-position-y: center;
+    background-repeat: no-repeat;
+
     border: 1px solid white;
     height: 100%;
     width: 32%;
-    font-size: xx-large;
     text-decoration: none;
-    color: #424946;
+    font-size: xx-large;
+    color: #2b302e;
+
+    p{
+        background-color: rgb(223, 221, 221);
+        border-radius: 2rem;
+        padding: 0 1rem;
+        border: 1px solid #424946;
+    }
+
+
 
     @media screen and (max-width: 768px) {
         width: 100%;
+        background-image: none;
+        background: rgba(255, 255, 255, 0.8);
+        backdrop-filter: blur(2px);
+        -webkit-backdrop-filter: blur(2px);
         margin-top: 0.5rem;
     }
 }
