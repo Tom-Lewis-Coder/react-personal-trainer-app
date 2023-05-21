@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import axios from 'axios'
-import { Video, Header } from '../../Components'
+import { Video, Header, Button } from '../../Components'
+import { useNavigate } from 'react-router-dom'
 
 import './Videos.scss'
 
@@ -10,6 +11,12 @@ let query = `https://youtube.googleapis.com/youtube/v3/search?part=snippet&chann
 export const Videos = () => {
 
     const [data, setData] = useState([])
+
+    const navigate = useNavigate();
+
+    const goBack = () => {
+        navigate(-1);
+    }
 
     useEffect(() => {
         const getData = async () => {
@@ -22,6 +29,9 @@ export const Videos = () => {
 
     return (
         <div className='app__video-section'>
+            <div className='app__video-back'>
+                <Button onClick={goBack} title={'Back'} className={'app__video-backbutton'} />
+            </div>
             <Header title={'Videos'} className={'app__video-title'} />
             <div className='app__video-container app__flex'>
                 {data?.map(vid => {
