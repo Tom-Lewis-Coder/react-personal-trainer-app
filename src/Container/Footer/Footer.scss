@@ -1,30 +1,116 @@
-.app__footer-section{
+.app__footer-section {
     margin-top: 5rem;
 }
 
-.app__footer-social-media{
+.app__footer-social-media {
     display: flex;
     flex-direction: column;
     align-items: center;
-    
+
     p {
         padding: 1rem 0;
         font-size: x-large;
         color: #424946;
     }
 
-    .app__footer-svg{
+    .app__footer-svg {
         padding: 0.5rem;
-        color:#424946;
+        color: #424946;
     }
 }
 
-.app__footer-copywrite{
-    display:flex;
+.app__footer-divider{
+    width: 90vw;
+    margin: 0 auto;
+    border-bottom: 1px solid #424946;
+    padding: 2rem 0;
+}
+
+.app__footer-middle {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    color: #424946;
+    margin-top: 3rem;
+
+    @media screen and (max-width: 630px) {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.app__footer-middle-left {
+    display: flex;
+    flex-direction: column;
+
+    h2 {
+        padding-bottom: 0.25rem;
+    }
+
+    p {
+        padding: 0.25rem 0;
+    }
+
+    @media screen and (max-width: 630px) {
+        margin-bottom: 3rem;
+
+        h2, p{
+            align-self: center;
+        }
+    }
+}
+
+
+.app__footer-middle-middle {
+    display: flex;
+    flex-direction: column;
+
+    h2 {
+        padding-bottom: 0.25rem;
+    }
+
+    a {
+        text-decoration: none;
+        color: #424946;
+        padding: 0.25rem 0;
+    }
+
+    @media screen and (max-width: 630px) {
+        margin-bottom: 3rem;
+
+        h2, a{
+            align-self: center;
+        }
+    }
+}
+
+.app__footer-middle-right {
+    display: flex;
+    flex-direction: column;
+
+    h2 {
+        padding-bottom: 0.25rem;
+    }
+
+    Link, a {
+        text-decoration: none;
+        color: #424946;
+        padding: 0.25rem 0;
+    }
+
+    @media screen and (max-width: 630px) {
+        Link, a{
+            align-self: center;
+        }
+    }
+}
+
+.app__footer-copywrite {
+    display: flex;
     width: 100%;
     justify-content: flex-end;
     font-size: small;
-    margin-top: 3rem;
+    margin-top: 4rem;
     padding: 1rem;
-    color:#78857f;
+    color: #78857f;
 }

@@ -1,5 +1,6 @@
 import React from 'react'
 import { SiInstagram, SiYoutube, SiTwitter, SiFacebook } from 'react-icons/si'
+import { Link } from 'react-router-dom'
 
 import './Footer.scss'
 
@@ -23,9 +24,29 @@ const Footer = () => {
                     </a>
                 </div>
             </div>
-
+            <div className='app__footer-divider'></div>
+            <div className='app__footer-middle'>
+                <div className='app__footer-middle-left'>
+                    <h2>Based In:</h2>
+                    <p>Temple Cloud</p>
+                    <p>Somerset</p>
+                    <p>BS39</p>
+                </div>
+                <div className='app__footer-middle-middle'>
+                    <h2>Contact:</h2>
+                    <a href='mailto:tomlewis139@gmail.com'>email: tomlewis139@gmail.com</a>
+                    <a href='tel:07376 265677'>Tel: 07376265677</a>
+                </div>
+                <div className='app__footer-middle-right'>
+                    <h2>About:</h2>
+                    <Link to={'./FAQ'}>FAQ</Link>
+                    <a href='#articles'>Blog</a>
+                    <Link to={'./videos'}>Videos</Link>
+                </div>
+            </div>
+            <div className='app__footer-divider'></div>
             <div className='app__footer-copywrite'>
-                <p>@2023 TSL Fitness Ltd <br/>All rights reserved</p>
+                <p>@2023 TSL Fitness Ltd <br />All rights reserved</p>
             </div>
         </div>
     )
