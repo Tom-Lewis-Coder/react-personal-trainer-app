@@ -36,10 +36,10 @@ const Header = () => {
             </div>
             <div className='app__header-lower'>
                 <Link to={'./FAQ'} className='app__header-lower-left app__flex'>
-                    FAQ
+                    <p>FAQ</p>
                 </Link>
                 <Link to={'/test'} className={'app__header-lower-middle app__flex'}>
-                    Fitness Test
+                    <p>Fitness Test</p>
                 </Link>
                 <Link to={'./videos'} className='app__header-lower-right app__flex'>
                     <p>Videos</p>

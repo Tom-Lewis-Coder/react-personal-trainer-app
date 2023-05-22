@@ -2,7 +2,7 @@ import React from 'react'
 import { Routes, Route } from 'react-router-dom'
 
 import { Navbar } from './Components/index.js';
-import { Header, About, Services, Contact, Workout, Blog, Reviews } from './Container';
+import { Header, About, Services, Contact, Workout, Blog, Reviews, Footer } from './Container';
 import { BlogPage, FAQ, FitnessTest, Videos } from './Pages'
 import './App.scss';
 
@@ -20,6 +20,7 @@ function App() {
             <Workout />
             <Contact />
             <Reviews />
+            <Footer />
           </>} />
         <Route exact path={'/posts/:slug'} element={
           <BlogPage />
