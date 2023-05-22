@@ -46,7 +46,7 @@ const Blog = () => {
     }, [])
 
     return (
-        <div className='app__blog-section' id='articles'>
+        <div className='app__blog-section' id='blog/nutrition'>
             <Header title={'Blog Posts'} className={'app__blog-title'} />
             <div className='app__blog-container'>
                 {posts?.posts?.map(post => {

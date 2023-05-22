@@ -7,7 +7,7 @@ import { Header } from '../../Components'
 
 function Workout() {
     return (
-        <div id='workout' className='app__workout'>
+        <div id='track & train' className='app__workout'>
             <Header title={'Track and Train'} className={'app__workout-title'} />
             <div className='app__workout-sections'>
                 <CalorieCalc />

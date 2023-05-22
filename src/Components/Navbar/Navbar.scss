@@ -36,6 +36,10 @@
             display: block;
             padding-block: inherit;
             text-transform: capitalize;
+
+            @media screen and (max-width: 1000px) {
+                font-size: 14px;
+            }
         }
 
         &:hover {
