@@ -40,7 +40,7 @@ const Footer = () => {
                 <div className='app__footer-middle-right'>
                     <h2>About:</h2>
                     <Link to={'./FAQ'}>FAQ</Link>
-                    <a href='#articles'>Blog</a>
+                    <a href='#blog/nutrition'>Blog</a>
                     <Link to={'./videos'}>Videos</Link>
                 </div>
             </div>
