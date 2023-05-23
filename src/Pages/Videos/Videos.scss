@@ -64,3 +64,74 @@
 .app__video-component-title{
     padding: 0.25rem;
 }
+
+.app__videoplayer-section{
+    display: flex;
+    flex-direction: column;
+    background-color: #78857f;
+    height: 100vh;
+    align-items: center;
+}
+
+.app__videoplayer-title{
+    display: flex;
+    background-color: white;
+    color: #424946;
+    font-size: xx-large;
+    margin: 3rem 0;
+    border-radius: 0.5rem;
+    padding: 0.65rem 1.5rem;
+
+    @media screen and (max-width: 515px) {
+        font-size: large;
+    }
+}
+
+.app__videoplayer-back {
+    display: flex;
+    justify-content: flex-end;
+    position: absolute;
+    padding: 2rem 2rem 2rem 0;
+    width: 100%;
+
+    @media screen and (max-width: 515px) {
+        display: none;
+    }
+}
+
+.app__videoplayer-button {
+    width: 4rem;
+    height: 2rem;
+    border: 1px solid #a8b8b0;
+    background-color: white;
+    color: #424946;
+    border-radius: 2.5px;
+    box-shadow: -1px 1px 2px #424946;
+}
+
+.app__videoplayer-button:hover {
+    cursor: pointer;
+}
+
+.app__videoplayer-video-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    padding: 0 2rem 2rem;
+
+    @media screen and (max-width: 750px) {
+        padding: 0;
+    }
+}
+
+.app__videoplayer-video{
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+
+    @media screen and (max-width: 750px) {
+        border-radius: 0;
+    }
+}
