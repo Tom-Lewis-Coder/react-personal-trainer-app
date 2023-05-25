@@ -35,7 +35,7 @@ const Footer = () => {
                 <div className='app__footer-middle-middle'>
                     <h2>Contact:</h2>
                     <a href='mailto:tomlewis139@gmail.com'>Email: tomlewis139@gmail.com</a>
-                    <a href='tel:07376 265677'>Tel: 07376265677</a>
+                    <a href='tel:07376 265677'>Tel: 07376 265677</a>
                 </div>
                 <div className='app__footer-middle-right'>
                     <h2>About:</h2>

@@ -27,7 +27,7 @@ const Header = () => {
                 <img src={headerImg} alt='fitness' className='app__header-img' />
                 <div className='app__header-pic-text app__flex'>
                     <div className='app__header-pic-text-upper app__flex' style={lightImg === 0 ? { color: '#424946', background: 'rgba(255, 255, 255, 0.5)' } : { color: 'white' }}>
-                        <p>Transfom Your Life with TSL,<br />Bringing the Gym to You!</p>
+                        <p>Transform Your Life with TSL,<br />Bringing the Gym to You!</p>
                     </div>
                     <a href='#contact' className='app__header-pic-text-lower app__flex' style={lightImg === 0 ? { color: '#303533', background: 'rgba(255, 255, 255, 0.5)' } : { color: 'white' }}>
                         Sign up ...
