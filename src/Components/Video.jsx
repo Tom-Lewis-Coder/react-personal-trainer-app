@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import PropTypes from 'prop-types'
 
 const Video = ({ id, url, title }) => {
     return (
@@ -13,4 +14,11 @@ const Video = ({ id, url, title }) => {
         </div>
     )
 }
+
+Video.propTypes = {
+    id: PropTypes.string.isRequired,
+    url: PropTypes.string.isRequired,
+    title: PropTypes.string.isRequired,
+}
+
 export default Video

@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react'
 import { FiMinus, FiPlus } from "react-icons/fi";
+import PropTypes from 'prop-types'
 
 const FAQuestion = ({ question, answer }) => {
 
@@ -35,6 +36,13 @@ const FAQuestion = ({ question, answer }) => {
             </div>
         </>
     )
+}
+
+FAQuestion.propTypes = {
+    className: PropTypes.string.isRequired,
+    toggleAccordion: PropTypes.func.isRequired,
+    question: PropTypes.string.isRequired,
+    answer: PropTypes.string.isRequired,
 }
 
 export default FAQuestion

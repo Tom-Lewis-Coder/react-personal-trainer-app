@@ -1,6 +1,7 @@
 import React from 'react'
 import { ImStarFull, ImStarHalf } from 'react-icons/im'
 import Header from './Header'
+import PropTypes from 'prop-types'
 
 const Testamonials = ({ name, content, stars, }) => {
 
@@ -15,6 +16,12 @@ const Testamonials = ({ name, content, stars, }) => {
             <div className='app__reviews-stars'>{starsArr}</div>
         </div>
     )
+}
+
+Testamonials.propTypes = {
+    content: PropTypes.string.isRequired,
+    name: PropTypes.string.isRequired,
+    starsArr: PropTypes.array,
 }
 
 export default Testamonials
