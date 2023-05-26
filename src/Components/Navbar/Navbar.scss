@@ -30,6 +30,10 @@
         cursor: pointer;
         border-radius: 3px 3px 0px 0px;
 
+        @media screen and (max-width: 1000px) {
+            padding: 0.1rem 0.4rem 0.4rem 0.4rem;
+        }
+
         a {
             text-decoration: none;
             color: #424946;
@@ -39,6 +43,7 @@
 
             @media screen and (max-width: 1000px) {
                 font-size: 14px;
+
             }
         }
 

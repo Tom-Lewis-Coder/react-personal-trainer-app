@@ -22,7 +22,8 @@ function App() {
             <Contact />
             <Reviews />
             <Footer />
-          </>} />
+          </>
+        } />
         <Route exact path={'/posts/:slug'} element={
           <BlogPage />
         } />
