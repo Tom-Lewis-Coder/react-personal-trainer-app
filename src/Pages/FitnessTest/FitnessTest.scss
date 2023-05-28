@@ -1,4 +1,75 @@
 .app__fitForm {
     display: flex;
     flex-direction: column;
+    align-items: center;
+}
+
+.app__fitform-back {
+    position: absolute;
+    display: flex;
+    padding: 2rem 2rem 0 0;
+    width: 100%;
+    justify-content: flex-end;
+}
+
+.app__fitform-backbutton{
+    width: 4rem;
+    height: 2rem;
+    border: 1px solid #a8b8b0;
+    color: #424946;
+    border-radius: 2.5px;
+    box-shadow: -1px 1px 3px #424946;
+}
+
+.app__fitform-header {
+    background-color: #78857f;
+    color: white;
+    font-size: xx-large;
+    margin: 7rem 0 0 0;
+    border-radius: 0.5rem;
+    padding: 0.65rem 1.5rem;
+}
+
+.app__fitform-form {
+    display: flex;
+    flex-direction: column;
+    background-color: #78857f;
+    margin: 7rem 0;
+    padding: 5rem;
+    color: white;
+    border-radius: 0.5rem;
+    width: 65%;
+
+    @media screen and (max-width:1000px) {
+        width: 90%;
+    } 
+
+    @media screen and (max-width:600px) {
+        padding: 5rem 2.5rem;
+    } 
+}
+
+.app__fitform-input{
+    margin: 0 0 1.5rem 0;
+    background-color: #a8b8b0;
+    color: white;
+    padding: 0.25rem;
+}
+
+.app__fitform-submit-button{
+    padding: 0.75rem 1.5rem;
+    font-size: large;
+    background-color: white;
+    color: #424946;
+    border: 1px solid #424946;
+    border-radius: 0.25rem;
+    margin: 2rem 0 0 0;
+}
+
+.app__fitform-submit-button:hover{
+    cursor: pointer;
+}
+
+.app__fitform-result-display{
+    padding: 3rem 0 0;
 }
