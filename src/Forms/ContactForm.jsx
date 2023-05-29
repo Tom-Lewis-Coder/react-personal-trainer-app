@@ -35,11 +35,11 @@ const ContactForm = (props) => {
         <div>
             <div className='app__contact-form app__flex'>
                 <Header className={'app__contact-title'} title={'How can I help you'} />
-                <div className='app__contact-name' id='getInTouch'>
+                <div className='app__contact-name'>
                     <input className='app__contact-name-item p-text' type='text' placeholder='Firstname...' name='firstname' value={firstname} onChange={handleChangeInput} />
                     <input className='app__contact-name-item p-text' type='text' placeholder='Lastname...' name='lastname' value={lastname} onChange={handleChangeInput} />
                 </div>
-                <div className='app__contact-details app__flex'>
+                <div className='app__contact-details app__flex' id='getInTouch'>
                     <input className='app__contact-item p-text' placeholder='Email...' name='email' value={email} onChange={handleChangeInput} />
                     <input className='app__contact-item p-text' placeholder='Your Location...' name='area' value={area} onChange={handleChangeInput} />
                     <input className='app__contact-item p-text' placeholder='Date of Birth' name='dob' value={dob} onChange={handleChangeInput} />
