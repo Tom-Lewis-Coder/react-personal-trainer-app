@@ -35,7 +35,7 @@ const ContactForm = (props) => {
         <div>
             <div className='app__contact-form app__flex'>
                 <Header className={'app__contact-title'} title={'How can I help you'} />
-                <div className='app__contact-name'>
+                <div className='app__contact-name' id='getInTouch'>
                     <input className='app__contact-name-item p-text' type='text' placeholder='Firstname...' name='firstname' value={firstname} onChange={handleChangeInput} />
                     <input className='app__contact-name-item p-text' type='text' placeholder='Lastname...' name='lastname' value={lastname} onChange={handleChangeInput} />
                 </div>

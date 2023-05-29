@@ -17,7 +17,7 @@ const Contact = () => {
                     <h3 className='app__contact-title-resp app__flex'>Thank you for getting in touch.</h3>
                 </div>
             }
-            <div className='app__contact-direct app__flex' id='getInTouch'>
+            <div className='app__contact-direct app__flex'>
                 <div className='app__contact-title app__flex'>Contact Directly</div>
                 <div className='app__contact-card '>
                     <a className='app__contact-card-item' href='mailto:tomlewis139@gmail.com'>
