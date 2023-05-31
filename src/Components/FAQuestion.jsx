@@ -39,8 +39,8 @@ const FAQuestion = ({ question, answer }) => {
 }
 
 FAQuestion.propTypes = {
-    className: PropTypes.string.isRequired,
-    toggleAccordion: PropTypes.func.isRequired,
+    className: PropTypes.string,
+    toggleAccordion: PropTypes.func,
     question: PropTypes.string.isRequired,
     answer: PropTypes.string.isRequired,
 }
