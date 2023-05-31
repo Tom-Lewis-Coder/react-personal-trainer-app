@@ -130,10 +130,9 @@
     @media screen and (max-width: 768px) {
         width: 100%;
         background-image: none;
-        background: rgba(255, 255, 255, 0.8);
-        backdrop-filter: blur(2px);
-        -webkit-backdrop-filter: blur(2px);
-        color: #424946;
+        margin-top: 0.5rem;
+        background-color: rgb(223, 221, 221);
+        color: #2b302e;
     }
 }
 
@@ -155,10 +154,8 @@
         width: 100%;
         background-image: none;
         margin-top: 0.5rem;
-        background: rgba(255, 255, 255, 0.8);
-        backdrop-filter: blur(2px);
-        -webkit-backdrop-filter: blur(2px);
-        color: #424946;
+        background-color: rgb(223, 221, 221);
+        color: #2b302e;
     }
 }
 
