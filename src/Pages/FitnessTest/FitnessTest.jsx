@@ -31,13 +31,13 @@ const FitnessTest = () => {
     } else {
       let score = Number(q1) + Number(q2) + Number(q3) + Number(q4) + Number(q5) + Number(q6) + Number(q7) + Number(q8) + Number(q9) + Number(q10) + Number(q11) + Number(q12)
       if (score < 100) {
-        setCaption('Poor')
+        setCaption('Poor. There are muiltiple aspects of your lifestlye that are holding you back from being a healthy individual. Get in touch to find out how I can help you transform into a healthier, happier you.')
       } else if (score < 140) {
-        setCaption('Below Average')
+        setCaption('Below Average. There is significant room for improvement here. Get in touch and find out how I can help you transform into a healthier, happier you.')
       } else if (score < 180) {
-        setCaption('Average')
+        setCaption('Average. You have a lifestyle that is on par with most of the population. Get in touch if you would like to improve it.')
       } else if (score < 220) {
-        setCaption('Above average')
+        setCaption('Above average. You have a lifestlye that is healthier than most. Well done!! However, there looks like there is room for improvement. If you would like any training advice or lifestyle coaching, get in touch.')
       } else {
         setCaption('Excellent. You have a very healthy lifestyle, keep up the good work!! If you would like any training advice, or advice on ways in which you could finetune all aspects of your lifestyle for optimum health, get in touch.')
       }

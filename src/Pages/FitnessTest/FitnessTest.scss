@@ -73,3 +73,17 @@
 .app__fitform-result-display{
     padding: 3rem 0 0;
 }
+
+.app__fitform-getintouch-button{
+    padding: 0.5rem 1rem;
+    font-size: medium;
+    background-color: white;
+    color: #424946;
+    border: 1px solid #424946;
+    border-radius: 0.25rem;
+    margin: 2rem 0 ;
+}
+
+.app__fitform-getintouch-button:hover{
+    cursor: pointer;
+}
