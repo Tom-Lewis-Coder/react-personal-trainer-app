@@ -138,17 +138,27 @@
 }
 
 .app__header-lower-middle {
-    background-color: lightgray;
+    background-image: url('../../Assets/FitnessTest.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: center;
+
     border: 1px solid white;
     height: 100%;
     width: 32%;
     font-size: xx-large;
     text-decoration: none;
-    color: #424946;
+    color: transparent;
 
     @media screen and (max-width: 768px) {
         width: 100%;
+        background-image: none;
         margin-top: 0.5rem;
+        background: rgba(255, 255, 255, 0.8);
+        backdrop-filter: blur(2px);
+        -webkit-backdrop-filter: blur(2px);
+        color: #424946;
     }
 }
 
@@ -172,8 +182,6 @@
         padding: 0 1rem;
         border: 2px solid #78857f;
     }
-
-
 
     @media screen and (max-width: 768px) {
         width: 100%;

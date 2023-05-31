@@ -7,7 +7,7 @@ import { Button, Header } from '../../Components'
 
 const FitnessTest = () => {
 
-  const [fitForm, setFitForm] = useState({ q1: 0, q2: 0, q3: 0, q4: 0, q5: 0, q6: 0, q7: 0, q8: 0, q9: 0, q10: 0, q11: 0, q12: 0  })
+  const [fitForm, setFitForm] = useState({ q1: 0, q2: 0, q3: 0, q4: 0, q5: 0, q6: 0, q7: 0, q8: 0, q9: 0, q10: 0, q11: 0, q12: 0 })
   const [fitFormResult, setFitFormResult] = useState(0)
   const [caption, setCaption] = useState('')
 
@@ -26,24 +26,24 @@ const FitnessTest = () => {
 
   const handleFitFormSubmit = e => {
     e.preventDefault()
-    if (q1 === 0 || q2 === 0 || q3 === 0 || q4 === 0 || q5 === 0 || q6 === 0 || q7 === 0 || q8 === 0 || q9 === 0 || q10 === 0 || q11 === 0 || q12 === 0)  {
+    if (q1 === 0 || q2 === 0 || q3 === 0 || q4 === 0 || q5 === 0 || q6 === 0 || q7 === 0 || q8 === 0 || q9 === 0 || q10 === 0 || q11 === 0 || q12 === 0) {
       alert('Please ensure all fields are entered')
     } else {
       let score = Number(q1) + Number(q2) + Number(q3) + Number(q4) + Number(q5) + Number(q6) + Number(q7) + Number(q8) + Number(q9) + Number(q10) + Number(q11) + Number(q12)
       if (score < 100) {
-        setCaption('Poor. There are muiltiple aspects of your lifestlye that are holding you back from being a healthy individual. Get in touch to find out how I can help you transform into a healthier, happier you.')
+        setCaption('Poor. There are muiltiple aspects of your lifestlye that are holding you back from being a healthy individual. Get in touch to find out how I can help you transform into a fitter, happier you.')
       } else if (score < 140) {
         setCaption('Below Average. There is significant room for improvement here. Get in touch and find out how I can help you transform into a healthier, happier you.')
       } else if (score < 180) {
         setCaption('Average. You have a lifestyle that is on par with most of the population. Get in touch if you would like to improve it.')
       } else if (score < 220) {
-        setCaption('Above average. You have a lifestlye that is healthier than most. Well done!! However, there looks like there is room for improvement. If you would like any training advice or lifestyle coaching, get in touch.')
+        setCaption('Above average. You have a lifestlye that is healthier than most. Well done! However, there looks like there is room for improvement. If you would like any training advice or lifestyle coaching, get in touch.')
       } else {
         setCaption('Excellent. You have a very healthy lifestyle, keep up the good work!! If you would like any training advice, or advice on ways in which you could finetune all aspects of your lifestyle for optimum health, get in touch.')
       }
       setFitFormResult(score)
     }
-}
+  }
 
   return (
     <div className='app__fitForm'>
@@ -98,7 +98,7 @@ const FitnessTest = () => {
           <option value={20}>Never</option>
           <option value={19}>Occasionally</option>
           <option value={14}>Once per week</option>
-          <option value={5}>More then 2x per week</option>
+          <option value={5}>2 or more times per week</option>
           <option value={1}>More then 4x per week</option>
         </select>
         <label>Do you pay attention to your step count?</label>
