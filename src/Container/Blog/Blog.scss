@@ -67,7 +67,11 @@
 .app__blogPage-back {
     display: flex;
     justify-content: flex-end;
-    padding: 2rem 2rem 0 0;
+    margin: 2rem 2rem 1rem 0;
+
+    @media screen and (max-width: 768px) {
+        margin: 2rem 1rem 1rem 0;
+    }
 }
 
 .app__blogPage-backbutton {
@@ -142,7 +146,7 @@
     }
 
     .app__blogPage-img {
-        height: 200px;
+        height: 227px;
         margin: 3rem 1rem 1rem 1rem;
     }
 

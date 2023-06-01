@@ -5,5 +5,6 @@ import Button from './Button'
 import FAQuestion from './FAQuestion'
 import Testamonials from './Testamonials'
 import Video from './Video'
+import Loading from './Loading'
 
-export { Navbar, BlogPost, Header, Button, FAQuestion, Testamonials, Video }
+export { Navbar, BlogPost, Header, Button, FAQuestion, Testamonials, Video, Loading }

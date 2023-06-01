@@ -1,3 +1,4 @@
+export { default as AppMain } from './AppMain'
 export { default as BlogPage } from './BlogPage'
 export { default as FAQ } from './FAQ/FAQ'
 export { default as FitnessTest } from './FitnessTest/FitnessTest'

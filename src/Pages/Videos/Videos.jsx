@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import axios from 'axios'
-import { Video, Header, Button } from '../../Components'
+import { Video, Header, Button, Loading } from '../../Components'
 import { useNavigate } from 'react-router-dom'
 
 import './Videos.scss'
@@ -11,6 +11,7 @@ let query = `https://youtube.googleapis.com/youtube/v3/search?part=snippet&chann
 export const Videos = () => {
 
     const [data, setData] = useState([])
+    const [loading, setLoading] = useState(true)
 
     const navigate = useNavigate();
 
@@ -22,6 +23,7 @@ export const Videos = () => {
         const getData = async () => {
             const data = await axios.get(query)
             setData(data?.data?.items)
+            setLoading(false)
         }
         getData()
             .catch(console.error)
@@ -34,14 +36,15 @@ export const Videos = () => {
             </div>
             <Header title={'Videos'} className={'app__video-title'} />
             <div className='app__video-container app__flex'>
-                {data?.map(vid => {
-                    return <Video
-                        key={vid?.id?.videoId}
-                        id={vid?.id?.videoId}
-                        url={vid?.snippet?.thumbnails?.default?.url}
-                        title={vid?.snippet?.title}
-                    />
-                })}
+                {loading ? <Loading /> :
+                    data?.map(vid => {
+                        return <Video
+                            key={vid?.id?.videoId}
+                            id={vid?.id?.videoId}
+                            url={vid?.snippet?.thumbnails?.default?.url}
+                            title={vid?.snippet?.title}
+                        />
+                    })}
             </div>
         </div>
     )

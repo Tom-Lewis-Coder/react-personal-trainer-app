@@ -1,9 +1,7 @@
 import React from 'react'
 import { Routes, Route } from 'react-router-dom'
 
-import { Navbar } from './Components/index.js';
-import { Header, About, Services, Contact, Workout, Blog, Reviews, Footer } from './Container';
-import { BlogPage, FAQ, FitnessTest, Videos, VideoPlayer } from './Pages'
+import { AppMain, BlogPage, FAQ, FitnessTest, Videos, VideoPlayer } from './Pages'
 
 import './App.scss';
 
@@ -12,17 +10,7 @@ function App() {
     <div className='app'>
       <Routes>
         <Route exact path='/' element={
-          <>
-            <Navbar />
-            <Header />
-            <About />
-            <Services />
-            <Blog />
-            <Workout />
-            <Contact />
-            <Reviews />
-            <Footer />
-          </>
+          <AppMain />
         } />
         <Route exact path={'/posts/:slug'} element={
           <BlogPage />

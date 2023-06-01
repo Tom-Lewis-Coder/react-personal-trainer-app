@@ -16,7 +16,7 @@ const Video = ({ id, url, title }) => {
 }
 
 Video.propTypes = {
-    id: PropTypes.string.isRequired,
+    id: PropTypes.string,
     url: PropTypes.string.isRequired,
     title: PropTypes.string.isRequired,
 }
