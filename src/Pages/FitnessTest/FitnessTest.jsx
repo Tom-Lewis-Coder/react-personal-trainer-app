@@ -33,7 +33,7 @@ const FitnessTest = () => {
       if (score < 100) {
         setCaption('Poor. There are muiltiple aspects of your lifestlye that are holding you back from being a healthy individual. Get in touch to find out how I can help you transform into a fitter, happier you.')
       } else if (score < 140) {
-        setCaption('Below Average. There is significant room for improvement here. Get in touch and find out how I can help you transform into a healthier, happier you.')
+        setCaption('Below Average. There is significant room for improvement. Get in touch and find out how I can help you transform into a healthier, happier you.')
       } else if (score < 180) {
         setCaption('Average. You have a lifestyle that is on par with most of the population. Get in touch if you would like to improve it.')
       } else if (score < 220) {
