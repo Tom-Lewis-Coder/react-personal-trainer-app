@@ -24,8 +24,8 @@ const FAQuestion = ({ question, answer }) => {
                 <button onClick={toggleAccordion} >
                     <div>
                         <div className={active ? "app__FAQ-align-active" : "app__FAQ-align"}>
-                            <FiPlus className={active ? 'app__FAQ-plus-hidden' : 'app__FAQ-plus'} />
-                            <FiMinus className={active ? 'app__FAQ-minus' : 'app__FAQ-minus-hidden'} />
+                            <FiMinus data-testid="minus" className='app__FAQ-svg' style={!active ? {visibility: 'hidden'} : {visibility: 'visible'}}/>
+                            <FiPlus data-testid="plus" className='app__FAQ-svg' style={active ? {visibility: 'hidden'} : {visibility: 'visible'}}/>
                             <h4 className="app__FAQ-style">{question}</h4>
                         </div>
                         <div ref={contentRef} className={active ? 'app__FAQ-answer' : 'app__FAQ-answer-hidden'} >
@@ -41,8 +41,8 @@ const FAQuestion = ({ question, answer }) => {
 FAQuestion.propTypes = {
     className: PropTypes.string,
     toggleAccordion: PropTypes.func,
-    question: PropTypes.string.isRequired,
-    answer: PropTypes.string.isRequired,
+    question: PropTypes.string,
+    answer: PropTypes.string,
 }
 
 export default FAQuestion

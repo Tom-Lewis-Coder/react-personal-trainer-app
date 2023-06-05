@@ -75,12 +75,12 @@
 }
 
 h4 {
-    padding: 0 0.5rem;
+    margin: 0 0 0 1.6rem;
     text-align: left;
 }
 
 p {
-    padding: 0 0.3rem;
+    padding: 0 0.6rem;
     text-align: left;
 }
 
@@ -97,12 +97,7 @@ p {
     visibility: hidden;
 }
 
-.app__FAQ-plus-hidden {
-    visibility: hidden;
-    position: absolute;
-}
-
-.app__FAQ-minus-hidden {
-    visibility: hidden;
+.app__FAQ-svg {
+    margin: 0 0.3rem;
     position: absolute;
 }

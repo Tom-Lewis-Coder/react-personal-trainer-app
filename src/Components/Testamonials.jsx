@@ -19,8 +19,8 @@ const Testamonials = ({ name, content, stars, }) => {
 }
 
 Testamonials.propTypes = {
-    content: PropTypes.string.isRequired,
-    name: PropTypes.string.isRequired,
+    content: PropTypes.string,
+    name: PropTypes.string,
     starsArr: PropTypes.array,
 }
 
