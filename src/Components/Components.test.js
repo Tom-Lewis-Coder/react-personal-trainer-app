@@ -16,26 +16,30 @@ describe('Button component', () => {
 })
 
 describe('FAQuestion component', () => {
-    test('Renders the FAQuestion component without crashing', () => {
+    test('Renders the FAQuestion component without crashing and toggles svg/answer', () => {
         render(<FAQuestion />)
 
         const button = screen.getByRole('button')
 
         const plus = screen.getByTestId('plus')
         const minus = screen.getByTestId('minus')
+        const answer = screen.getByTestId('answer')
 
         expect(plus).toBeVisible()
         expect(minus).not.toBeVisible()
+        expect(answer).not.toBeVisible()
 
         fireEvent.click(button)
 
         expect(plus).not.toBeVisible()
         expect(minus).toBeVisible()
+        expect(answer).toBeVisible()
 
         fireEvent.click(button)
 
         expect(plus).toBeVisible()
         expect(minus).not.toBeVisible()
+        expect(answer).not.toBeVisible()
     })
 })
 

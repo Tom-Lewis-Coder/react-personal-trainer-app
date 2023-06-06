@@ -28,7 +28,7 @@ const FAQuestion = ({ question, answer }) => {
                             <FiPlus data-testid="plus" className='app__FAQ-svg' style={active ? {visibility: 'hidden'} : {visibility: 'visible'}}/>
                             <h4 className="app__FAQ-style">{question}</h4>
                         </div>
-                        <div ref={contentRef} className={active ? 'app__FAQ-answer' : 'app__FAQ-answer-hidden'} >
+                        <div ref={contentRef} data-testid="answer" className='app__FAQ-answer' style={!active ? {visibility: 'hidden'} : {visibility: 'visible'}}>
                             <p>{answer}</p>
                         </div>
                     </div>
