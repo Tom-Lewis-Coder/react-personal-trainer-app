@@ -20,11 +20,11 @@ const Navbar = () => {
             </ul>
 
             <div className='app__navbar-menu'>
-                <HiMenuAlt4 onClick={() => setToggle(!toggle)} />
+                <HiMenuAlt4 data-testid="menuDrop" onClick={() => setToggle(true)} />
 
                 {toggle && (
-                    <div>
-                        <HiX onClick={() => setToggle(false)} />
+                    <div data-testid="menu">
+                        <HiX data-testid="menuUp" onClick={() => setToggle(false)} />
                         <ul className='app__navbar-links'>
                             {['home', 'about', 'services', 'blog/nutrition', 'track & train', 'contact', 'reviews'].map(item => (
                                 <li

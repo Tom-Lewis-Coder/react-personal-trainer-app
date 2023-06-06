@@ -6,6 +6,22 @@ import '@testing-library/jest-dom'
 describe('Navbar component', () => {
     test('Renders the Navbar component without crashing', () => {
         render(<Navbar />)
+
+        const menuDrop = screen.getByTestId('menuDrop')
+
+        expect(menuDrop).toBeVisible()
+
+        fireEvent.click(menuDrop)
+
+        const menuUp = screen.getByTestId('menuUp')
+        const menu = screen.getByTestId('menu')
+
+        expect(menuUp).toBeVisible()
+        expect(menu).toBeVisible()
+
+        fireEvent.click(menuUp)
+
+        expect(menuDrop).toBeVisible()
     })
 })
 
