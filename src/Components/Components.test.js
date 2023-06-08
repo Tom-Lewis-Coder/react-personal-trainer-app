@@ -1,11 +1,13 @@
 import React from 'react'
 import { fireEvent, getByRole, render, screen } from '@testing-library/react'
-import { Navbar, Button, FAQuestion, Header, Loading, Testamonials } from '../Components'
+import { Navbar, Button, FAQuestion, Header, Loading, Testamonials, Video } from '../Components'
 import '@testing-library/jest-dom'
 
 describe('Navbar component', () => {
-    test('Renders the Navbar component without crashing', () => {
+    test('Renders the Navbar component without crashing and drop down menu functionality', () => {
         render(<Navbar />)
+
+        expect(screen.getAllByRole('link')).toBeTruthy()
 
         const menuDrop = screen.getByTestId('menuDrop')
 
@@ -74,5 +76,13 @@ describe('Loading component', () => {
 describe('Testamonials component', () => {
     test('Renders the Testamonials component without crashing', () => {
         render(<Testamonials />)
+
+        const content = screen.getByRole('content')
+        const name = screen.getByRole('name')
+        const starsArr = screen.getByRole('starsArr')
+
+        expect(content).toBeVisible()
+        expect(name).toBeVisible()
+        expect(starsArr).toBeVisible()
     })
 })
