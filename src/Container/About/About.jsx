@@ -15,7 +15,7 @@ const About = () => {
                     </div>
                     <p className='app__about-caption'><span>Title</span><br /><br />Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent fermentum sem odio, facilisis mollis sapien eleifend eu. Aliquam vehicula, elit et accumsan congue, elit risus viverra sapien, quis molestie magna felis in erat. Phasellus ligula turpis, volutpat ac justo id, cursus bibendum nunc. </p>
                 </div>
-                <div className='app__about-right app__flex'>
+                <div className='app__about-right'>
                     <div className='app__about-hero-img'></div>
                     <p>Big Me Text</p> {/* text underneath */}
                 </div>

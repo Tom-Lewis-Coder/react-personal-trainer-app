@@ -82,6 +82,8 @@
     width: 49%;
     padding: 2rem;
 
+    align-items: center;
+
     p {
         font-size: larger;
         padding: 0.5rem;
@@ -98,7 +100,7 @@
     background-image: url(../../Assets/HeadshotSelfie.jpg);
     background-repeat: no-repeat;
     background-size: contain;
-    background-position: center;
+    background-position: top;
     height: 85%;
     width: 75%;
 
