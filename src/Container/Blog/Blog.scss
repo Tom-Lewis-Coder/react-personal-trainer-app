@@ -88,11 +88,12 @@
 }
 
 .app__blogPage-img {
-    max-width: 90%;
+    height: 50vh;
+    margin: 3rem 3rem 2rem 3rem;
 }
 
 .app__blogPage-content {
-    margin: 0 2rem;
+    margin: 0 3rem;
     line-height: 2rem;
     color: #424946;
 
@@ -143,17 +144,17 @@
     }
 
     .app__blogPage-img {
-        height: 227px;
+        max-width: 90%;
         margin: 3rem 1rem 1rem 1rem;
     }
 
     .app__blogPage-content {
-        margin: 1rem;
+        margin: 0 1rem;
         line-height: 1.75rem;
         color: #424946;
 
         h1 {
-            margin: 0.75rem 0;
+            margin: 0.5rem 0;
         }
     }
 
