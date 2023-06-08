@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import { useNavigate } from 'react-router'
 import { HashLink } from 'react-router-hash-link';
 
@@ -18,6 +18,10 @@ const FitnessTest = () => {
   const goBack = () => {
     navigate(-1);
   }
+
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
 
   const handleFitFormChange = e => {
     const { name, value } = e.target

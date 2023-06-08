@@ -37,7 +37,7 @@
 
     @media screen and (max-width: 850px) {
         flex-direction: column-reverse;
-        height: 100vh;
+        height: 150vh;
     }
 }
 
@@ -63,6 +63,10 @@
     width: 100%;
     height: 60%;
     border: 1px solid #424946;
+
+    @media screen and (max-width: 850px) {
+        height: 100%;
+    }
 }
 
 .app__about-caption {
@@ -85,17 +89,22 @@
 
     @media screen and (max-width: 850px) {
         width: 100%;
-        height: 100%;
+        height: 75%;
         padding: 1rem;
     }
 }
 
 .app__about-hero-img {
-    background-image: url(../../Assets/bigme.jpg);
+    background-image: url(../../Assets/HeadshotSelfie.jpg);
     background-repeat: no-repeat;
-    background-position: top;
+    background-size: contain;
+    background-position: center;
     height: 85%;
     width: 75%;
+
+    @media screen and (max-width: 850px) {
+        height: 75%;
+    }
 }
 
 

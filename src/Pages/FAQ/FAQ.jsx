@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { Header, FAQuestion, Button } from '../../Components'
 import questions from '../../Constants/Questions.json'
 import { useNavigate } from 'react-router-dom'
@@ -12,6 +12,10 @@ const FAQ = () => {
   const goBack = () => {
       navigate(-1);
   }
+
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
 
   return (
     <>

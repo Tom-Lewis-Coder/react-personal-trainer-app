@@ -59,7 +59,6 @@
 .app__blogPage {
     display: flex;
     flex-direction: column;
-    margin: 3rem;
     box-shadow: 0px 0px 10px #78857f;
     min-height: fit-content;
 }
@@ -89,24 +88,21 @@
 }
 
 .app__blogPage-img {
-    height: 40vh;
-    max-width: 500px;
-    margin: 3rem 3rem 2rem 3rem;
+    max-width: 90%;
 }
 
 .app__blogPage-content {
-    margin: 0 3rem;
+    margin: 0 2rem;
     line-height: 2rem;
     color: #424946;
 
+    h1 {
+        margin: 0.5rem 0;
+    }
+
     p {
         text-align: justify;
-    }
-}
-
-.app__blogPage-content {
-    h1 {
-        margin: 1rem 0;
+        padding: 0;
     }
 }
 
@@ -128,6 +124,7 @@
     height: 2.2rem;
     width: 2rem;
     border-radius: 50%;
+    box-shadow: -1px 1px 2px #424946;
 }
 
 .app__blogPage-date {

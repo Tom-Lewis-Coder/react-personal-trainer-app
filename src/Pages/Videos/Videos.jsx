@@ -24,6 +24,7 @@ export const Videos = () => {
             const data = await axios.get(query)
             setData(data?.data?.items)
             setLoading(false)
+            window.scrollTo(0, 0)
         }
         getData()
             .catch(console.error)
