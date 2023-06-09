@@ -97,9 +97,13 @@
         padding: 1.25rem 0 0 2rem;
 
         width: 35%;
-        height: 65vh;
+        height: 75vh;
         min-width: 220px;
-        overflow-y:auto;        
+        overflow-y:auto;    
+        
+        @media screen and (min-height: 700px) {
+            height: 65vh;
+        }
 
         display: flex;
         justify-content: flex-start;
