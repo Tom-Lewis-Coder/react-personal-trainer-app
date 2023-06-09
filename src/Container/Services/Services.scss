@@ -16,22 +16,21 @@
 .app__services-split-container {
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: space-between;
     width: 90%;
-    height: 100vh;
     border: 2px solid white;
+    padding: 2rem;
 
     @media screen and (max-width: 850px) {
         flex-direction: column;
-        height: 150vh;
     }
 }
 
 .app__services-left{
     height: 100%;
     width: 50%;
-    padding: 2rem;
     color: white;
+    margin-right: 2rem;
 
     div {
         padding: 0.5rem 0;
@@ -39,11 +38,13 @@
 
     p{
         padding: 0.5rem 0;
+        height: 5rem;
     }
 
     @media screen and (max-width: 850px) {
         width: 100%;
-        padding: 1rem;
+        margin-right: 0;
+        margin-bottom: 3rem;
     }
 }
 
@@ -51,7 +52,7 @@
     background-image: url(../../Assets/TSLimg121.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    height: 60%;
+    min-height: 14rem;
     border: 1px solid white;
 
     @media screen and (max-width: 850px) {
@@ -62,7 +63,6 @@
 .app__services-right{
     height: 100%;
     width: 50%;
-    padding: 2rem;
     color: white;
     
     div {
@@ -71,11 +71,11 @@
 
     p{
         padding: 0.5rem 0;
+        height: 5rem;
     }
 
     @media screen and (max-width: 850px) {
         width: 100%;
-        padding: 1rem;
     }
 }
 
@@ -83,7 +83,7 @@
     background-image: url(../../Assets/TSLimggroup.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    height: 60%;
+    min-height: 14rem;
     border: 1px solid white;
 
     @media screen and (max-width: 850px) {

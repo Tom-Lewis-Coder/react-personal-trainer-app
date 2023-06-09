@@ -16,7 +16,7 @@ const Services = () => {
         <div className='app__services-right'>
           <div className='app__services-img-stretch'></div>
           <div>Group Training</div>
-          <p>Train with friends or family for extra motivation.</p>
+          <p>Train in a group with friends or family for extra motivation.</p>
         </div>
       </div>
     </div>
