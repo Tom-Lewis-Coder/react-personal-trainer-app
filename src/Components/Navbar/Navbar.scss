@@ -82,7 +82,7 @@
         cursor: pointer;
 
         &:hover {
-            color: gray;
+            color: #78857f;
         }
     }
 
@@ -110,19 +110,26 @@
         align-items: flex-start;
         flex-direction: column;
 
-        background-color: #424946;
+        background-color: #78857f;
         background-size: cover;
         background-repeat: repeat;
 
         border: 1px solid white;
+        border-radius: 0.5rem;
 
         svg {
             position: absolute;
             width: 2rem;
             height: 2rem;
-            color: white;
+            color: #78857f;
             cursor: pointer;
             border: 1px solid white;
+            background-color: white;
+            border-radius: 50%;
+
+            &:hover{
+                color:#424946;
+            }
         }
 
         ul {
@@ -146,7 +153,8 @@
                     font-weight: 500;
 
                     &:hover {
-                        color: gray;
+                        color: #424946;
+                        background-color: #78857f;
                     }
                 }
             }

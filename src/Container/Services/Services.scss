@@ -1,7 +1,7 @@
 .app__services {
     flex-direction: column;
-    background-color: #78857f;
     padding-bottom: 5rem;
+    background-image: linear-gradient(to bottom right, #78857f 75%, #424946 75%);
 }
 
 .app__services-title {
@@ -17,8 +17,8 @@
     display: flex;
     flex-wrap: wrap;
     width: 90%;
-    border: 1px solid white;
-    padding: 2rem;
+    //border: 1px solid white;
+    //padding: 2rem;
 
     @media screen and (max-width: 850px) {
         flex-direction: column;
@@ -31,16 +31,17 @@
     margin: 2rem;
     padding: 1rem;
     color: white;
-    border: 1px solid white;
+    border: 2px solid white;
     width: 300px;
     height: 425px;
     border-radius: 0.5rem;
     align-items: center;
+    background-color: #424946;
 
     .app__services-desc {
         color: #424946;
         padding: 0.5rem 0;
-        font-weight:600;
+        font-weight: 600;
         text-align: center;
         background-color: white;
         border-radius: 0 0 0.25rem 0.25rem;
@@ -77,13 +78,42 @@
     }
 }
 
-.app__services-img-stretch {
+.app__services-img-group {
     background-image: url(../../Assets/TSLimggroup.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     min-height: 14rem;
-    border: 1px solid white;
+    border: 2px solid white;
+    border-radius: 0.25rem 0.25rem 0 0;
+
+    @media screen and (max-width: 850px) {
+        height: 50%;
+    }
+}
+
+.app__services-img-online {
+    background-image: url(../../Assets/videos.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 14rem;
+    border: 2px solid white;
+    border-radius: 0.25rem 0.25rem 0 0;
+
+    @media screen and (max-width: 850px) {
+        height: 50%;
+    }
+}
+
+.app__services-img-corporate {
+    background-image: url(../../Assets/TSLimgAbout.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 14rem;
+    border: 2px solid white;
+    border-radius: 0.25rem 0.25rem 0 0;
 
     @media screen and (max-width: 850px) {
         height: 50%;

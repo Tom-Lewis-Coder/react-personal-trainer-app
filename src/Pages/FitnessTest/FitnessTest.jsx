@@ -54,7 +54,7 @@ const FitnessTest = () => {
       <div className='app__fitform-back'>
         <Button title={'Back'} onClick={goBack} className={'app__fitform-backbutton'} />
       </div>
-      <Header title={'Fit Quiz'} className={'app__fitform-header'} />
+      <Header title={'Fitness Assessment'} className={'app__fitform-header'} />
       <form className='app__fitform-form'>
         <label>How often do you exercise?</label>
         <select name="q1" onChange={handleFitFormChange} value={q1} className='app__fitform-input'>

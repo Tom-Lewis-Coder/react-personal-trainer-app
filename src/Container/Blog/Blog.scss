@@ -3,7 +3,8 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-}
+ }
+
 
 .app__blog-title {
     background-color: #78857f;
@@ -28,7 +29,8 @@
     overflow: hidden;
     margin: 2rem;
     box-shadow: -3px 3px 10px #78857f;
-    border-radius: 5px;
+    border-radius: 0.5rem;
+    padding: 1rem;
 
     @media screen and (max-width: 1050px) {
         max-width: 300px;
@@ -37,14 +39,20 @@
     }
 }
 
+.app__blogPost-component:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+    transition: 350ms;
+}
+
 .app__component-img {
     height: 200px;
-    width: 300px;
+    width: 268px;
+    border-radius: 0.25rem;
 }
 
 .app__component-title {
     font-size: large;
-    padding: 0 0.5rem;
     color: #424946;
 }
 
