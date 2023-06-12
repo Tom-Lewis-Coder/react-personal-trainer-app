@@ -2,6 +2,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-color: #78857f;
 }
 
 .app__fitform-back {
@@ -22,8 +23,8 @@
 }
 
 .app__fitform-header {
-    background-color: #78857f;
-    color: white;
+    background-color: white;
+    color: #424946;
     font-size: xx-large;
     margin: 7rem 0 0 0;
     border-radius: 0.5rem;
@@ -33,10 +34,10 @@
 .app__fitform-form {
     display: flex;
     flex-direction: column;
-    background-color: #78857f;
+    background-color: white;
     margin: 7rem 0;
     padding: 5rem;
-    color: white;
+    color: #424946;
     border-radius: 0.25rem;
     width: 65%;
 
@@ -50,17 +51,17 @@
 }
 
 .app__fitform-input{
-    margin: 0 0 1.5rem 0;
-    background-color: #a8b8b0;
-    color: white;
+    margin: 0.25rem 0 1.5rem 0;
+    background-color: #c8dad1;
+    color: #424946;
     padding: 0.25rem;
 }
 
 .app__fitform-submit-button{
     padding: 0.75rem 1.5rem;
     font-size: large;
-    background-color: white;
-    color: #424946;
+    background-color: #78857f;
+    color: white;
     border: 1px solid #424946;
     border-radius: 0.25rem;
     margin: 2rem 0 0 0;
@@ -68,6 +69,7 @@
 
 .app__fitform-submit-button:hover{
     cursor: pointer;
+    background-color: #424946;
 }
 
 .app__fitform-result-display{

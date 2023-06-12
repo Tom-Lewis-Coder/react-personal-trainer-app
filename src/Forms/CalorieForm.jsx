@@ -50,9 +50,10 @@ const CalorieForm = () => {
         <>
             <form>
                 <div className='app__calCalc-1'>
-                    <label>Age: </label>
+                    <label htmlFor='age' >Age: </label>
                     <input
                         className="app__input"
+                        id='age'
                         type="number"
                         name="age"
                         min="15"
@@ -74,26 +75,28 @@ const CalorieForm = () => {
                         value='female'
                         onChange={getGender}
                     /><label className='app__gender-input' htmlFor='female'> Female</label>
-                    <label>Height: </label>
+                    <label htmlFor='height'>Height: </label>
                     <input
                         className='app__input'
+                        id='height'
                         placeholder='cm'
                         type="number"
                         name="height"
                         value={height}
                         onChange={handleForm1Change}
                     /><br />
-                    <label>Weight: </label>
+                    <label htmlFor='weight'>Weight: </label>
                     <input
                         className='app__input'
+                        id='weight'
                         placeholder='KG'
                         type="number"
                         name="weight"
                         value={weight}
                         onChange={handleForm1Change}
                     /><br />
-                    <label>Activity level:</label>
-                    <select name="activity" onChange={handleForm1Change} value={activity} className='app__activity-input'>
+                    <label htmlFor='activity' >Activity level:</label>
+                    <select name="activity" onChange={handleForm1Change} value={activity} className='app__activity-input' id='activity'>
                         <option value="1">BMR (Basal Metabolic Rate) No activity</option>
                         <option value="1.2">Sedentary: little to no activity</option>
                         <option value="1.375">Light: exercise 1/3 x per week</option>
@@ -110,18 +113,20 @@ const CalorieForm = () => {
             </form>
             <form>
                 <div className='app__calorieCalc-2'>
-                    <label>Weight Goal: </label>
+                    <label htmlFor='weightGoal'>Weight Goal: </label>
                     <input
                         className='app__input'
+                        id='weightGoal'
                         type="number"
                         placeholder='KG'
                         name="weightGoal"
                         value={weightGoal}
                         onChange={handleForm2Change}
                     /><br />
-                    <label>Time Frame: </label>
+                    <label htmlFor='timeFrame'>Time Frame: </label>
                     <input
                         className='app__input'
+                        id='timeFrame'
                         type="number"
                         placeholder='Months'
                         name="timeFrame"

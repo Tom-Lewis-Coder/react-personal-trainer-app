@@ -40,7 +40,7 @@ const ContactForm = (props) => {
                     <input className='app__contact-name-item p-text' type='text' placeholder='Lastname...' name='lastname' value={lastname} onChange={handleChangeInput} />
                 </div>
                 <div className='app__contact-details app__flex' id='getInTouch'>
-                    <input className='app__contact-item p-text' placeholder='Email...' name='email' value={email} onChange={handleChangeInput} />
+                    <input className='app__contact-item p-text' placeholder='Email...' name='email' value={email} onChange={handleChangeInput} autoComplete='off'/>
                     <input className='app__contact-item p-text' placeholder='Your Location...' name='area' value={area} onChange={handleChangeInput} />
                     <input className='app__contact-item p-text' placeholder='Date of Birth' name='dob' value={dob} onChange={handleChangeInput} />
                     <select className='app__contact-item p-text' name='requirements' value={requirements} onChange={handleChangeInput} >

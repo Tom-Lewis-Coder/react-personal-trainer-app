@@ -7,7 +7,7 @@ const About = () => {
     return (
         <div className='app__about app__flex' id='about'>
             <Header title={'The TSL System'} className={'app__about-title'} />
-            <div className='app__about-system'>The quick brown fox jumps over the lazy dog</div>
+            <div className='app__about-system'>Working together to accomplish your goals.</div>
             <div className='app__about-split-container'>
                 <div className='app__about-left'>
                     <div className='app__about-image'>
