@@ -15,67 +15,65 @@
 
 .app__services-split-container {
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    flex-wrap: wrap;
     width: 90%;
-    border: 2px solid white;
+    border: 1px solid white;
     padding: 2rem;
 
     @media screen and (max-width: 850px) {
         flex-direction: column;
+        padding: 0;
+        border: none;
     }
 }
 
-.app__services-left{
-    height: 100%;
-    width: 50%;
+.app__services-service {
+    margin: 2rem;
+    padding: 1rem;
     color: white;
-    margin-right: 2rem;
+    border: 1px solid white;
+    width: 300px;
+    height: 425px;
+    border-radius: 0.5rem;
+    align-items: center;
 
-    div {
+    .app__services-desc {
+        color: #424946;
         padding: 0.5rem 0;
+        font-weight:600;
+        text-align: center;
+        background-color: white;
+        border-radius: 0 0 0.25rem 0.25rem;
     }
 
-    p{
-        padding: 0.5rem 0;
+    p {
+        padding: 1rem 0;
         height: 5rem;
     }
 
     @media screen and (max-width: 850px) {
-        width: 100%;
-        margin-right: 0;
-        margin-bottom: 3rem;
+        margin: 1rem 0;
     }
+
+}
+
+.app__services-service:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+    transition: 350ms;
 }
 
 .app__services-img-121 {
     background-image: url(../../Assets/TSLimg121.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
     min-height: 14rem;
     border: 1px solid white;
+    border-radius: 0.25rem 0.25rem 0 0;
 
     @media screen and (max-width: 850px) {
-        height: 80%;
-     }
-}
-
-.app__services-right{
-    height: 100%;
-    width: 50%;
-    color: white;
-    
-    div {
-        padding: 0.5rem 0;
-    }
-
-    p{
-        padding: 0.5rem 0;
-        height: 5rem;
-    }
-
-    @media screen and (max-width: 850px) {
-        width: 100%;
+        height: 50%;
     }
 }
 
@@ -83,10 +81,11 @@
     background-image: url(../../Assets/TSLimggroup.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
     min-height: 14rem;
     border: 1px solid white;
 
     @media screen and (max-width: 850px) {
-       height: 80%;
+        height: 50%;
     }
 }
