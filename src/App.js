@@ -1,7 +1,7 @@
 import React from 'react'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 
-import { AppMain, BlogPage, FAQ, FitnessTest, Videos, VideoPlayer } from './Pages'
+import { AppMain, BlogPage, FAQ, FitnessTest, Videos, VideoPlayer, FatLoss, HealthAndWellbeing, MuscleBuilding, One2One, Group, Online, Corporate  } from './Pages'
 
 import './App.scss';
 
@@ -27,6 +27,27 @@ function App() {
           } />
           <Route exact path={'/videos/videoplayer'} element={
             <VideoPlayer />
+          } />
+          <Route exact path={'/fatloss'} element={
+            <FatLoss />
+          } />
+          <Route exact path={'/healthandwellbeing'} element={
+            <HealthAndWellbeing />
+          } />
+          <Route exact path={'/musclebuilding'} element={
+            <MuscleBuilding />
+          } />
+          <Route exact path={'/one2one'} element={
+            <One2One />
+          } />
+          <Route exact path={'/group'} element={
+            <Group />
+          } />
+          <Route exact path={'/online'} element={
+            <Online/>
+          } />
+          <Route exact path={'/corporate'} element={
+            <Corporate />
           } />
         </Routes>
       </Router>

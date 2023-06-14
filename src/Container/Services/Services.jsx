@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 import './Services.scss'
 import { Header } from '../../Components'
@@ -8,26 +9,26 @@ const Services = () => {
     <div className='app__services app__flex' id='services'>
       <Header title={'Programmes'} className={'app__services-title'} />
       <div className='app__services-split-container app__flex'>
-        <div className='app__services-service'>
+        <Link to='./one2one' className='app__services-service' >
           <div className='app__services-img-121'></div>
           <div className='app__services-desc'>1-2-1 Training</div>
           <p>Dedicated, bespoke support from your Personal Trainer.</p>
-        </div>
-        <div className='app__services-service'>
+        </Link>
+        <Link to='./group' className='app__services-service'>
           <div className='app__services-img-group'></div>
           <div className='app__services-desc'>Group Training</div>
           <p>Train in a group with friends or family for extra motivation.</p>
-        </div>
-        <div className='app__services-service'>
+        </Link>
+        <Link to ='./online' className='app__services-service'>
           <div className='app__services-img-online'></div>
           <div className='app__services-desc'>Online coaching</div>
           <p>Dedicated, bespoke support from your Personal Trainer.</p>
-        </div>
-        <div className='app__services-service'>
+        </Link>
+        <Link to='./corporate' className='app__services-service'>
           <div className='app__services-img-corporate'></div>
           <div className='app__services-desc'>Corporate training</div>
           <p>Dedicated, bespoke support from your Personal Trainer.</p>
-        </div>
+        </Link>
       </div>
     </div>
   )

@@ -15,7 +15,7 @@
 
 .app__about-system {
     font-size: x-large;
-    margin: 3rem 0;
+    margin: 3rem 2rem;
     text-align: center;
 
     @media screen and (max-width: 523px) {
@@ -100,4 +100,18 @@
     @media screen and (max-width: 850px) {
         width: 75%;
     }
+}
+
+.app__about-link {
+    margin: 1.5rem 0 0;
+    padding: 0.5rem;
+    color: #424946;
+    border: 1px solid #78857f;
+    text-decoration: none;
+    width: 40%;
+}
+
+.app__about-link:hover{
+    color: white;
+    background-color: #424946;
 }

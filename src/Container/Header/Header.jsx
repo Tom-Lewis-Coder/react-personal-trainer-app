@@ -30,7 +30,7 @@ const Header = () => {
                         <p>Transform Your Life with TSL,<br />Bringing the Gym to You!</p>
                     </div>
                     <a href='#contact' className='app__header-pic-text-lower app__flex' style={lightImg === 0 ? { color: '#303533', background: 'rgba(255, 255, 255, 0.5)' } : { color: 'white' }}>
-                        Sign up ...
+                        Enquire now ...
                     </a>
                 </div>
             </div>
