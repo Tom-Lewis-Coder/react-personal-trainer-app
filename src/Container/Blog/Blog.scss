@@ -3,7 +3,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
- }
+}
 
 
 .app__blog-title {
@@ -70,63 +70,75 @@
     flex-direction: column;
     box-shadow: 0px 0px 10px #78857f;
     min-height: fit-content;
+    margin: 2rem;
+    border-radius: 0.25rem;
+}
+
+.app__blogPage-container {
+    padding: 2rem;
 }
 
 .app__blogPage-back {
     display: flex;
     justify-content: flex-end;
-    margin: 2rem 2rem 1rem 0;
-
-    @media screen and (max-width: 768px) {
-        margin: 2rem 1rem 1rem 0;
-    }
 }
 
 .app__blogPage-backbutton {
-    position: absolute;
     width: 4rem;
     height: 2rem;
-    border: 1px solid #a8b8b0;
-    color: #424946;
-    border-radius: 2.5px;
-    box-shadow: -1px 1px 2px #424946;
+    margin: 0 0 1rem 1rem;
+    border: none;
+    color: white;
+    border-radius: 0.125rem;
+    font-family: 'Playfair Display';
+    font-weight: bold;
+    background-color: #78857f;
 }
 
 .app__blogPage-backbutton:hover {
     cursor: pointer;
+    background-color: #424946;
+}
+
+.app__blogPage-title {
+    text-align: center;
+    padding: 1rem;
+    background-color: #78857f;
+    color: white;
+    font-family: "Playfair Display";
+    border-radius: 0.125rem;
 }
 
 .app__blogPage-img {
     height: 50vh;
-    margin: 3rem 3rem 2rem 3rem;
+    width: 100%;
+    object-fit: cover;
+    object-position: bottom;
+    margin: 1rem 0;
+    border-radius: 0.125rem;
 }
 
 .app__blogPage-content {
-    margin: 0 3rem;
-    line-height: 2rem;
     color: #424946;
-
-    h1 {
-        margin: 0.5rem 0;
-    }
 
     p {
         text-align: justify;
         padding: 0;
+        font-size: x-large;
+        line-height: 2.25rem;
     }
 }
 
 .app__blogPage-footer {
     display: flex;
     justify-content: space-between;
-    padding: 1rem 2rem;
+    margin: 5rem 0 0 0;
     color: #424946;
-    margin: 3rem 0 1rem 0;
 }
 
 .app__blogPage-author {
     font-size: small;
-    padding: 0.5rem 1rem;
+    font-family: 'Playfair Display';
 }
 
 .app__blogPage-avatar {
@@ -140,39 +152,27 @@
 .app__blogPage-date {
     font-size: medium;
     align-self: center;
-    padding: 0.5rem 1rem;
+    font-family: 'Playfair Display';
 }
-
 
 
 @media screen and (max-width: 768px) {
     .app__blogPage {
-        margin: 0;
-        box-shadow: none;
-        padding: 0.5rem;
+        margin: 0.65rem;
     }
 
-    .app__blogPage-img {
-        max-width: 90%;
-        margin: 3rem 1rem 1rem 1rem;
+    .app__blogPage-container {
+        padding: 1rem;
+    }
+
+    .app__blogPage-title {
+        font-size: x-large;
     }
 
     .app__blogPage-content {
-        margin: 0 1rem;
-        line-height: 1.75rem;
-        color: #424946;
-
-        h1 {
-            margin: 0.5rem 0;
+        p {
+            font-size: large;
+            line-height: 1.5;
         }
-    }
-
-    .app__blog-back {
-        padding: 1rem 1rem 0 0;
-    }
-
-    .app__blogPage-footer {
-        margin: 3rem 0 1rem 0;
-        padding: 0;
     }
 }

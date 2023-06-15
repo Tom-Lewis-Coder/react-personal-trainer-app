@@ -77,9 +77,9 @@ describe('Testamonials component', () => {
     test('Renders the Testamonials component without crashing', () => {
         render(<Testamonials />)
 
-        const content = screen.getByRole('content')
-        const name = screen.getByRole('name')
-        const starsArr = screen.getByRole('starsArr')
+        const content = screen.getByTestId('content')
+        const name = screen.getByTestId('name')
+        const starsArr = screen.getByTestId('starsArr')
 
         expect(content).toBeVisible()
         expect(name).toBeVisible()

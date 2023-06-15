@@ -11,9 +11,9 @@ const Testamonials = ({ name, content, stars, }) => {
     return (
         <div className='app__testamonial-component'>
             <Header className={'app__testimonial-header'} title={'Reviews'} />
-            <p role='content' className='app__reviews-content'>{`"${content}"`}</p>
-            <div role='name' className='app__reviews-name'>- {name}</div>
-            <div role='starsArr' className='app__reviews-stars'>{starsArr}</div>
+            <p data-testid='content' className='app__reviews-content'>{`"${content}"`}</p>
+            <div data-testid='name' className='app__reviews-name'>- {name}</div>
+            <div data-testid='starsArr' className='app__reviews-stars'>{starsArr}</div>
         </div>
     )
 }

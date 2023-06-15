@@ -59,10 +59,11 @@ const BlogPage = () => {
 
     return (
         <div className='app__blogPage'>
-            <div className='app__blogPage-back'>
-                <Button onClick={goBack} title={'Back'} className={'app__blogPage-backbutton'} />
-            </div>
             <div className='app__blogPage-container'>
+                <div className='app__blogPage-back'>
+                    <Button onClick={goBack} title={'Back'} className={'app__blogPage-backbutton'} />
+                </div>
+                <h1 className='app__blogPage-title'>{blog[0]?.title}</h1>
                 <img src={blog[0]?.coverPhoto?.url} alt='' className='app__blogPage-img' />
                 <div dangerouslySetInnerHTML={{ __html: blog[0]?.content?.html }} className='app__blogPage-content' />
                 <div className='app__blogPage-footer'>

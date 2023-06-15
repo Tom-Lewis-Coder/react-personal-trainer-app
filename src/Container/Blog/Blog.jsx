@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import { GraphQLClient, gql } from 'graphql-request'
 import { Header, BlogPost } from '../../Components'
+import "@fontsource/playfair-display";
 
 import './Blog.scss'
 
