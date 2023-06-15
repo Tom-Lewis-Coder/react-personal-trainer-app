@@ -155,6 +155,12 @@
     font-family: 'Playfair Display';
 }
 
+@media screen and (max-width: 1000px) {
+    .app__blogPage-img {
+        height: 40vh;
+    }
+}
+
 
 @media screen and (max-width: 768px) {
     .app__blogPage {
@@ -167,6 +173,10 @@
 
     .app__blogPage-title {
         font-size: x-large;
+    }
+
+    .app__blogPage-img {
+        height: 30vh;
     }
 
     .app__blogPage-content {
