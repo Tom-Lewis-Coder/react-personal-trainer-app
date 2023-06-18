@@ -16,7 +16,7 @@
 
 .app__blog-container {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     margin: 5rem 0 7rem 0;
     flex-wrap: wrap;
 }
@@ -24,10 +24,8 @@
 .app__blogPost-component {
     max-width: 300px;
     min-width: 300px;
-    display: flex;
-    overflow: hidden;
-    margin: 2rem;
-    box-shadow: -0px 0px 5px #78857f;
+    margin: 1rem;
+    box-shadow: -2px 1px 5px #78857f;
     border-radius: 0.5rem;
     padding: 1rem;
 
@@ -67,7 +65,7 @@
 .app__blogPage {
     display: flex;
     flex-direction: column;
-    box-shadow: 0px 0px 10px #78857f;
+    box-shadow: 0px 0px 5px #8ac7ab;
     min-height: fit-content;
     margin: 2rem;
     border-radius: 0.25rem;
@@ -91,18 +89,18 @@
     border-radius: 0.125rem;
     font-family: 'Playfair Display';
     font-weight: bold;
-    background-color: #78857f;
+    background-color: #8ac7ab;
 }
 
 .app__blogPage-backbutton:hover {
     cursor: pointer;
-    background-color: #424946;
+    background-color: #689680;
 }
 
 .app__blogPage-title {
     text-align: center;
     padding: 1rem;
-    background-color: #78857f;
+    background-color: #8ac7ab;
     color: white;
     font-family: "Playfair Display";
     border-radius: 0.125rem;
@@ -119,12 +117,29 @@
 
 .app__blogPage-content {
     color: #424946;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .app__blogPage-divider {
+        border-bottom: 1px solid #689680;
+        width: 5rem;
+        margin: 5rem 0;
+    }
 
     p {
-        text-align: justify;
-        padding: 0;
-        font-size: x-large;
+        text-align: center;
+        font-size: large;
         line-height: 2.25rem;
+        width: 60vw;
+
+        @media screen and (max-width: 600px) {
+            width: 75vw;
+        }
+
+        @media screen and (max-width: 450px) {
+            width: 85vw;
+        }
     }
 }
 
@@ -145,7 +160,7 @@
     height: 2.2rem;
     width: 2rem;
     border-radius: 50%;
-    box-shadow: -1px 1px 2px #424946;
+
 }
 
 .app__blogPage-date {
