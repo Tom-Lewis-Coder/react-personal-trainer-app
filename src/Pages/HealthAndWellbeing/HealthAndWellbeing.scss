@@ -1,0 +1,63 @@
+.app__healthAndWellbeing-container{
+    display: flex;
+    flex-direction: column;
+    padding: 5rem 0;
+    align-items: center;
+    background-color: #78857f;
+    color:white;
+}
+
+.app__healthAndWellbeing-back {
+    display: flex;
+    position: absolute;
+    width: 100%;
+    top: 1rem;
+    right: 1rem;
+    justify-content: flex-end;
+}
+
+.app__healthAndWellbeing-backbutton {
+    position: absolute;
+    width: 4rem;
+    height: 2rem;
+    border: 1px solid #a8b8b0;
+    color: #424946;
+    border-radius: 2.5px;
+    box-shadow: -2px 2px 3px #424946;
+}
+
+.app__healthAndWellbeing-backbutton:hover {
+    cursor: pointer;
+}
+
+.app__healthAndWellbeing-img{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 60vh;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+
+}
+
+.app__healthAndWellbeing-title{
+    font-size: xx-large;
+    margin: 5rem 0;
+}
+
+.app__healthAndWellbeing-divider{
+    border-bottom: 2px solid white;
+    width: 10vh;
+}
+
+.app__healthAndWellbeing-content{
+    font-size: large;
+    margin: 5rem 0;
+    width: 60vw;
+    text-align: center;
+
+    @media screen and (max-width: 600px) {
+        width: 90vw;       
+    }
+}
