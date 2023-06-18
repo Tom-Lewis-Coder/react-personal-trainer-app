@@ -2,7 +2,7 @@ import React, { useEffect } from 'react'
 import { useNavigate } from 'react-router';
 import { Header, Button } from '../Components'
 
-const About = ({ title, className, pic, content}) => {
+const About = ({ title, className, pic, content }) => {
 
   const navigate = useNavigate();
 
@@ -13,8 +13,6 @@ const About = ({ title, className, pic, content}) => {
   useEffect(() => {
     window.scrollTo(0, 0)
   }, [])
-
-  console.log(className + '-container')
 
   return (
     <div className={className + '-container'}>
@@ -27,7 +25,7 @@ const About = ({ title, className, pic, content}) => {
       <p className={className + '-content'}>
         {content}
       </p>
-      <div className={'app__' + {className} + '-divider'} />
+      <div className={className + '-divider'} />
     </div>
   )
 }
