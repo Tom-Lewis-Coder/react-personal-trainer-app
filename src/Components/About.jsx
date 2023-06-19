@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import React from 'react'
 import { useNavigate } from 'react-router';
 import { Header, Button } from '../Components'
 
@@ -9,10 +9,6 @@ const About = ({ title, className, pic, content }) => {
   const goBack = () => {
     navigate(-1);
   }
-
-  useEffect(() => {
-    window.scrollTo(0, 0)
-  }, [])
 
   return (
     <div className={className + '-container'}>

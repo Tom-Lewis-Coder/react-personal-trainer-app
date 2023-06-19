@@ -36,6 +36,7 @@ const QUERY = gql`
 const Blog = () => {
 
     const [posts, setPosts] = useState([])
+    const [readMore, setReadMore] = useState(false)
 
     useEffect(() => {
         const fetchPosts = async () => {
@@ -46,18 +47,36 @@ const Blog = () => {
             .catch(console.error)
     }, [])
 
+    const handleClick = () => {
+        setReadMore(!readMore)
+    }
+
     return (
         <div className='app__blog-section' id='blog/nutrition'>
             <Header title={'Blog'} className={'app__blog-title'} />
+            <div onClick={handleClick} className='app__blog-readMoreTop' id='top'>
+                {posts?.posts?.length > 2 && readMore ? <p>Read less...</p> : <p></p>}
+            </div>
             <div className='app__blog-container'>
-                {posts?.posts?.map(post => {
+                {!readMore ? posts?.posts?.slice(0, 2).map(post => {
                     return <BlogPost
                         title={post.title}
                         coverPhoto={post.coverPhoto}
                         key={post.id}
                         slug={post.slug}
                     />
-                })}
+                }) :
+                    posts?.posts?.map(post => {
+                        return <BlogPost
+                            title={post.title}
+                            coverPhoto={post.coverPhoto}
+                            key={post.id}
+                            slug={post.slug}
+                        />
+                    })}
+            </div>
+            <div onClick={handleClick} className='app__blog-readMoreBottom'>
+                {posts?.posts?.length <= 2 ? <p></p> : readMore ? <a href='#top'>Read Less...</a> : <p>Read More...</p>}
             </div>
         </div>
     )
