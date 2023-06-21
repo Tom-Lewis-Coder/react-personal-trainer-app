@@ -1,4 +1,4 @@
-.app__muscleBuilding-container{
+.app__corporate-container{
     display: flex;
     flex-direction: column;
     padding: 5rem 0;
@@ -7,7 +7,7 @@
     color:white;
 }
 
-.app__muscleBuilding-back {
+.app__corporate-back {
     display: flex;
     position: absolute;
     width: 100%;
@@ -16,7 +16,7 @@
     justify-content: flex-end;
 }
 
-.app__muscleBuilding-backbutton {
+.app__corporate-backbutton {
     position: absolute;
     width: 4rem;
     height: 2rem;
@@ -26,11 +26,11 @@
     box-shadow: -2px 2px 3px #424946;
 }
 
-.app__muscleBuilding-backbutton:hover {
+.app__corporate-backbutton:hover {
     cursor: pointer;
 }
 
-.app__muscleBuilding-img{
+.app__corporate-img{
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -41,17 +41,17 @@
     border-bottom: 2px solid white;
 }
 
-.app__muscleBuilding-title{
+.app__corporate-title{
     font-size: xx-large;
     margin: 5rem 0;
 }
 
-.app__muscleBuilding-divider{
+.app__corporate-divider{
     border-bottom: 2px solid white;
     width: 10vh;
 }
 
-.app__muscleBuilding-content{
+.app__corporate-content{
     font-size: large;
     margin: 5rem 0;
     width: 60vw;

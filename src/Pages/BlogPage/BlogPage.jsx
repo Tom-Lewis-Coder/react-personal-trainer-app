@@ -2,7 +2,9 @@ import React, { useState, useEffect } from 'react'
 import { useParams } from 'react-router'
 import { useNavigate } from 'react-router-dom'
 import { GraphQLClient, gql } from 'graphql-request'
-import { Button } from '../Components'
+import { Button } from '../../Components'
+
+import './BlogPage.scss'
 
 const graphcms = new GraphQLClient('https://api-eu-west-2.hygraph.com/v2/clh942quu0a2m01tab5da0g2b/master')
 

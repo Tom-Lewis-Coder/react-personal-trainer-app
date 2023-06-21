@@ -1,0 +1,141 @@
+// BlogPage CSS
+
+.app__blogPage {
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0px 0px 5px #78857f;
+    min-height: fit-content;
+    margin: 2rem;
+    border-radius: 0.25rem;
+}
+
+.app__blogPage-container {
+    padding: 2rem;
+}
+
+.app__blogPage-back {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.app__blogPage-backbutton {
+    width: 4rem;
+    height: 2rem;
+    margin: 0 0 1rem 1rem;
+    border: none;
+    color: white;
+    border-radius: 0.125rem;
+    font-family: 'Playfair Display';
+    font-weight: bold;
+    background-color: #78857f;
+}
+
+.app__blogPage-backbutton:hover {
+    cursor: pointer;
+    background-color: #424946;
+}
+
+.app__blogPage-title {
+    text-align: center;
+    padding: 1rem;
+    background-color: #78857f;
+    color: white;
+    font-family: "Playfair Display";
+    border-radius: 0.125rem;
+}
+
+.app__blogPage-img {
+    height: 50vh;
+    width: 100%;
+    object-fit: cover;
+    object-position: bottom;
+    margin: 1rem 0;
+    border-radius: 0.125rem;
+}
+
+.app__blogPage-content {
+    color: #424946;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .app__blogPage-divider {
+        border-bottom: 1px solid #424946;
+        width: 5rem;
+        margin: 5rem 0;
+    }
+
+    p {
+        text-align: center;
+        font-size: large;
+        font-style: italic;
+        line-height: 2.25rem;
+        width: 60vw;
+
+        @media screen and (max-width: 600px) {
+            width: 75vw;
+        }
+
+        @media screen and (max-width: 450px) {
+            width: 85vw;
+        }
+    }
+}
+
+.app__blogPage-footer {
+    display: flex;
+    justify-content: space-between;
+    margin: 5rem 0 0 0;
+    color: #424946;
+}
+
+.app__blogPage-author {
+    font-size: small;
+    font-family: 'Playfair Display';
+}
+
+.app__blogPage-avatar {
+    margin-left: 1rem;
+    height: 2.2rem;
+    width: 2rem;
+    border-radius: 50%;
+
+}
+
+.app__blogPage-date {
+    font-size: medium;
+    align-self: center;
+    font-family: 'Playfair Display';
+}
+
+@media screen and (max-width: 1000px) {
+    .app__blogPage-img {
+        height: 40vh;
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+    .app__blogPage {
+        margin: 0.65rem;
+    }
+
+    .app__blogPage-container {
+        padding: 1rem;
+    }
+
+    .app__blogPage-title {
+        font-size: x-large;
+    }
+
+    .app__blogPage-img {
+        height: 30vh;
+    }
+
+    .app__blogPage-content {
+        p {
+            font-size: large;
+            line-height: 1.5;
+        }
+    }
+}

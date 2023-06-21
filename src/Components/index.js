@@ -7,5 +7,6 @@ import Testamonials from './Testamonials'
 import Video from './Video'
 import Loading from './Loading'
 import About from './About'
+import Services from './Services'
 
-export { Navbar, BlogPost, Header, Button, FAQuestion, Testamonials, Video, Loading, About }
+export { Navbar, BlogPost, Header, Button, FAQuestion, Testamonials, Video, Loading, About, Services }
