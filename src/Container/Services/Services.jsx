@@ -9,7 +9,7 @@ const Services = () => {
     <div className='app__services app__flex' id='services'>
       <Header title={'Programmes'} className={'app__services-title'} />
       <div className='app__services-split-container app__flex'>
-        <Link to='./one2one' className='app__services-service' >
+        <Link to='./one2one' className='app__services-service' key='one2one'>
           <div className='app__services-img-121'></div>
           <div className='app__services-desc'>1-2-1 Training</div>
           <p>Dedicated, bespoke support from your Personal Trainer.</p>

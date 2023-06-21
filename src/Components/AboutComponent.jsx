@@ -1,8 +1,8 @@
 import React from 'react'
 import { useNavigate } from 'react-router';
-import { Header, Button } from '../Components'
+import { Header, Button } from '.'
 
-const About = ({ title, className, pic, content }) => {
+const AboutComponent = ({ title, className, pic, content, content1, content2 }) => {
 
   const navigate = useNavigate();
 
@@ -20,10 +20,14 @@ const About = ({ title, className, pic, content }) => {
       <div className={className + '-divider'} />
       <p className={className + '-content'}>
         {content}
+        <br /><br />
+        {content1}
+        <br /><br />
+        {content2}
       </p>
       <div className={className + '-divider'} />
     </div>
   )
 }
 
-export default About
+export default AboutComponent
