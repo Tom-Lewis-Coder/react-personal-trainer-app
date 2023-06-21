@@ -86,7 +86,7 @@
 .app__blogPage {
     display: flex;
     flex-direction: column;
-    box-shadow: 0px 0px 5px #8ac7ab;
+    box-shadow: 0px 0px 5px #78857f;
     min-height: fit-content;
     margin: 2rem;
     border-radius: 0.25rem;
@@ -110,18 +110,18 @@
     border-radius: 0.125rem;
     font-family: 'Playfair Display';
     font-weight: bold;
-    background-color: #8ac7ab;
+    background-color: #78857f;
 }
 
 .app__blogPage-backbutton:hover {
     cursor: pointer;
-    background-color: #689680;
+    background-color: #424946;
 }
 
 .app__blogPage-title {
     text-align: center;
     padding: 1rem;
-    background-color: #8ac7ab;
+    background-color: #78857f;
     color: white;
     font-family: "Playfair Display";
     border-radius: 0.125rem;
@@ -143,7 +143,7 @@
     align-items: center;
 
     .app__blogPage-divider {
-        border-bottom: 1px solid #689680;
+        border-bottom: 1px solid #424946;
         width: 5rem;
         margin: 5rem 0;
     }

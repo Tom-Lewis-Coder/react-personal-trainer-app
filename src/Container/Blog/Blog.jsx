@@ -55,10 +55,10 @@ const Blog = () => {
         <div className='app__blog-section' id='blog/nutrition'>
             <Header title={'Blog'} className={'app__blog-title'} />
             <div onClick={handleClick} className='app__blog-readMoreTop' id='top'>
-                {posts?.posts?.length > 2 && readMore ? <p>Read less...</p> : <p></p>}
+                {posts?.posts?.length > 4 && readMore ? <p>Less...</p> : <p></p>}
             </div>
             <div className='app__blog-container'>
-                {!readMore ? posts?.posts?.slice(0, 2).map(post => {
+                {!readMore ? posts?.posts?.slice(0, 4).map(post => {
                     return <BlogPost
                         title={post.title}
                         coverPhoto={post.coverPhoto}
@@ -76,7 +76,7 @@ const Blog = () => {
                     })}
             </div>
             <div onClick={handleClick} className='app__blog-readMoreBottom'>
-                {posts?.posts?.length <= 2 ? <p></p> : readMore ? <a href='#top'>Read Less...</a> : <p>Read More...</p>}
+                {posts?.posts?.length <= 4 ? <p></p> : readMore ? <a href='#top'>Less...</a> : <p>More...</p>}
             </div>
         </div>
     )
