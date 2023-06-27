@@ -13,7 +13,7 @@ const HealthAndWellbeing = () => {
 
   return (
     <>
-      <AboutComponent title={'Health and Wellbeing'} pic={pic} className={'app__healthAndWellbeing'} content={content[0]} content1={content[1]} content2={content[2]} />
+      <AboutComponent title={'Health and Wellbeing'} pic={pic} className={'app__healthAndWellbeing'} content={content} />
     </>
   )
 }

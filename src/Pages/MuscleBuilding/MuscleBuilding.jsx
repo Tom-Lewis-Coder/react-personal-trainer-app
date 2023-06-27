@@ -13,7 +13,7 @@ const MuscleBuilding = () => {
 
   return (
     <>
-      <AboutComponent title={'Muscle Building'} pic={pic} className={'app__muscleBuilding'} content={content[0]} content1={content[1]} content2={content[2]} />
+      <AboutComponent title={'Muscle Building'} pic={pic} className={'app__muscleBuilding'} content={content} />
     </>
   )
 }

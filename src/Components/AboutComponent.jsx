@@ -2,13 +2,17 @@ import React from 'react'
 import { useNavigate } from 'react-router';
 import { Header, Button } from '.'
 
-const AboutComponent = ({ title, className, pic, content, content1, content2 }) => {
+const AboutComponent = ({ title, className, pic, content }) => {
 
   const navigate = useNavigate();
 
   const goBack = () => {
     navigate(-1);
   }
+
+  const contentSplit = content.map((para, i) => {
+    return <p className={className + '-content'} key={i} >{para}</p>
+  })
 
   return (
     <div className={className + '-container'}>
@@ -18,13 +22,7 @@ const AboutComponent = ({ title, className, pic, content, content1, content2 }) 
       <img src={pic} alt='img' className={className + '-img'} />
       <Header title={title} className={className + '-title'} />
       <div className={className + '-divider'} />
-      <p className={className + '-content'}>
-        {content}
-        <br /><br />
-        {content1}
-        <br /><br />
-        {content2}
-      </p>
+        {contentSplit}
       <div className={className + '-divider'} />
     </div>
   )

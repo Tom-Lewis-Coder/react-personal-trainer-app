@@ -13,7 +13,7 @@ const FatLoss = () => {
 
   return (
     <>
-      <AboutComponent title={'Fat Loss'} pic={pic} className={'app__fatLoss'} content={content[0]} content1={content[1]} content2={content[2]} />
+      <AboutComponent title={'Fat Loss'} pic={pic} className={'app__fatLoss'} content={content} />
     </>
   )
 }
