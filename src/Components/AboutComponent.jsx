@@ -22,7 +22,7 @@ const AboutComponent = ({ title, className, pic, content }) => {
       <img src={pic} alt='img' className={className + '-img'} />
       <Header title={title} className={className + '-title'} />
       <div className={className + '-divider'} />
-        {contentSplit}
+      {contentSplit}
       <div className={className + '-divider'} />
     </div>
   )
