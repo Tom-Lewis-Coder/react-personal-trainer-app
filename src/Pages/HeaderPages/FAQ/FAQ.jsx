@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react'
-import { Header, FAQuestion, Button } from '../../Components'
-import questions from '../../Constants/Questions.json'
+import { Header, FAQuestion, Button } from '../../../Components'
+import questions from '../../../Constants/Questions.json'
 import { useNavigate } from 'react-router-dom'
 
 import './FAQ.scss'

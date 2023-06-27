@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react'
-import { AboutComponent } from '../../Components';
-import pic from '../../Assets/TSLimg1.jpg'
-import content from '../../Constants/ServicesContent'
+import { AboutComponent } from '../../../Components';
+import pic from '../../../Assets/TSLimg1.jpg'
+import content from '../../../Constants/ServicesContent'
 
 import './MuscleBuilding.scss'
 

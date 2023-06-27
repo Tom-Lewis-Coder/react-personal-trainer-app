@@ -1,4 +1,4 @@
-.app__corporate-container{
+.app__group-container{
     display: flex;
     flex-direction: column;
     padding: 5rem 0;
@@ -7,7 +7,7 @@
     color:white;
 }
 
-.app__corporate-back {
+.app__group-back {
     display: flex;
     position: absolute;
     width: 100%;
@@ -16,7 +16,7 @@
     justify-content: flex-end;
 }
 
-.app__corporate-backbutton {
+.app__group-backbutton {
     position: absolute;
     width: 4rem;
     height: 2rem;
@@ -26,11 +26,11 @@
     box-shadow: -2px 2px 3px #424946;
 }
 
-.app__corporate-backbutton:hover {
+.app__group-backbutton:hover {
     cursor: pointer;
 }
 
-.app__corporate-img{
+.app__group-img{
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -41,21 +41,22 @@
     border-bottom: 2px solid white;
 }
 
-.app__corporate-title{
+.app__group-title{
     font-size: xx-large;
-    margin: 5rem 0;
+    margin: 5rem 0 0.5rem;
 }
 
-.app__corporate-divider{
+.app__group-divider{
     border-bottom: 2px solid white;
-    width: 10vh;
+    width: 15vh;
+    margin: 4.5rem 0;
 }
 
-.app__corporate-content{
+.app__group-content{
     font-size: large;
-    margin: 5rem 0;
     width: 60vw;
     text-align: center;
+    margin: 1rem;
 
     @media screen and (max-width: 600px) {
         width: 90vw;       

@@ -1,7 +1,7 @@
 import React from 'react'
 
-import { Navbar } from '../Components/index.js';
-import { Header, About, Services, Contact, Workout, Blog, Reviews, Footer } from '../Container';
+import { Navbar } from '../../Components/index.js';
+import { Header, About, Services, Contact, Workout, Blog, Reviews, Footer } from '../../Container/index.js';
 
 const AppMain = () => {
     return (

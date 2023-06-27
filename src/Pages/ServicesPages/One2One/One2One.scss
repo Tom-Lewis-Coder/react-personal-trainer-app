@@ -1,4 +1,4 @@
-.app__group-container{
+.app__one2one-container{
     display: flex;
     flex-direction: column;
     padding: 5rem 0;
@@ -7,7 +7,7 @@
     color:white;
 }
 
-.app__group-back {
+.app__one2one-back {
     display: flex;
     position: absolute;
     width: 100%;
@@ -16,7 +16,7 @@
     justify-content: flex-end;
 }
 
-.app__group-backbutton {
+.app__one2one-backbutton {
     position: absolute;
     width: 4rem;
     height: 2rem;
@@ -26,11 +26,11 @@
     box-shadow: -2px 2px 3px #424946;
 }
 
-.app__group-backbutton:hover {
+.app__one2one-backbutton:hover {
     cursor: pointer;
 }
 
-.app__group-img{
+.app__one2one-img{
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -39,23 +39,25 @@
     height: 60vh;
     border-top: 2px solid white;
     border-bottom: 2px solid white;
+
 }
 
-.app__group-title{
+.app__one2one-title{
     font-size: xx-large;
-    margin: 5rem 0;
+    margin: 5rem 0 0.5rem;
 }
 
-.app__group-divider{
+.app__one2one-divider{
     border-bottom: 2px solid white;
-    width: 10vh;
+    width: 15vh;
+    margin: 4.5rem 0;
 }
 
-.app__group-content{
+.app__one2one-content{
     font-size: large;
-    margin: 5rem 0;
     width: 60vw;
     text-align: center;
+    margin: 1rem;
 
     @media screen and (max-width: 600px) {
         width: 90vw;       

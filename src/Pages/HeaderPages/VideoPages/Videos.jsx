@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import axios from 'axios'
-import { Video, Header, Button, Loading } from '../../Components'
+import { Video, Header, Button, Loading } from '../../../Components'
 import { useNavigate } from 'react-router-dom'
 
 import './Videos.scss'

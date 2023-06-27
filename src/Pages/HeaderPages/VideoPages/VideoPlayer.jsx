@@ -1,6 +1,6 @@
 import React from 'react'
 import { useLocation, useNavigate } from 'react-router-dom'
-import { Button, Header } from '../../Components'
+import { Button, Header } from '../../../Components'
 
 const VideoPlayer = () => {
     const location = useLocation()

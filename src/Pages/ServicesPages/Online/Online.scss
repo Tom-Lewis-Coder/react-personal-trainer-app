@@ -43,19 +43,20 @@
 
 .app__online-title{
     font-size: xx-large;
-    margin: 5rem 0;
+    margin: 5rem 0 0.5rem;
 }
 
 .app__online-divider{
     border-bottom: 2px solid white;
-    width: 10vh;
+    width: 15vh;
+    margin: 4.5rem 0;
 }
 
 .app__online-content{
     font-size: large;
-    margin: 5rem 0;
     width: 60vw;
     text-align: center;
+    margin: 1rem;
 
     @media screen and (max-width: 600px) {
         width: 90vw;       

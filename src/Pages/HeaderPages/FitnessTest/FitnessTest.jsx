@@ -3,7 +3,7 @@ import { useNavigate } from 'react-router'
 import { HashLink } from 'react-router-hash-link';
 
 import './FitnessTest.scss'
-import { Button, Header } from '../../Components'
+import { Button, Header } from '../../../Components'
 
 const FitnessTest = () => {
 
