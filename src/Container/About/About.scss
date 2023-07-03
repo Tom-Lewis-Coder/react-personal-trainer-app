@@ -1,12 +1,12 @@
 .app__about {
     flex-direction: column;
     margin-bottom: 5rem;
-    color: #424946;
+    color: var(--secondary-color);
 }
 
 .app__about-title {
-    background-color: #78857f;
-    color: white;
+    background-color: var(--primary-color);
+    color: var(--white-color);
     font-size: xx-large;
     margin: 7rem 0 0 0;
     border-radius: 0.5rem;
@@ -109,13 +109,13 @@
 .app__about-link {
     margin: 1.5rem 0 0;
     padding: 0.5rem;
-    color: #424946;
-    border: 1px solid #78857f;
+    color: var(--secondary-color);
+    border: 1px solid var(--primary-color);
     text-decoration: none;
     width: 40%;
 }
 
 .app__about-link:hover {
-    color: white;
-    background-color: #424946;
+    color: var(--white-color);
+    background-color: var(--secondary-color);
 }

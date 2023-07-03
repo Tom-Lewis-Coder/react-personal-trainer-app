@@ -3,13 +3,13 @@
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    background-image: linear-gradient(to bottom left, #78857f 65%, #424946 65%);
+    background-image: linear-gradient(to bottom left, var(--primary-color) 65%, var(--secondary-color) 65%);
 }
 
 .app__workout-title {
     display: flex;
-    background-color: white;
-    color: #424946;
+    background-color: var(--white-color);
+    color: var(--secondary-color);
     font-size: xx-large;
     margin: 7rem 0 0 0;
     border-radius: 0.5rem;
@@ -34,7 +34,7 @@
 .app__workout-disclaimer{
     margin: 0 7rem 6em;
     font-size: small;
-    color: white;
+    color: var(--white-color);
 
     @media screen and (max-width: 800px){
         margin: 0 2rem 4rem 2rem ;

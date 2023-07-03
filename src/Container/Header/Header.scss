@@ -1,6 +1,6 @@
 .app__header {
     flex-direction: column;
-    background-color: #78857f;
+    background-color: var(--primary-color);
     padding: 5rem 0 2rem 0;
 
     @media screen and (max-width: 900px) {
@@ -16,7 +16,7 @@
     position: relative;
     background-repeat: no-repeat;
     background-size: cover;
-    border: 1px solid white;
+    border: 1px solid var(--white-color);
     object-fit: cover;
     margin-bottom: 1rem;
     flex: 1;
@@ -129,7 +129,7 @@
     width: 90%;
     height: 11rem;
     max-height: 20rem;
-    color: #424946;
+    color: var(--secondary-color);
 
     @media screen and (max-width: 768px) {
         flex-direction: column;
@@ -142,7 +142,7 @@
     background-position-x: center;
     background-position-y: bottom;
 
-    border: 1px solid white;
+    border: 1px solid var(--white-color);
     height: 100%;
     width: 32%;
     font-size: xx-large;
@@ -165,7 +165,7 @@
     background-position-x: center;
     background-position-y: center;
 
-    border: 1px solid white;
+    border: 1px solid var(--white-color);
     height: 100%;
     width: 32%;
     font-size: xx-large;
@@ -188,7 +188,7 @@
     background-position-y: center;
     background-repeat: no-repeat;
 
-    border: 1px solid white;
+    border: 1px solid var(--white-color);
     height: 100%;
     width: 32%;
     text-decoration: none;

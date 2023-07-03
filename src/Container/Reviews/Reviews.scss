@@ -2,9 +2,9 @@
     display: flex;
     flex-direction: row;
     justify-content: center;
-    background-image: linear-gradient(to top left, #78857f 75%, #424946 75%);
+    background-image: linear-gradient(to top left, var(--primary-color) 75%, var(--secondary-color) 75%);
     padding: 2.5rem;
-    color: white;
+    color: var(--white-color);
     align-items: center;
 }
 
@@ -22,8 +22,8 @@
 }
 
 .app__testimonial-header{
-    background-color: white;
-    color: #424946;
+    background-color: var(--white-color);
+    color: var(--secondary-color);
     font-size: xx-large;
     margin: 7rem 0 5rem 0;
     border-radius: 0.5rem;
@@ -32,7 +32,7 @@
 
 .app__reviews-content {
     display: flex;
-    color: #424946;
+    color: var(--secondary-color);
     padding: 1.5rem;
     margin: 1rem;
     min-height: 150px;
@@ -45,7 +45,7 @@
     text-align: center;
     background: rgba(255, 255, 255, 0.4);
     border-radius: 5px;
-    border: 1px solid white;
+    border: 1px solid var(--white-color);
 
     @media screen and (max-width: 764px) {
         min-height: 300px;

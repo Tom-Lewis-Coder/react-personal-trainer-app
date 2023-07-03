@@ -1,7 +1,7 @@
 .app__FAQ-container {
     display: flex;
     flex-direction: column;
-    background-color: #78857f;
+    background-color: var(--primary-color);
     align-items: center;
     min-height: 100vh;
 }
@@ -17,9 +17,9 @@
     width: 4rem;
     height: 2rem;
     border: 1px solid #a8b8b0;
-    color: #424946;
+    color: var(--secondary-color);
     border-radius: 2.5px;
-    box-shadow: -2px 2px 3px #424946;
+    box-shadow: -2px 2px 3px var(--secondary-color);
 }
 
 .app__FAQ-backbutton:hover {
@@ -28,8 +28,8 @@
 
 .app__FAQ-header {
     display: flex;
-    background-color: white;
-    color: #424946;
+    background-color: var(--white-color);
+    color: var(--secondary-color);
     font-size: xx-large;
     margin: 3rem 0;
     border-radius: 0.5rem;
@@ -52,9 +52,9 @@
     align-items: center;
     justify-content: flex-start;
     padding: 0.5rem;
-    color: #424946;
-    background-color: white;
-    box-shadow: -2px 2px 3px #424946;
+    color: var(--secondary-color);
+    background-color: var(--white-color);
+    box-shadow: -2px 2px 3px var(--secondary-color);
 }
 
 .app__FAQ-align:hover {
@@ -66,8 +66,8 @@
     align-items: center;
     justify-content: flex-start;
     padding: 0.5rem;
-    color: #424946;
-    background-color: white;
+    color: var(--secondary-color);
+    background-color: var(--white-color);
 }
 
 .app__FAQ-align-active:hover {
@@ -89,8 +89,8 @@ p {
     justify-content: flex-start;
     line-height: 1.5rem;
     padding: 0 1.5rem;
-    color: #424946;
-    background-color: white;
+    color: var(--secondary-color);
+    background-color: var(--white-color);
 }
 
 .app__FAQ-svg {
