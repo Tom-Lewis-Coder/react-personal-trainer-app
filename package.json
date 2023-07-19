@@ -3,11 +3,13 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@emailjs/browser": "^3.11.0",
     "@fontsource/playfair-display": "^5.0.3",
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
     "axios": "^1.4.0",
+    "emailjs": "^4.0.2",
     "enzyme": "^3.11.0",
     "graphql": "^16.6.0",
     "graphql-request": "^6.0.0",

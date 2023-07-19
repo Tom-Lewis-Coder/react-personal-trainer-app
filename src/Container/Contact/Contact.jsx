@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 
 import { images } from '../../Constants'
+import { Header } from '../../Components'
 import './Contact.scss'
 import ContactForm from '../../Forms/ContactForm'
 
@@ -9,7 +10,8 @@ const Contact = () => {
     const [isFormSubmitted, setIsFormSubmitted] = useState(false)
 
     return (
-        <div id='contact'>
+        <div id='contact' className='app__contact'>
+            <Header className={'app__contact-title'} title={'How can I help you'} />
             {!isFormSubmitted ?
                 <ContactForm setIsFormSubmitted={setIsFormSubmitted} />
                 :

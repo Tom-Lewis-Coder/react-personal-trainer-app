@@ -1,7 +1,8 @@
-.app__contact-form {
+.app__contact{
+    display: flex;
     flex-direction: column;
-    color: var(--secondary-color);
-    width: 100%;
+    justify-content: center;
+    align-items: center;
 }
 
 .app__contact-title {
@@ -13,6 +14,12 @@
     padding: 0.65rem 1.5rem;
 }
 
+.app__contact-form {
+    flex-direction: column;
+    color: var(--secondary-color);
+    width: 100vw;
+}
+
 .app__contact-title-resp {
     background-color: var(--primary-color);
     color: var(--white-color);
@@ -20,6 +27,7 @@
     margin: 7rem 7rem 4rem 7rem;
     border-radius: 2rem;
     padding: 0.65rem 1.5rem;
+    text-align: center;
 }
 
 @media screen and (max-width: 720px) {
