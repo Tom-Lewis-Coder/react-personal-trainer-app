@@ -1,4 +1,4 @@
-.app__fatLoss-container{
+.app__fatLoss-container {
     display: flex;
     flex-direction: column;
     padding: 5rem 0;
@@ -30,35 +30,35 @@
     cursor: pointer;
 }
 
-.app__fatLoss-img{
+.app__fatLoss-img {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     object-fit: cover;
     width: 100%;
     height: 60vh;
-    border-top: 2px solid  var(--white-color);
-    border-bottom: 2px solid  var(--white-color);
+    border-top: 2px solid var(--white-color);
+    border-bottom: 2px solid var(--white-color);
 }
 
-.app__fatLoss-title{
+.app__fatLoss-title {
     font-size: xx-large;
     margin: 5rem 0 0.5rem;
 }
 
-.app__fatLoss-divider{
-    border-bottom: 2px solid  var(--white-color);
+.app__fatLoss-divider {
+    border-bottom: 2px solid var(--white-color);
     width: 15vh;
     margin: 4.5rem 0;
 }
 
-.app__fatLoss-content{
+.app__fatLoss-content {
     font-size: large;
     width: 60vw;
     text-align: center;
     margin: 1rem;
 
     @media screen and (max-width: 600px) {
-        width: 90vw;       
+        width: 90vw;
     }
 }

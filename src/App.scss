@@ -1,19 +1,19 @@
-*{
- scroll-behavior: smooth;
+* {
+    scroll-behavior: smooth;
 }
 
 .app__flex {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .p-text {
-  font-size: 1rem;
-  text-align: left;
-  line-height: 2;
+    font-size: 1rem;
+    text-align: left;
+    line-height: 2;
 
-  @media screen and (min-width: 2000px) {
-    font-size: 1.75rem;
-  }
+    @media screen and (min-width: 2000px) {
+        font-size: 1.75rem;
+    }
 }

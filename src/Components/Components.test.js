@@ -1,6 +1,14 @@
 import React from 'react'
 import { fireEvent, getByRole, render, screen } from '@testing-library/react'
-import { Navbar, Button, FAQuestion, Header, Loading, Testamonials, Video } from '../Components'
+import {
+    Navbar,
+    Button,
+    FAQuestion,
+    Header,
+    Loading,
+    Testamonials,
+    Video
+} from '../Components'
 import '@testing-library/jest-dom'
 
 describe('Navbar component', () => {

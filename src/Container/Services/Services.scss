@@ -1,7 +1,11 @@
 .app__services {
     flex-direction: column;
     padding-bottom: 7rem;
-    background-image: linear-gradient(to bottom right, var(--primary-color) 75%, var(--secondary-color) 75%);
+    background-image: linear-gradient(
+        to bottom right,
+        var(--primary-color) 75%,
+        var(--secondary-color) 75%
+    );
 }
 
 .app__services-title {
@@ -47,7 +51,6 @@
     @media screen and (max-width: 850px) {
         margin: 1rem;
     }
-
 }
 
 .app__services-service:hover {

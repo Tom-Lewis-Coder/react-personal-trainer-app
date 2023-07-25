@@ -2,7 +2,11 @@
     display: flex;
     flex-direction: row;
     justify-content: center;
-    background-image: linear-gradient(to top left, var(--primary-color) 75%, var(--secondary-color) 75%);
+    background-image: linear-gradient(
+        to top left,
+        var(--primary-color) 75%,
+        var(--secondary-color) 75%
+    );
     padding: 2.5rem;
     color: var(--white-color);
     align-items: center;
@@ -21,7 +25,7 @@
     }
 }
 
-.app__testimonial-header{
+.app__testimonial-header {
     background-color: var(--white-color);
     color: var(--secondary-color);
     font-size: xx-large;
@@ -66,11 +70,11 @@
     padding: 0rem;
 }
 
-.app__review-chevron{
+.app__review-chevron {
     cursor: pointer;
 }
 
-.app__reviews-stars{
+.app__reviews-stars {
     padding: 0.5rem;
     color: yellow;
     margin-bottom: 5rem;

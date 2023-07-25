@@ -1,10 +1,10 @@
-.app__one2one-container{
+.app__one2one-container {
     display: flex;
     flex-direction: column;
     padding: 5rem 0;
     align-items: center;
     background-color: var(--primary-color);
-    color:var(--white-color);
+    color: var(--white-color);
 }
 
 .app__one2one-back {
@@ -30,7 +30,7 @@
     cursor: pointer;
 }
 
-.app__one2one-img{
+.app__one2one-img {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -39,27 +39,26 @@
     height: 60vh;
     border-top: 2px solid var(--white-color);
     border-bottom: 2px solid var(--white-color);
-
 }
 
-.app__one2one-title{
+.app__one2one-title {
     font-size: xx-large;
     margin: 5rem 0 0.5rem;
 }
 
-.app__one2one-divider{
+.app__one2one-divider {
     border-bottom: 2px solid var(--white-color);
     width: 15vh;
     margin: 4.5rem 0;
 }
 
-.app__one2one-content{
+.app__one2one-content {
     font-size: large;
     width: 60vw;
     text-align: center;
     margin: 1rem;
 
     @media screen and (max-width: 600px) {
-        width: 90vw;       
+        width: 90vw;
     }
 }

@@ -7,8 +7,11 @@ import './CalorieCalc.scss'
 const CalorieCalc = () => {
     return (
         <div>
-            <div className='app__cal-Container' >
-                <Header title={'Calorie Calculator'} className={'app__headTitle'} />
+            <div className="app__cal-Container">
+                <Header
+                    title={'Calorie Calculator'}
+                    className={'app__headTitle'}
+                />
                 <CalorieForm />
             </div>
         </div>

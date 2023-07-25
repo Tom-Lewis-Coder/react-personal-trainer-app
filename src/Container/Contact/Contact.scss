@@ -1,4 +1,4 @@
-.app__contact{
+.app__contact {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -76,11 +76,11 @@ textarea {
     font-size: large;
     background-color: var(--primary-color);
     color: var(--white-color);
- 
+
     transition: cubic-bezier(0.55, 0.085, 0.68, 0.53);
     border: 1px solid var(--secondary-color);
     border-radius: 0.25rem;
- }
+}
 
 .app__contact-form-button:hover {
     background-color: var(--secondary-color);
@@ -140,8 +140,8 @@ textarea {
 }
 
 .app__contact-card-item:hover {
- background-color: var(--secondary-color);
-    img{
-        border: 1px solid var(--secondary-color);  
+    background-color: var(--secondary-color);
+    img {
+        border: 1px solid var(--secondary-color);
     }
 }

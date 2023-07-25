@@ -6,7 +6,9 @@ import { Button } from '../../Components'
 
 import './BlogPage.scss'
 
-const graphcms = new GraphQLClient('https://api-eu-west-2.hygraph.com/v2/clh942quu0a2m01tab5da0g2b/master')
+const graphcms = new GraphQLClient(
+    'https://api-eu-west-2.hygraph.com/v2/clh942quu0a2m01tab5da0g2b/master'
+)
 
 const QUERY = gql`
     query Posts {
@@ -17,15 +19,15 @@ const QUERY = gql`
             slug
             content {
                 html
-        }
+            }
             author {
                 name
-                    avatar {
+                avatar {
                     url
-                    }
+                }
             }
-        coverPhoto {
-            publishedAt
+            coverPhoto {
+                publishedAt
                 publishedBy {
                     id
                 }
@@ -34,19 +36,17 @@ const QUERY = gql`
             }
         }
     }
-
-  `
+`
 
 const BlogPage = () => {
-
     const [blog, setBlog] = useState([])
 
     const { slug } = useParams()
 
-    const navigate = useNavigate();
+    const navigate = useNavigate()
 
     const goBack = () => {
-        navigate(-1);
+        navigate(-1)
     }
 
     useEffect(() => {
@@ -55,29 +55,50 @@ const BlogPage = () => {
             setBlog(data?.posts?.filter((post) => post.slug === slug))
             window.scrollTo(0, 0)
         }
-        fetchPost()
-            .catch(console.error)
+        fetchPost().catch(console.error)
     }, [slug])
 
     return (
-        <div className='app__blogPage'>
-            <div className='app__blogPage-container'>
-                <div className='app__blogPage-back'>
-                    <Button onClick={goBack} title={'Back'} className={'app__blogPage-backbutton'} />
+        <div className="app__blogPage">
+            <div className="app__blogPage-container">
+                <div className="app__blogPage-back">
+                    <Button
+                        onClick={goBack}
+                        title={'Back'}
+                        className={'app__blogPage-backbutton'}
+                    />
                 </div>
-                <h1 className='app__blogPage-title'>{blog[0]?.title}</h1>
-                <img src={blog[0]?.coverPhoto?.url} alt='' className='app__blogPage-img' />
-                <div className='app__blogPage-content'>
-                <div className='app__blogPage-divider' />
-                <div dangerouslySetInnerHTML={{ __html: blog[0]?.content?.html }} />
-                <div className='app__blogPage-divider' />
+                <h1 className="app__blogPage-title">{blog[0]?.title}</h1>
+                <img
+                    src={blog[0]?.coverPhoto?.url}
+                    alt=""
+                    className="app__blogPage-img"
+                />
+                <div className="app__blogPage-content">
+                    <div className="app__blogPage-divider" />
+                    <div
+                        dangerouslySetInnerHTML={{
+                            __html: blog[0]?.content?.html
+                        }}
+                    />
+                    <div className="app__blogPage-divider" />
                 </div>
-                <div className='app__blogPage-footer'>
-                    <div className='app__blogPage-author app__flex'>
+                <div className="app__blogPage-footer">
+                    <div className="app__blogPage-author app__flex">
                         <div>{blog[0]?.author?.name}</div>
-                        <img src={blog[0]?.author?.avatar?.url} alt='' className='app__blogPage-avatar' />
+                        <img
+                            src={blog[0]?.author?.avatar?.url}
+                            alt=""
+                            className="app__blogPage-avatar"
+                        />
                     </div>
-                    <div className='app__blogPage-date'>{blog[0]?.coverPhoto?.publishedAt.slice(0, 10).split('-').reverse().join('-')}</div>
+                    <div className="app__blogPage-date">
+                        {blog[0]?.coverPhoto?.publishedAt
+                            .slice(0, 10)
+                            .split('-')
+                            .reverse()
+                            .join('-')}
+                    </div>
                 </div>
             </div>
         </div>

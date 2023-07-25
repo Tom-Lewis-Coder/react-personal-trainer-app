@@ -9,4 +9,15 @@ import Loading from './Loading'
 import AboutComponent from './AboutComponent'
 import ServicesComponent from './ServicesComponent'
 
-export { Navbar, BlogPost, Header, Button, FAQuestion, Testamonials, Video, Loading, AboutComponent, ServicesComponent }
+export {
+    Navbar,
+    BlogPost,
+    Header,
+    Button,
+    FAQuestion,
+    Testamonials,
+    Video,
+    Loading,
+    AboutComponent,
+    ServicesComponent
+}
