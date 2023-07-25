@@ -6,20 +6,20 @@ import content from '../../../Constants/ServicesContent'
 import './One2One.scss'
 
 const One2One = () => {
-    useEffect(() => {
-        window.scrollTo(0, 0)
-    }, [])
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
 
-    return (
-        <>
-            <ServicesComponent
-                title={'121 Training'}
-                pic={pic}
-                className={'app__one2one'}
-                content={content}
-            />
-        </>
-    )
+  return (
+    <>
+      <ServicesComponent
+        title={'121 Training'}
+        pic={pic}
+        className={'app__one2one'}
+        content={content}
+      />
+    </>
+  )
 }
 
 export default One2One

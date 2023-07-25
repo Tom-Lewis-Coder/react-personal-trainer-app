@@ -6,20 +6,20 @@ import content from '../../../Constants/ServicesContent'
 import './HealthAndWellbeing.scss'
 
 const HealthAndWellbeing = () => {
-    useEffect(() => {
-        window.scrollTo(0, 0)
-    }, [])
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
 
-    return (
-        <>
-            <AboutComponent
-                title={'Health and Wellbeing'}
-                pic={pic}
-                className={'app__healthAndWellbeing'}
-                content={content}
-            />
-        </>
-    )
+  return (
+    <>
+      <AboutComponent
+        title={'Health and Wellbeing'}
+        pic={pic}
+        className={'app__healthAndWellbeing'}
+        content={content}
+      />
+    </>
+  )
 }
 
 export default HealthAndWellbeing

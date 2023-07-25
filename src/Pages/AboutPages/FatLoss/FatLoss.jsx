@@ -6,20 +6,20 @@ import content from '../../../Constants/ServicesContent'
 import './FatLoss.scss'
 
 const FatLoss = () => {
-    useEffect(() => {
-        window.scrollTo(0, 0)
-    }, [])
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
 
-    return (
-        <>
-            <AboutComponent
-                title={'Fat Loss'}
-                pic={pic}
-                className={'app__fatLoss'}
-                content={content}
-            />
-        </>
-    )
+  return (
+    <>
+      <AboutComponent
+        title={'Fat Loss'}
+        pic={pic}
+        className={'app__fatLoss'}
+        content={content}
+      />
+    </>
+  )
 }
 
 export default FatLoss

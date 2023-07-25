@@ -6,20 +6,20 @@ import content from '../../../Constants/ServicesContent'
 import './Group.scss'
 
 const Group = () => {
-    useEffect(() => {
-        window.scrollTo(0, 0)
-    }, [])
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
 
-    return (
-        <>
-            <ServicesComponent
-                title={'Group Training'}
-                pic={pic}
-                className={'app__group'}
-                content={content}
-            />
-        </>
-    )
+  return (
+    <>
+      <ServicesComponent
+        title={'Group Training'}
+        pic={pic}
+        className={'app__group'}
+        content={content}
+      />
+    </>
+  )
 }
 
 export default Group

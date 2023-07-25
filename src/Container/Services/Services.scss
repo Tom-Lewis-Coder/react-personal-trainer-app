@@ -1,116 +1,116 @@
 .app__services {
-    flex-direction: column;
-    padding-bottom: 7rem;
-    background-image: linear-gradient(
-        to bottom right,
-        var(--primary-color) 75%,
-        var(--secondary-color) 75%
-    );
+  flex-direction: column;
+  padding-bottom: 7rem;
+  background-image: linear-gradient(
+    to bottom right,
+    var(--primary-color) 75%,
+    var(--secondary-color) 75%
+  );
 }
 
 .app__services-title {
-    background-color: var(--white-color);
-    color: var(--secondary-color);
-    font-size: xx-large;
-    margin: 7rem 0 5rem 0;
-    border-radius: 0.5rem;
-    padding: 1rem;
+  background-color: var(--white-color);
+  color: var(--secondary-color);
+  font-size: xx-large;
+  margin: 7rem 0 5rem 0;
+  border-radius: 0.5rem;
+  padding: 1rem;
 }
 
 .app__services-split-container {
-    display: flex;
-    flex-wrap: wrap;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .app__services-service {
+  margin: 1rem;
+  padding: 1rem;
+  color: var(--white-color);
+  border: 2px solid var(--white-color);
+  width: 300px;
+  height: 425px;
+  border-radius: 0.5rem;
+  align-items: center;
+  background-color: var(--secondary-color);
+  text-decoration: none;
+
+  .app__services-desc {
+    color: var(--secondary-color);
+    padding: 0.5rem 0;
+    font-weight: 600;
+    text-align: center;
+    background-color: var(--white-color);
+    border-radius: 0 0 0.25rem 0.25rem;
+  }
+
+  p {
+    padding: 1rem 0;
+    height: 5rem;
+  }
+
+  @media screen and (max-width: 850px) {
     margin: 1rem;
-    padding: 1rem;
-    color: var(--white-color);
-    border: 2px solid var(--white-color);
-    width: 300px;
-    height: 425px;
-    border-radius: 0.5rem;
-    align-items: center;
-    background-color: var(--secondary-color);
-    text-decoration: none;
-
-    .app__services-desc {
-        color: var(--secondary-color);
-        padding: 0.5rem 0;
-        font-weight: 600;
-        text-align: center;
-        background-color: var(--white-color);
-        border-radius: 0 0 0.25rem 0.25rem;
-    }
-
-    p {
-        padding: 1rem 0;
-        height: 5rem;
-    }
-
-    @media screen and (max-width: 850px) {
-        margin: 1rem;
-    }
+  }
 }
 
 .app__services-service:hover {
-    cursor: pointer;
-    transform: scale(1.05);
-    transition: 350ms;
+  cursor: pointer;
+  transform: scale(1.05);
+  transition: 350ms;
 }
 
 .app__services-img-121 {
-    background-image: url(../../Assets/TSLimg121.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    min-height: 14rem;
-    border: 1px solid var(--white-color);
-    border-radius: 0.25rem 0.25rem 0 0;
+  background-image: url(../../Assets/TSLimg121.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-height: 14rem;
+  border: 1px solid var(--white-color);
+  border-radius: 0.25rem 0.25rem 0 0;
 
-    @media screen and (max-width: 850px) {
-        height: 50%;
-    }
+  @media screen and (max-width: 850px) {
+    height: 50%;
+  }
 }
 
 .app__services-img-group {
-    background-image: url(../../Assets/TSLimggroup.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    min-height: 14rem;
-    border: 2px solid var(--white-color);
-    border-radius: 0.25rem 0.25rem 0 0;
+  background-image: url(../../Assets/TSLimggroup.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-height: 14rem;
+  border: 2px solid var(--white-color);
+  border-radius: 0.25rem 0.25rem 0 0;
 
-    @media screen and (max-width: 850px) {
-        height: 50%;
-    }
+  @media screen and (max-width: 850px) {
+    height: 50%;
+  }
 }
 
 .app__services-img-online {
-    background-image: url(../../Assets/videos.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    min-height: 14rem;
-    border: 2px solid var(--white-color);
-    border-radius: 0.25rem 0.25rem 0 0;
+  background-image: url(../../Assets/videos.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-height: 14rem;
+  border: 2px solid var(--white-color);
+  border-radius: 0.25rem 0.25rem 0 0;
 
-    @media screen and (max-width: 850px) {
-        height: 50%;
-    }
+  @media screen and (max-width: 850px) {
+    height: 50%;
+  }
 }
 
 .app__services-img-corporate {
-    background-image: url(../../Assets/TSLimgAbout.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    min-height: 14rem;
-    border: 2px solid var(--white-color);
-    border-radius: 0.25rem 0.25rem 0 0;
+  background-image: url(../../Assets/TSLimgAbout.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-height: 14rem;
+  border: 2px solid var(--white-color);
+  border-radius: 0.25rem 0.25rem 0 0;
 
-    @media screen and (max-width: 850px) {
-        height: 50%;
-    }
+  @media screen and (max-width: 850px) {
+    height: 50%;
+  }
 }

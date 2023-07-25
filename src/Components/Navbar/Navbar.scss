@@ -1,182 +1,182 @@
 .app__navbar {
-    display: flex;
-    width: 100%;
-    justify-content: space-between;
-    align-items: center;
-    background: rgba(255, 255, 255, 0.85);
-    backdrop-filter: blur(4px);
-    -webkit-backdrop-filter: blur(4px);
-    border: 1px solid rgba(255, 255, 255, 0.18);
-    position: fixed;
-    top: 0;
-    z-index: 2;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  position: fixed;
+  top: 0;
+  z-index: 2;
 
-    @media screen and (min-width: 900px) {
-        border-bottom: 1px solid var(--secondary-color);
-    }
+  @media screen and (min-width: 900px) {
+    border-bottom: 1px solid var(--secondary-color);
+  }
 }
 
 .app__navbar-links {
-    margin: 0.7rem 0 0 3rem;
-    flex: 1;
-    display: flex;
-    justify-content: flex-start;
-    list-style: none;
+  margin: 0.7rem 0 0 3rem;
+  flex: 1;
+  display: flex;
+  justify-content: flex-start;
+  list-style: none;
 
-    li {
-        margin: 0rem 0.5rem;
-        padding: 0.1rem 0.4rem 0.3rem 0.4rem;
-        cursor: pointer;
-        border-radius: 3px 3px 0px 0px;
+  li {
+    margin: 0rem 0.5rem;
+    padding: 0.1rem 0.4rem 0.3rem 0.4rem;
+    cursor: pointer;
+    border-radius: 3px 3px 0px 0px;
 
-        @media screen and (max-width: 1000px) {
-            padding: 0.1rem 0.4rem 0.4rem 0.4rem;
-        }
-
-        a {
-            text-decoration: none;
-            color: var(--secondary-color);
-            display: block;
-            padding-block: inherit;
-            text-transform: capitalize;
-
-            @media screen and (max-width: 1000px) {
-                font-size: 14px;
-            }
-        }
-
-        &:hover {
-            background-color: var(--secondary-color);
-
-            a {
-                color: var(--white-color);
-            }
-        }
+    @media screen and (max-width: 1000px) {
+      padding: 0.1rem 0.4rem 0.4rem 0.4rem;
     }
 
-    @media screen and (max-width: 899px) {
-        display: none;
+    a {
+      text-decoration: none;
+      color: var(--secondary-color);
+      display: block;
+      padding-block: inherit;
+      text-transform: capitalize;
+
+      @media screen and (max-width: 1000px) {
+        font-size: 14px;
+      }
     }
+
+    &:hover {
+      background-color: var(--secondary-color);
+
+      a {
+        color: var(--white-color);
+      }
+    }
+  }
+
+  @media screen and (max-width: 899px) {
+    display: none;
+  }
 }
 
 .app__navbar-menu {
-    // icon and toggle false
-    margin: 1rem 2rem;
-    width: 35px;
-    height: 35px;
-    border-radius: 50%;
-    position: relative;
+  // icon and toggle false
+  margin: 1rem 2rem;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  position: relative;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--secondary-color);
+
+  svg {
+    width: 70%;
+    height: 70%;
+    color: var(--white-color);
+    cursor: pointer;
+
+    &:hover {
+      color: var(--primary-color);
+    }
+  }
+
+  div {
+    // toggle true menu container
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 5;
+
+    padding: 1.25rem 0 0 2rem;
+
+    width: 35%;
+    height: 75vh;
+    min-width: 220px;
+    overflow-y: auto;
+
+    @media screen and (min-height: 700px) {
+      height: 65vh;
+    }
 
     display: flex;
-    justify-content: center;
-    align-items: center;
-    background: var(--secondary-color);
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+
+    background-color: var(--primary-color);
+    background-size: cover;
+    background-repeat: repeat;
+
+    border: 1px solid var(--white-color);
+    border-radius: 0.5rem;
 
     svg {
-        width: 70%;
-        height: 70%;
-        color: var(--white-color);
-        cursor: pointer;
+      position: absolute;
+      width: 2rem;
+      height: 2rem;
+      color: var(--primary-color);
+      cursor: pointer;
+      border: 1px solid var(--white-color);
+      background-color: var(--white-color);
+      border-radius: 50%;
 
-        &:hover {
-            color: var(--primary-color);
-        }
+      &:hover {
+        color: var(--secondary-color);
+      }
     }
 
-    div {
-        // toggle true menu container
-        position: fixed;
-        top: 0;
-        bottom: 0;
-        left: 0;
-        z-index: 5;
+    ul {
+      list-style: none;
 
-        padding: 1.25rem 0 0 2rem;
+      display: flex;
+      justify-content: flex-start;
+      align-items: flex-start;
+      flex-direction: column;
+      margin: 2.5rem 0 0 1.75rem;
 
-        width: 35%;
-        height: 75vh;
-        min-width: 220px;
-        overflow-y: auto;
+      li {
+        margin: 0.75rem 0rem 0.75rem 0rem;
+        padding: 0;
 
-        @media screen and (min-height: 700px) {
-            height: 65vh;
+        a {
+          color: var(--white-color);
+          text-decoration: none;
+          font-size: 1rem;
+          text-transform: uppercase;
+          font-weight: 500;
+
+          &:hover {
+            color: var(--secondary-color);
+            background-color: var(--primary-color);
+          }
         }
-
-        display: flex;
-        justify-content: flex-start;
-        align-items: flex-start;
-        flex-direction: column;
-
-        background-color: var(--primary-color);
-        background-size: cover;
-        background-repeat: repeat;
-
-        border: 1px solid var(--white-color);
-        border-radius: 0.5rem;
-
-        svg {
-            position: absolute;
-            width: 2rem;
-            height: 2rem;
-            color: var(--primary-color);
-            cursor: pointer;
-            border: 1px solid var(--white-color);
-            background-color: var(--white-color);
-            border-radius: 50%;
-
-            &:hover {
-                color: var(--secondary-color);
-            }
-        }
-
-        ul {
-            list-style: none;
-
-            display: flex;
-            justify-content: flex-start;
-            align-items: flex-start;
-            flex-direction: column;
-            margin: 2.5rem 0 0 1.75rem;
-
-            li {
-                margin: 0.75rem 0rem 0.75rem 0rem;
-                padding: 0;
-
-                a {
-                    color: var(--white-color);
-                    text-decoration: none;
-                    font-size: 1rem;
-                    text-transform: uppercase;
-                    font-weight: 500;
-
-                    &:hover {
-                        color: var(--secondary-color);
-                        background-color: var(--primary-color);
-                    }
-                }
-            }
-        }
+      }
     }
+  }
 
-    @media screen and (min-width: 900px) {
-        display: none;
-    }
+  @media screen and (min-width: 900px) {
+    display: none;
+  }
 }
 
 .app__navbar-logo {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    padding: 0.5rem;
-    margin: 0.5rem 4rem 0.5rem 0rem;
-    border: 1px solid var(--secondary-color);
-    color: var(--secondary-color);
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 0.5rem;
+  margin: 0.5rem 4rem 0.5rem 0rem;
+  border: 1px solid var(--secondary-color);
+  color: var(--secondary-color);
 
-    @media screen and (max-width: 899px) {
-        margin: 1.1rem 3rem 1rem 0rem;
-    }
+  @media screen and (max-width: 899px) {
+    margin: 1.1rem 3rem 1rem 0rem;
+  }
 
-    @media screen and (max-width: 800px) {
-        margin: 1.1rem 2rem 1rem 0rem;
-    }
+  @media screen and (max-width: 800px) {
+    margin: 1.1rem 2rem 1rem 0rem;
+  }
 }

@@ -6,20 +6,20 @@ import content from '../../../Constants/ServicesContent'
 import './MuscleBuilding.scss'
 
 const MuscleBuilding = () => {
-    useEffect(() => {
-        window.scrollTo(0, 0)
-    }, [])
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
 
-    return (
-        <>
-            <AboutComponent
-                title={'Muscle Building'}
-                pic={pic}
-                className={'app__muscleBuilding'}
-                content={content}
-            />
-        </>
-    )
+  return (
+    <>
+      <AboutComponent
+        title={'Muscle Building'}
+        pic={pic}
+        className={'app__muscleBuilding'}
+        content={content}
+      />
+    </>
+  )
 }
 
 export default MuscleBuilding

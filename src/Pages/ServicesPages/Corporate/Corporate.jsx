@@ -6,20 +6,20 @@ import content from '../../../Constants/ServicesContent'
 import './Corporate.scss'
 
 const Corporate = () => {
-    useEffect(() => {
-        window.scrollTo(0, 0)
-    }, [])
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
 
-    return (
-        <>
-            <ServicesComponent
-                title={'Corporate Training'}
-                pic={pic}
-                className={'app__corporate'}
-                content={content}
-            />
-        </>
-    )
+  return (
+    <>
+      <ServicesComponent
+        title={'Corporate Training'}
+        pic={pic}
+        className={'app__corporate'}
+        content={content}
+      />
+    </>
+  )
 }
 
 export default Corporate

@@ -1,81 +1,81 @@
 .app__testamonial {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    background-image: linear-gradient(
-        to top left,
-        var(--primary-color) 75%,
-        var(--secondary-color) 75%
-    );
-    padding: 2.5rem;
-    color: var(--white-color);
-    align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background-image: linear-gradient(
+    to top left,
+    var(--primary-color) 75%,
+    var(--secondary-color) 75%
+  );
+  padding: 2.5rem;
+  color: var(--white-color);
+  align-items: center;
 }
 
 .app__testamonial-component {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 0 2.5rem 5rem 2.5rem;
-    font-size: x-large;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 2.5rem 5rem 2.5rem;
+  font-size: x-large;
 
-    @media screen and (max-width: 764px) {
-        padding: 0 1rem 5rem 1rem;
-    }
+  @media screen and (max-width: 764px) {
+    padding: 0 1rem 5rem 1rem;
+  }
 }
 
 .app__testimonial-header {
-    background-color: var(--white-color);
-    color: var(--secondary-color);
-    font-size: xx-large;
-    margin: 7rem 0 5rem 0;
-    border-radius: 0.5rem;
-    padding: 0.65rem 1.5rem;
+  background-color: var(--white-color);
+  color: var(--secondary-color);
+  font-size: xx-large;
+  margin: 7rem 0 5rem 0;
+  border-radius: 0.5rem;
+  padding: 0.65rem 1.5rem;
 }
 
 .app__reviews-content {
-    display: flex;
-    color: var(--secondary-color);
-    padding: 1.5rem;
-    margin: 1rem;
-    min-height: 150px;
-    min-width: 500px;
-    //max-height: 150px;
-    max-width: 500px;
-    font-size: 1.3rem;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    background: rgba(255, 255, 255, 0.4);
-    border-radius: 5px;
-    border: 1px solid var(--white-color);
+  display: flex;
+  color: var(--secondary-color);
+  padding: 1.5rem;
+  margin: 1rem;
+  min-height: 150px;
+  min-width: 500px;
+  //max-height: 150px;
+  max-width: 500px;
+  font-size: 1.3rem;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.4);
+  border-radius: 5px;
+  border: 1px solid var(--white-color);
 
-    @media screen and (max-width: 764px) {
-        min-height: 300px;
-        min-width: 300px;
-        max-height: 350px;
-        max-width: 300px;
-    }
+  @media screen and (max-width: 764px) {
+    min-height: 300px;
+    min-width: 300px;
+    max-height: 350px;
+    max-width: 300px;
+  }
 
-    @media screen and (max-width: 500px) {
-        min-height: 300px;
-        min-width: 225px;
-        max-height: 350px;
-        max-width: 225px;
-    }
+  @media screen and (max-width: 500px) {
+    min-height: 300px;
+    min-width: 225px;
+    max-height: 350px;
+    max-width: 225px;
+  }
 }
 
 .app__reviews-name {
-    padding: 0rem;
+  padding: 0rem;
 }
 
 .app__review-chevron {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 .app__reviews-stars {
-    padding: 0.5rem;
-    color: yellow;
-    margin-bottom: 5rem;
+  padding: 0.5rem;
+  color: yellow;
+  margin-bottom: 5rem;
 }

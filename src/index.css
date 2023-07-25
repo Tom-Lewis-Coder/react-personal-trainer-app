@@ -1,13 +1,13 @@
 :root {
-    --primary-color: #78857f;
-    --secondary-color: #424946;
-    --white-color: #ffffff;
+  --primary-color: #78857f;
+  --secondary-color: #424946;
+  --white-color: #ffffff;
 }
 
 * {
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
-    scroll-behavior: smooth;
-    font-family: 'Roboto', 'Open Sans';
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth;
+  font-family: 'Roboto', 'Open Sans';
 }

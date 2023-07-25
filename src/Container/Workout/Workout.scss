@@ -1,46 +1,46 @@
 .app__workout {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    background-image: linear-gradient(
-        to bottom left,
-        var(--primary-color) 65%,
-        var(--secondary-color) 65%
-    );
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background-image: linear-gradient(
+    to bottom left,
+    var(--primary-color) 65%,
+    var(--secondary-color) 65%
+  );
 }
 
 .app__workout-title {
-    display: flex;
-    background-color: var(--white-color);
-    color: var(--secondary-color);
-    font-size: xx-large;
-    margin: 7rem 0 0 0;
-    border-radius: 0.5rem;
-    padding: 0.65rem 1.5rem;
+  display: flex;
+  background-color: var(--white-color);
+  color: var(--secondary-color);
+  font-size: xx-large;
+  margin: 7rem 0 0 0;
+  border-radius: 0.5rem;
+  padding: 0.65rem 1.5rem;
 }
 
 .app__workout-sections {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    margin: 5rem 5rem 6rem 5rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 5rem 5rem 6rem 5rem;
 }
 
 @media screen and (max-width: 800px) {
-    .app__workout-sections {
-        flex-direction: column;
-        margin: 5rem 1rem 1rem 1rem;
-    }
+  .app__workout-sections {
+    flex-direction: column;
+    margin: 5rem 1rem 1rem 1rem;
+  }
 }
 
 .app__workout-disclaimer {
-    margin: 0 7rem 6em;
-    font-size: small;
-    color: var(--white-color);
+  margin: 0 7rem 6em;
+  font-size: small;
+  color: var(--white-color);
 
-    @media screen and (max-width: 800px) {
-        margin: 0 2rem 4rem 2rem;
-    }
+  @media screen and (max-width: 800px) {
+    margin: 0 2rem 4rem 2rem;
+  }
 }

@@ -10,14 +10,14 @@ import AboutComponent from './AboutComponent'
 import ServicesComponent from './ServicesComponent'
 
 export {
-    Navbar,
-    BlogPost,
-    Header,
-    Button,
-    FAQuestion,
-    Testamonials,
-    Video,
-    Loading,
-    AboutComponent,
-    ServicesComponent
+  Navbar,
+  BlogPost,
+  Header,
+  Button,
+  FAQuestion,
+  Testamonials,
+  Video,
+  Loading,
+  AboutComponent,
+  ServicesComponent
 }

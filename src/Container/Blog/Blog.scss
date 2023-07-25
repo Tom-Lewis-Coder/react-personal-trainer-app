@@ -1,81 +1,81 @@
 .app__blog-section {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .app__blog-title {
-    background-color: var(--primary-color);
-    color: var(--white-color);
-    font-size: xx-large;
-    margin: 7rem 0 0 0;
-    border-radius: 0.5rem;
-    padding: 0.65rem 1.5rem;
+  background-color: var(--primary-color);
+  color: var(--white-color);
+  font-size: xx-large;
+  margin: 7rem 0 0 0;
+  border-radius: 0.5rem;
+  padding: 0.65rem 1.5rem;
 }
 
 .app__blog-container {
-    display: flex;
-    justify-content: center;
-    margin: 2rem 0 5rem 0;
-    flex-wrap: wrap;
+  display: flex;
+  justify-content: center;
+  margin: 2rem 0 5rem 0;
+  flex-wrap: wrap;
 }
 
 .app__blogPost-component {
+  max-width: 300px;
+  min-width: 300px;
+  margin: 1rem;
+  box-shadow: -2px 1px 5px var(--primary-color);
+  border-radius: 0.5rem;
+  padding: 1rem;
+
+  @media screen and (max-width: 850px) {
     max-width: 300px;
     min-width: 300px;
+    min-height: fit-content;
     margin: 1rem;
-    box-shadow: -2px 1px 5px var(--primary-color);
-    border-radius: 0.5rem;
-    padding: 1rem;
-
-    @media screen and (max-width: 850px) {
-        max-width: 300px;
-        min-width: 300px;
-        min-height: fit-content;
-        margin: 1rem;
-    }
+  }
 }
 
 .app__blogPost-component:hover {
-    cursor: pointer;
-    transform: scale(1.05);
-    transition: 350ms;
+  cursor: pointer;
+  transform: scale(1.05);
+  transition: 350ms;
 }
 
 .app__component-img {
-    height: 200px;
-    width: 268px;
-    border-radius: 0.25rem;
+  height: 200px;
+  width: 268px;
+  border-radius: 0.25rem;
 }
 
 .app__component-title {
-    font-size: large;
-    color: var(--secondary-color);
+  font-size: large;
+  color: var(--secondary-color);
 }
 
 .app__blog-link {
-    text-decoration: none;
-    height: 16rem;
+  text-decoration: none;
+  height: 16rem;
 }
 
 .app__blog-readMoreTop {
-    display: flex;
-    align-self: flex-end;
-    cursor: pointer;
-    color: var(--secondary-color);
-    margin: 5rem 5rem 0 0;
+  display: flex;
+  align-self: flex-end;
+  cursor: pointer;
+  color: var(--secondary-color);
+  margin: 5rem 5rem 0 0;
 }
 
 .app__blog-readMoreBottom {
-    display: flex;
-    align-self: flex-end;
-    cursor: pointer;
-    color: var(--secondary-color);
-    margin: 0 5rem 5rem 0;
+  display: flex;
+  align-self: flex-end;
+  cursor: pointer;
+  color: var(--secondary-color);
+  margin: 0 5rem 5rem 0;
 
-    a {
-        text-decoration: none;
-        color: var(--secondary-color);
-    }
+  a {
+    text-decoration: none;
+    color: var(--secondary-color);
+  }
 }
