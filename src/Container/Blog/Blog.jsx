@@ -22,6 +22,7 @@ const QUERY = gql`
           url
         }
       }
+      topic
       coverPhoto {
         publishedAt
         publishedBy {
@@ -65,6 +66,7 @@ const Blog = () => {
                   coverPhoto={post.coverPhoto}
                   key={post.id}
                   slug={post.slug}
+                  topic={post.topic}
                 />
               )
             })
@@ -75,6 +77,7 @@ const Blog = () => {
                   coverPhoto={post.coverPhoto}
                   key={post.id}
                   slug={post.slug}
+                  topic={post.topic}
                 />
               )
             })}
