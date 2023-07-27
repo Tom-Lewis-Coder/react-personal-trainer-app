@@ -69,21 +69,7 @@ const BlogPage = () => {
           />
         </div>
         <h1 className="app__blogPage-title">{blog[0]?.title}</h1>
-        <img
-          src={blog[0]?.coverPhoto?.url}
-          alt=""
-          className="app__blogPage-img"
-        />
-        <div className="app__blogPage-content">
-          <div className="app__blogPage-divider" />
-          <div
-            dangerouslySetInnerHTML={{
-              __html: blog[0]?.content?.html
-            }}
-          />
-          <div className="app__blogPage-divider" />
-        </div>
-        <div className="app__blogPage-footer">
+        <div className="app__blogPage-head">
           <div className="app__blogPage-author app__flex">
             <div>{blog[0]?.author?.name}</div>
             <img
@@ -99,6 +85,20 @@ const BlogPage = () => {
               .reverse()
               .join('-')}
           </div>
+        </div>
+        <img
+          src={blog[0]?.coverPhoto?.url}
+          alt=""
+          className="app__blogPage-img"
+        />
+        <div className="app__blogPage-content">
+          <div className="app__blogPage-divider" />
+          <div
+            dangerouslySetInnerHTML={{
+              __html: blog[0]?.content?.html
+            }}
+          />
+          <div className="app__blogPage-divider" />
         </div>
       </div>
     </div>

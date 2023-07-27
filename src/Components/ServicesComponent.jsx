@@ -40,7 +40,7 @@ ServicesComponent.propTypes = {
   title: PropTypes.string,
   className: PropTypes.string,
   pic: PropTypes.img,
-  content: PropTypes.string,
+  content: PropTypes.array,
   para: PropTypes.string
 }
 
