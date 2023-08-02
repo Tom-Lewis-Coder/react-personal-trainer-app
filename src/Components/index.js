@@ -8,6 +8,7 @@ import Video from './Video'
 import Loading from './Loading'
 import AboutComponent from './AboutComponent'
 import ServicesComponent from './ServicesComponent'
+import Calendly from './Calendly'
 
 export {
   Navbar,
@@ -19,5 +20,6 @@ export {
   Video,
   Loading,
   AboutComponent,
-  ServicesComponent
+  ServicesComponent,
+  Calendly
 }

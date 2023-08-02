@@ -7,7 +7,7 @@ import { Header } from '../../Components'
 const Services = () => {
   return (
     <div className="app__services app__flex" id="services">
-      <Header title={'Programmes'} className={'app__services-title'} />
+      <Header title={'Plans and Pricing'} className={'app__services-title'} />
       <div className="app__services-split-container app__flex">
         <Link to="./one2one" className="app__services-service" key="one2one">
           <div className="app__services-img-121"></div>

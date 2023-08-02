@@ -136,26 +136,25 @@
       line-height: 1.5;
     }
 
-    .app__blogPage-head{
+    .app__blogPage-head {
       margin: 2rem 0;
     }
   }
 
   @media screen and (max-width: 620px) {
-
     .app__blogPage-container {
       padding: 2rem;
     }
- 
+
     .app__blogPage-title {
       margin: 0;
       padding: 1rem 1rem 3rem 1rem;
     }
-}
-
-@media screen and (max-width: 474px) {
-  .app__blogPage-container {
-    padding: 1rem;
   }
-}
+
+  @media screen and (max-width: 474px) {
+    .app__blogPage-container {
+      padding: 1rem;
+    }
+  }
 }

@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 
 import { images } from '../../Constants'
-import { Header } from '../../Components'
+import { Header, Calendly } from '../../Components'
 import './Contact.scss'
 import ContactForm from '../../Forms/ContactForm'
 
@@ -20,6 +20,10 @@ const Contact = () => {
           </h3>
         </div>
       )}
+      <Calendly
+        className={'app__contact-calendly'}
+        text={'Or click here to schedule a consultation!'}
+      />
       <div className="app__contact-direct app__flex">
         <div className="app__contact-title app__flex">Contact Directly</div>
         <div className="app__contact-card ">
