@@ -1,12 +1,15 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState, useEffect, useRef } from 'react'
 import { headerImages } from '../../Constants'
 import { Link } from 'react-router-dom'
+import { Calendly } from '../../Components'
 
 import './Header.scss'
 
 const Header = () => {
   const [headerImg, setHeaderImg] = useState(headerImages[0])
   const [lightImg, setLightImg] = useState(0)
+
+  const windowSize = useRef([window.innerWidth])
 
   useEffect(() => {
     let count = 0
@@ -70,6 +73,13 @@ const Header = () => {
           <p>Videos</p>
         </Link>
       </div>
+      <Calendly
+        text={
+          windowSize.current[0] > 768
+            ? 'Click to book a free consultation'
+            : 'Free consultation'
+        }
+      />
     </div>
   )
 }
