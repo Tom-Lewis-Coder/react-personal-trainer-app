@@ -26,11 +26,7 @@ const ContactForm = (props) => {
   }
 
   return (
-    <form
-      className="app__contact-form app__flex"
-      onSubmit={handleSubmit}
-      ref={form}
-    >
+    <form className="app__contact-form app__flex" onSubmit={handleSubmit} ref={form}>
       <div className="app__contact-name">
         <input
           className="app__contact-name-item p-text"
@@ -81,11 +77,7 @@ const ContactForm = (props) => {
         ></textarea>
       </div>
       <div>
-        <input
-          className={'app__contact-form-button app__flex'}
-          type="submit"
-          value="Send >>"
-        />
+        <input className={'app__contact-form-button app__flex'} type="submit" value="Send >>" />
       </div>
     </form>
   )

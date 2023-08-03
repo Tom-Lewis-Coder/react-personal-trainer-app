@@ -13,18 +13,13 @@ const Testamonials = ({ name, content, stars }) => {
   ]
   let starsArr =
     stars % 1 === 0.5
-      ? fullStars
-          .slice(0, Math.floor(stars))
-          .concat(<ImStarHalf key={6} size={20} />)
+      ? fullStars.slice(0, Math.floor(stars)).concat(<ImStarHalf key={6} size={20} />)
       : fullStars.slice(0, stars)
 
   return (
     <div className="app__testamonial-component">
       <Header className={'app__testimonial-header'} title={'Reviews'} />
-      <p
-        data-testid="content"
-        className="app__reviews-content"
-      >{`"${content}"`}</p>
+      <p data-testid="content" className="app__reviews-content">{`"${content}"`}</p>
       <div data-testid="name" className="app__reviews-name">
         - {name}
       </div>

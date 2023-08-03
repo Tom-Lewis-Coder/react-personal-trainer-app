@@ -62,35 +62,19 @@ const BlogPage = () => {
     <div className="app__blogPage">
       <div className="app__blogPage-container">
         <div className="app__blogPage-back">
-          <Button
-            onClick={goBack}
-            title={'Back'}
-            className={'app__blogPage-backbutton'}
-          />
+          <Button onClick={goBack} title={'Back'} className={'app__blogPage-backbutton'} />
         </div>
         <h1 className="app__blogPage-title">{blog[0]?.title}</h1>
         <div className="app__blogPage-head">
           <div className="app__blogPage-author app__flex">
             <div>{blog[0]?.author?.name}</div>
-            <img
-              src={blog[0]?.author?.avatar?.url}
-              alt=""
-              className="app__blogPage-avatar"
-            />
+            <img src={blog[0]?.author?.avatar?.url} alt="" className="app__blogPage-avatar" />
           </div>
           <div className="app__blogPage-date">
-            {blog[0]?.coverPhoto?.publishedAt
-              .slice(0, 10)
-              .split('-')
-              .reverse()
-              .join('-')}
+            {blog[0]?.coverPhoto?.publishedAt.slice(0, 10).split('-').reverse().join('-')}
           </div>
         </div>
-        <img
-          src={blog[0]?.coverPhoto?.url}
-          alt=""
-          className="app__blogPage-img"
-        />
+        <img src={blog[0]?.coverPhoto?.url} alt="" className="app__blogPage-img" />
         <div className="app__blogPage-content">
           <div className="app__blogPage-divider" />
           <div

@@ -34,9 +34,7 @@ const Footer = () => {
         </div>
         <div className="app__footer-middle-middle">
           <h2>Contact:</h2>
-          <a href="mailto:tslfitnessltd@gmail.com">
-            Email: tslfitnessltd@gmail.com
-          </a>
+          <a href="mailto:tslfitnessltd@gmail.com">Email: tslfitnessltd@gmail.com</a>
           <a href="tel:07376 265677">Tel: 07376 265677</a>
         </div>
         <div className="app__footer-middle-right">

@@ -29,25 +29,13 @@ const Reviews = () => {
   return (
     <div id="reviews" className="app__testamonial">
       <div
-        onClick={() =>
-          handleClick(
-            currentIndex === 0 ? reviewList.length - 1 : currentIndex - 1
-          )
-        }
+        onClick={() => handleClick(currentIndex === 0 ? reviewList.length - 1 : currentIndex - 1)}
       >
         <FaChevronLeft size={32} className="app__review-chevron" />
       </div>
-      <Testamonials
-        name={review.Name}
-        content={review.Content}
-        stars={review.Stars}
-      />
+      <Testamonials name={review.Name} content={review.Content} stars={review.Stars} />
       <div
-        onClick={() =>
-          handleClick(
-            currentIndex === reviewList.length - 1 ? 0 : currentIndex + 1
-          )
-        }
+        onClick={() => handleClick(currentIndex === reviewList.length - 1 ? 0 : currentIndex + 1)}
       >
         <FaChevronRight size={32} className="app__review-chevron" />
       </div>

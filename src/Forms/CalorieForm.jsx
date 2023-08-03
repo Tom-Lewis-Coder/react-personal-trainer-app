@@ -34,11 +34,7 @@ const CalorieForm = () => {
       alert('Please ensure all fields are entered')
     } else {
       let result1 = Math.floor(
-        (weight * 10 +
-          height * 6.25 -
-          age * 5 +
-          (gender === 'male' ? 5 : -161)) *
-          activity
+        (weight * 10 + height * 6.25 - age * 5 + (gender === 'male' ? 5 : -161)) * activity
       )
       setForm1Result(result1)
     }
@@ -52,13 +48,9 @@ const CalorieForm = () => {
   const handleForm2Submit = (e) => {
     e.preventDefault()
     if (weightGoal === '' || timeFrame === '' || form1Result === '') {
-      alert(
-        'Please ensure all fields are entered and the first form is completed'
-      )
+      alert('Please ensure all fields are entered and the first form is completed')
     } else {
-      let result2 =
-        Math.round(((weightGoal - weight) * 7700) / (timeFrame * 30)) +
-        form1Result
+      let result2 = Math.round(((weightGoal - weight) * 7700) / (timeFrame * 30)) + form1Result
       setForm2Result(result2)
     }
   }
@@ -79,24 +71,12 @@ const CalorieForm = () => {
             onChange={handleForm1Change}
           />
           <br />
-          <input
-            id="male"
-            type="radio"
-            name="radio"
-            value="male"
-            onChange={getGender}
-          />
+          <input id="male" type="radio" name="radio" value="male" onChange={getGender} />
           <label className="app__gender-input" htmlFor="male">
             {' '}
             Male
           </label>
-          <input
-            id="female"
-            type="radio"
-            name="radio"
-            value="female"
-            onChange={getGender}
-          />
+          <input id="female" type="radio" name="radio" value="female" onChange={getGender} />
           <label className="app__gender-input" htmlFor="female">
             {' '}
             Female
@@ -135,24 +115,14 @@ const CalorieForm = () => {
             <option value="1.2">Sedentary: little to no activity</option>
             <option value="1.375">Light: exercise 1/3 x per week</option>
             <option value="1.465">Moderate: exercise 4/5 x per week</option>
-            <option value="1.55">
-              Active: daily exercise or intense 3/4 x per week
-            </option>
+            <option value="1.55">Active: daily exercise or intense 3/4 x per week</option>
             <option value="1.725">Very: intense exercise 6/7 x per week</option>
             <option value="1.9">Extremely: intense exercise/job daily</option>
           </select>
         </div>
-        <Button
-          title={'Calculate'}
-          onClick={handleForm1Submit}
-          className={'btn-default'}
-        />
+        <Button title={'Calculate'} onClick={handleForm1Submit} className={'btn-default'} />
         <div className="results-container">
-          <p>
-            {form1Result
-              ? `Maintain weight with ~ ${form1Result} kcals a day.`
-              : ''}{' '}
-          </p>
+          <p>{form1Result ? `Maintain weight with ~ ${form1Result} kcals a day.` : ''} </p>
         </div>
       </form>
       <form>
@@ -180,17 +150,9 @@ const CalorieForm = () => {
             onChange={handleForm2Change}
           />
         </div>
-        <Button
-          title={'Calculate'}
-          onClick={handleForm2Submit}
-          className={'btn-default'}
-        />
+        <Button title={'Calculate'} onClick={handleForm2Submit} className={'btn-default'} />
         <div className="results-container">
-          <p>
-            {form2Result
-              ? `Reach ~ ${form2Result} kcals a day to achieve goal.`
-              : ''}{' '}
-          </p>
+          <p>{form2Result ? `Reach ~ ${form2Result} kcals a day to achieve goal.` : ''} </p>
         </div>
       </form>
     </>

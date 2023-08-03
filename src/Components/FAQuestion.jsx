@@ -8,9 +8,7 @@ const FAQuestion = ({ question, answer }) => {
   const contentRef = useRef(null)
 
   useEffect(() => {
-    contentRef.current.style.height = active
-      ? `${contentRef.current.scrollHeight + 5}px `
-      : '0px'
+    contentRef.current.style.height = active ? `${contentRef.current.scrollHeight + 5}px ` : '0px'
   }, [contentRef, active]) // if active ref={contentRef} in div sets div height to scrollheight to display answer
 
   const toggleAccordion = () => {
@@ -22,22 +20,16 @@ const FAQuestion = ({ question, answer }) => {
       <div className="app__FAQ-component">
         <button onClick={toggleAccordion}>
           <div>
-            <div
-              className={active ? 'app__FAQ-align-active' : 'app__FAQ-align'}
-            >
+            <div className={active ? 'app__FAQ-align-active' : 'app__FAQ-align'}>
               <FiMinus
                 data-testid="minus"
                 className="app__FAQ-svg"
-                style={
-                  !active ? { visibility: 'hidden' } : { visibility: 'visible' }
-                }
+                style={!active ? { visibility: 'hidden' } : { visibility: 'visible' }}
               />
               <FiPlus
                 data-testid="plus"
                 className="app__FAQ-svg"
-                style={
-                  active ? { visibility: 'hidden' } : { visibility: 'visible' }
-                }
+                style={active ? { visibility: 'hidden' } : { visibility: 'visible' }}
               />
               <h4 className="app__FAQ-style">{question}</h4>
             </div>
@@ -45,9 +37,7 @@ const FAQuestion = ({ question, answer }) => {
               ref={contentRef}
               data-testid="answer"
               className="app__FAQ-answer"
-              style={
-                !active ? { visibility: 'hidden' } : { visibility: 'visible' }
-              }
+              style={!active ? { visibility: 'hidden' } : { visibility: 'visible' }}
             >
               <p>{answer}</p>
             </div>

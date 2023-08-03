@@ -75,9 +75,7 @@ const Header = () => {
       </div>
       <Calendly
         text={
-          windowSize.current[0] > 768
-            ? 'Click to book a free consultation'
-            : 'Free consultation'
+          windowSize.current[0] > 768 ? 'Click to book a free consultation' : 'Free consultation'
         }
       />
     </div>

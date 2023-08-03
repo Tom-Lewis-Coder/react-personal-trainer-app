@@ -31,11 +31,7 @@ function App() {
           <Route exact path={'/videos'} element={<Videos />} />
           <Route exact path={'/videos/videoplayer'} element={<VideoPlayer />} />
           <Route exact path={'/fatloss'} element={<FatLoss />} />
-          <Route
-            exact
-            path={'/healthandwellbeing'}
-            element={<HealthAndWellbeing />}
-          />
+          <Route exact path={'/healthandwellbeing'} element={<HealthAndWellbeing />} />
           <Route exact path={'/musclebuilding'} element={<MuscleBuilding />} />
           <Route exact path={'/one2one'} element={<One2One />} />
           <Route exact path={'/group'} element={<Group />} />

@@ -99,21 +99,12 @@ const FitnessTest = () => {
   return (
     <div className="app__fitForm">
       <div className="app__fitform-back">
-        <Button
-          title={'Back'}
-          onClick={goBack}
-          className={'app__fitform-backbutton'}
-        />
+        <Button title={'Back'} onClick={goBack} className={'app__fitform-backbutton'} />
       </div>
       <Header title={'Fitness Assessment'} className={'app__fitform-header'} />
       <form className="app__fitform-form">
         <label>How often do you exercise?</label>
-        <select
-          name="q1"
-          onChange={handleFitFormChange}
-          value={q1}
-          className="app__fitform-input"
-        >
+        <select name="q1" onChange={handleFitFormChange} value={q1} className="app__fitform-input">
           <option value={0}>Select one...</option>
           <option value={20}>Over once per week</option>
           <option value={12}>Weekly</option>
@@ -121,12 +112,7 @@ const FitnessTest = () => {
           <option value={3}>Never</option>
         </select>
         <label>How would you consider yourself?</label>
-        <select
-          name="q2"
-          onChange={handleFitFormChange}
-          value={q2}
-          className="app__fitform-input"
-        >
+        <select name="q2" onChange={handleFitFormChange} value={q2} className="app__fitform-input">
           <option value={0}>Select one...</option>
           <option value={20}>Ideal weight</option>
           <option value={11}>Underweight</option>
@@ -134,12 +120,7 @@ const FitnessTest = () => {
           <option value={3}>Very Overweight</option>
         </select>
         <label>How many hours sleep do you get nightly?</label>
-        <select
-          name="q3"
-          onChange={handleFitFormChange}
-          value={q3}
-          className="app__fitform-input"
-        >
+        <select name="q3" onChange={handleFitFormChange} value={q3} className="app__fitform-input">
           <option value={0}>Select one...</option>
           <option value={20}>8 or more hours</option>
           <option value={15}>Around 7 Hours</option>
@@ -147,12 +128,7 @@ const FitnessTest = () => {
           <option value={3}>Less than 6</option>
         </select>
         <label>How would you describe your daily work life?</label>
-        <select
-          name="q4"
-          onChange={handleFitFormChange}
-          value={q4}
-          className="app__fitform-input"
-        >
+        <select name="q4" onChange={handleFitFormChange} value={q4} className="app__fitform-input">
           <option value={0}>Select one...</option>
           <option value={20}>Low stress</option>
           <option value={15}>Moderate Stress</option>
@@ -160,12 +136,7 @@ const FitnessTest = () => {
           <option value={3}>Very Stressfull</option>
         </select>
         <label>How would you describe your diet?</label>
-        <select
-          name="q5"
-          onChange={handleFitFormChange}
-          value={q5}
-          className="app__fitform-input"
-        >
+        <select name="q5" onChange={handleFitFormChange} value={q5} className="app__fitform-input">
           <option value={0}>Select one...</option>
           <option value={20}>Balanced and nutritional</option>
           <option value={15}>Fairly balanced with some indulgences</option>
@@ -173,12 +144,7 @@ const FitnessTest = () => {
           <option value={3}>All over the shop</option>
         </select>
         <label>How often do you consume alcohol?</label>
-        <select
-          name="q6"
-          onChange={handleFitFormChange}
-          value={q6}
-          className="app__fitform-input"
-        >
+        <select name="q6" onChange={handleFitFormChange} value={q6} className="app__fitform-input">
           <option value={0}>Select one...</option>
           <option value={20}>Never</option>
           <option value={19}>Occasionally</option>
@@ -187,12 +153,7 @@ const FitnessTest = () => {
           <option value={1}>More then 4x per week</option>
         </select>
         <label>Do you pay attention to your step count?</label>
-        <select
-          name="q7"
-          onChange={handleFitFormChange}
-          value={q7}
-          className="app__fitform-input"
-        >
+        <select name="q7" onChange={handleFitFormChange} value={q7} className="app__fitform-input">
           <option value={0}>Select one...</option>
           <option value={20}>Yes daily</option>
           <option value={18}>Most days</option>
@@ -200,12 +161,7 @@ const FitnessTest = () => {
           <option value={3}>Never</option>
         </select>
         <label>Do you smoke or vape?</label>
-        <select
-          name="q8"
-          onChange={handleFitFormChange}
-          value={q8}
-          className="app__fitform-input"
-        >
+        <select name="q8" onChange={handleFitFormChange} value={q8} className="app__fitform-input">
           <option value={0}>Select one...</option>
           <option value={20}>Never</option>
           <option value={10}>Occasionally</option>
@@ -213,12 +169,7 @@ const FitnessTest = () => {
           <option value={1}>Everyday</option>
         </select>
         <label>Can you touch your toes?</label>
-        <select
-          name="q9"
-          onChange={handleFitFormChange}
-          value={q9}
-          className="app__fitform-input"
-        >
+        <select name="q9" onChange={handleFitFormChange} value={q9} className="app__fitform-input">
           <option value={0}>Select one...</option>
           <option value={20}>Yes comfortably</option>
           <option value={15}>Almost</option>
@@ -252,8 +203,8 @@ const FitnessTest = () => {
           <option value={3}>I cant do one</option>
         </select>
         <label>
-          Do you have any chronic illness or pain? ie a condition that has been
-          present for over 1 year
+          Do you have any chronic illness or pain? ie a condition that has been present for over 1
+          year
         </label>
         <select
           name="q12"
@@ -271,14 +222,10 @@ const FitnessTest = () => {
           className={'app__fitform-submit-button'}
         />
         <div className="app__fitform-result-display">
-          <p>
-            {fitFormResult ? `You scored ${fitFormResult} : ${caption}` : ''}
-          </p>
+          <p>{fitFormResult ? `You scored ${fitFormResult} : ${caption}` : ''}</p>
           {fitFormResult ? (
             <HashLink smooth to="/#getInTouch">
-              <button className="app__fitform-getintouch-button">
-                Get in Touch
-              </button>
+              <button className="app__fitform-getintouch-button">Get in Touch</button>
             </HashLink>
           ) : (
             ''

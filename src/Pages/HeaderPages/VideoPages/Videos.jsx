@@ -30,11 +30,7 @@ export const Videos = () => {
   return (
     <div className="app__video-section">
       <div className="app__video-back">
-        <Button
-          onClick={goBack}
-          title={'Back'}
-          className={'app__video-backbutton'}
-        />
+        <Button onClick={goBack} title={'Back'} className={'app__video-backbutton'} />
       </div>
       <Header title={'Videos'} className={'app__video-title'} />
       <div className="app__video-container app__flex">

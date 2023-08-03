@@ -16,11 +16,7 @@ const VideoPlayer = () => {
     <div className="app__videoplayer-section">
       <Header title={'TSL Fitness'} className={'app__videoplayer-title'} />
       <div className="app__videoplayer-back">
-        <Button
-          onClick={goBack}
-          title={'Back'}
-          className={'app__videoplayer-button'}
-        />
+        <Button onClick={goBack} title={'Back'} className={'app__videoplayer-button'} />
       </div>
       <div className="app__videoplayer-video-container">
         <iframe

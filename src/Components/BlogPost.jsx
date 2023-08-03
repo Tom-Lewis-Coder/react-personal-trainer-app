@@ -7,11 +7,7 @@ const BlogPost = ({ title, coverPhoto, slug, topic }) => {
     <div className="app__blogPost-component">
       <Link to={'/posts/' + slug} className="app__blog-link">
         <div className="app__blogComponent-style">
-          <img
-            src={coverPhoto?.url}
-            alt=""
-            className="app__blogComponent-img"
-          />
+          <img src={coverPhoto?.url} alt="" className="app__blogComponent-img" />
           <div className="app__blogComponent-topic">{topic}</div>
           <div className="app__blogComponent-title">{title}</div>
         </div>

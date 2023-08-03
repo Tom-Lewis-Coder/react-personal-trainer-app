@@ -21,11 +21,7 @@ const AboutComponent = ({ title, className, pic, content }) => {
   return (
     <div className={className + '-container'}>
       <div className={className + '-back'}>
-        <Button
-          onClick={goBack}
-          title={'Back'}
-          className={className + '-backbutton'}
-        />
+        <Button onClick={goBack} title={'Back'} className={className + '-backbutton'} />
       </div>
       <img src={pic} alt="img" className={className + '-img'} />
       <Header title={title} className={className + '-title'} />

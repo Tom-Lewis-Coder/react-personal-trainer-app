@@ -20,24 +20,13 @@ const FAQ = () => {
     <>
       <div className="app__FAQ-container">
         <div className="app__FAQ-back">
-          <Button
-            onClick={goBack}
-            title={'Back'}
-            className={'app__FAQ-backbutton'}
-          />
+          <Button onClick={goBack} title={'Back'} className={'app__FAQ-backbutton'} />
         </div>
-        <Header
-          title={'Frequently Asked Questions'}
-          className={'app__FAQ-header'}
-        />
+        <Header title={'Frequently Asked Questions'} className={'app__FAQ-header'} />
         <div>
           {questions?.map((question) => {
             return (
-              <FAQuestion
-                question={question.question}
-                answer={question.answer}
-                key={question.id}
-              />
+              <FAQuestion question={question.question} answer={question.answer} key={question.id} />
             )
           })}
         </div>

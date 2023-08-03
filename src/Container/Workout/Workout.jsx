@@ -14,10 +14,9 @@ function Workout() {
         <WorkoutApp />
       </div>
       <p className="app__workout-disclaimer">
-        * Consult your physician before starting any exercise program or
-        changing your diet. Stop exercising immediately if you experience pain,
-        shortness of breath, dizziness, lightheadedness, blurred vision,
-        headache, nausea, or any other discomfort.
+        * Consult your physician before starting any exercise program or changing your diet. Stop
+        exercising immediately if you experience pain, shortness of breath, dizziness,
+        lightheadedness, blurred vision, headache, nausea, or any other discomfort.
       </p>
     </div>
   )

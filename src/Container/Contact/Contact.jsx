@@ -23,10 +23,7 @@ const Contact = () => {
       <div className="app__contact-direct app__flex">
         <div className="app__contact-title app__flex">Contact Directly</div>
         <div className="app__contact-card ">
-          <a
-            className="app__contact-card-item"
-            href="mailto:tslfitnessltd@gmail.com"
-          >
+          <a className="app__contact-card-item" href="mailto:tslfitnessltd@gmail.com">
             <img src={images[0]} alt="email" />
             <div>tslfitnessltd@gmail.com</div>
           </a>

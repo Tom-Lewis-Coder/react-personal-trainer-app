@@ -9,19 +9,13 @@ const Navbar = () => {
   return (
     <nav className="app__navbar">
       <ul className="app__navbar-links">
-        {[
-          'home',
-          'about',
-          'services',
-          'blog/nutrition',
-          'track & train',
-          'contact',
-          'reviews'
-        ].map((item) => (
-          <li className="app-flex p-text" key={item}>
-            <a href={`#${item}`}>{item}</a>
-          </li>
-        ))}
+        {['home', 'about', 'services', 'blog/nutrition', 'track & train', 'contact', 'reviews'].map(
+          (item) => (
+            <li className="app-flex p-text" key={item}>
+              <a href={`#${item}`}>{item}</a>
+            </li>
+          )
+        )}
       </ul>
 
       <div className="app__navbar-menu">
