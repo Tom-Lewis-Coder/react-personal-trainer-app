@@ -23,7 +23,7 @@ const AboutComponent = ({ title, className, pic, content }) => {
       <div className={className + '-back'}>
         <Button onClick={goBack} title={'Back'} className={className + '-backbutton'} />
       </div>
-      <img src={pic} alt="img" className={className + '-img'} />
+      <img src={pic} alt={title} className={className + '-img'} />
       <Header title={title} className={className + '-title'} />
       <div className={className + '-divider'} />
       {contentSplit}
