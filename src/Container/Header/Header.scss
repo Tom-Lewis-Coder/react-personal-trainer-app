@@ -60,9 +60,8 @@
   font-weight: bold;
   padding: 1rem;
   margin-bottom: 1rem;
-  background: rgba(255, 255, 255, 0.3);
+  background: rgba(255, 255, 255, 0.4);
   backdrop-filter: blur(4px);
-  -webkit-backdrop-filter: blur(4px);
   border-radius: 0.25rem;
 
   @media screen and (max-width: 900px) {
@@ -98,9 +97,8 @@
   font-size: 36px;
   padding: 1rem;
   text-decoration: none;
-  background: rgba(255, 255, 255, 0.2);
+  background: rgba(255, 255, 255, 0.3);
   backdrop-filter: blur(4px);
-  -webkit-backdrop-filter: blur(4px);
   border-radius: 0.25rem;
 
   @media screen and (max-width: 900px) {
@@ -144,21 +142,39 @@
   background-image: url('../../Assets/faqs.jpg');
   background-size: cover;
   background-position-x: center;
-  background-position-y: bottom;
+  background-position-y: center;
+  background-repeat: no-repeat;
 
   border: 1px solid var(--white-color);
   height: 100%;
   width: 32%;
-  font-size: xx-large;
   text-decoration: none;
-  color: transparent;
+  font-size: xx-large;
+  color: var(--secondary-color);
+
+  p {
+    border-radius: 0.25rem;
+    padding: 0.2rem 1rem;
+    box-shadow: 1px 1px 5px var(--secondary-color);
+    background: rgba(255, 255, 255, 0.75);
+    backdrop-filter: blur(4px);
+  }
+
+p:hover {
+  transform: scale(1.05);
+  transition: 350ms;
+}
 
   @media screen and (max-width: 768px) {
     width: 100%;
     background-image: none;
     margin-top: 0.5rem;
     background-color: rgb(223, 221, 221);
-    color: #2b302e;
+
+    p {
+      background-color: rgb(223, 221, 221);
+      box-shadow: none;
+    }
   }
 }
 
@@ -172,16 +188,33 @@
   border: 1px solid var(--white-color);
   height: 100%;
   width: 32%;
-  font-size: xx-large;
   text-decoration: none;
-  color: transparent;
+  font-size: xx-large;
+  color: var(--secondary-color);
+
+  p {
+    border-radius: 0.25rem;
+    padding: 0.2rem 1rem;
+    box-shadow: 1px 1px 5px var(--secondary-color);
+    background: rgba(255, 255, 255, 0.75);
+    backdrop-filter: blur(4px);
+  }
+
+  p:hover {
+    transform: scale(1.05);
+    transition: 350ms;
+  }
 
   @media screen and (max-width: 768px) {
     width: 100%;
     background-image: none;
     margin-top: 0.5rem;
     background-color: rgb(223, 221, 221);
-    color: #2b302e;
+
+    p {
+      background-color: rgb(223, 221, 221);
+      box-shadow: none;
+    }
   }
 }
 
@@ -197,13 +230,19 @@
   width: 32%;
   text-decoration: none;
   font-size: xx-large;
-  color: #2b302e;
+  color: var(--secondary-color);
 
   p {
-    background-color: rgb(223, 221, 221);
     border-radius: 0.25rem;
     padding: 0.2rem 1rem;
-    box-shadow: 1px 1px 10px #2b302e;
+    box-shadow: 1px 1px 5px var(--secondary-color);
+    background: rgba(255, 255, 255, 0.75);
+    backdrop-filter: blur(4px);
+  }
+
+  p:hover {
+    transform: scale(1.05);
+    transition: 350ms;
   }
 
   @media screen and (max-width: 768px) {
@@ -213,6 +252,7 @@
     background-color: rgb(223, 221, 221);
 
     p {
+      background-color: rgb(223, 221, 221);
       box-shadow: none;
     }
   }
