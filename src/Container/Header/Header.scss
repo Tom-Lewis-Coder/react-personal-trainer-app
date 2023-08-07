@@ -25,13 +25,41 @@
   width: 90%;
 }
 
-.app__header-pic-text-upper {
+.app__header-pic-text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
   position: absolute;
-  font-size: 40px;
-  font-weight: bold;
   top: 7rem;
   left: 6rem;
+
+  @media screen and (max-width: 900px) {
+    left: 4rem;
+  }
+
+  @media screen and (max-width: 655px) {
+    top: 7rem;
+    left: 3rem;
+  }
+
+  @media screen and (max-width: 515px) {
+    left: 2rem;
+  }
+
+  @media screen and (max-width: 395px) {
+    left: 1.7rem;
+  }
+
+  @media screen and (max-width: 355px) {
+    visibility: hidden;
+  }
+}
+
+.app__header-pic-text-upper {
+  font-size: 40px;
+  font-weight: bold;
   padding: 1rem;
+  margin-bottom: 1rem;
   background: rgba(255, 255, 255, 0.3);
   backdrop-filter: blur(4px);
   -webkit-backdrop-filter: blur(4px);
@@ -39,14 +67,11 @@
 
   @media screen and (max-width: 900px) {
     font-size: 32px;
-    left: 4rem;
   }
 
   @media screen and (max-width: 655px) {
     font-size: 25px;
     padding: 0.5rem;
-    top: 7rem;
-    left: 3rem;
   }
 
   @media screen and (max-height: 600px) {
@@ -56,7 +81,6 @@
 
   @media screen and (max-width: 515px) {
     font-size: 20px;
-    left: 2rem;
     padding: 0.25rem 0.1rem;
   }
 
@@ -65,21 +89,13 @@
     padding: 0.5rem;
   }
 
-  @media screen and (max-width: 395px) {
+  @media screen and (max-width: 454px) {
     font-size: 18px;
-    left: 1.7rem;
-  }
-
-  @media screen and (max-width: 355px) {
-    visibility: hidden;
   }
 }
 
 .app__header-pic-text-lower {
-  position: absolute;
   font-size: 36px;
-  top: 17rem;
-  left: 6rem;
   padding: 1rem;
   text-decoration: none;
   background: rgba(255, 255, 255, 0.2);
@@ -89,14 +105,10 @@
 
   @media screen and (max-width: 900px) {
     font-size: 24px;
-    left: 4rem;
-    top: 15rem;
   }
 
   @media screen and (max-width: 655px) {
     font-size: 20px;
-    left: 3rem;
-    top: 13rem;
     padding: 0.5rem;
   }
 
@@ -107,18 +119,10 @@
 
   @media screen and (max-width: 515px) {
     font-size: 20px;
-    left: 2rem;
-    top: 12rem;
   }
 
-  @media screen and (max-width: 395px) {
+  @media screen and (max-width: 454px) {
     font-size: 18px;
-    left: 1.75rem;
-    top: 11rem;
-  }
-
-  @media screen and (max-width: 355px) {
-    visibility: hidden;
   }
 }
 

@@ -27,12 +27,12 @@ const Header = () => {
   return (
     <div className="app__header app__flex" id="home">
       <div className="app__header-top app__flex">
-        <img src={headerImg} alt="fitness" className="app__header-img" />
-        <div className="app__header-pic-text app__flex">
+        <img src={headerImg} alt="fitness pictures" className="app__header-img" />
+        <div className="app__header-pic-text">
           <div
             className="app__header-pic-text-upper app__flex"
             style={
-              lightImg === 0
+              lightImg < 3
                 ? {
                     color: '#424946',
                     background: 'rgba(255, 255, 255, 0.5)'
@@ -50,7 +50,7 @@ const Header = () => {
             href="#contact"
             className="app__header-pic-text-lower app__flex"
             style={
-              lightImg === 0
+              lightImg < 3
                 ? {
                     color: '#303533',
                     background: 'rgba(255, 255, 255, 0.5)'
