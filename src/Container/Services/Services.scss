@@ -20,15 +20,16 @@
 .app__services-split-container {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
 .app__services-service {
-  margin: 1.3rem;
+  margin: 1rem;
   padding: 0.75rem;
   color: var(--white-color);
   border: 2px solid var(--white-color);
   width: 280px;
-  height: 350px;
+  height: 360px;
   //border-radius: 0.5rem;
   align-items: center;
   background-color: var(--secondary-color);
@@ -88,7 +89,7 @@
 }
 
 .app__services-img-online {
-  background-image: url(../../Assets/videos.jpg);
+  background-image: url(../../Assets/onlinetraining.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -102,7 +103,7 @@
 }
 
 .app__services-img-corporate {
-  background-image: url(../../Assets/TSLimgAbout.jpg);
+  background-image: url(../../Assets/corporatewellness.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;

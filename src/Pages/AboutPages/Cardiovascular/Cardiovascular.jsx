@@ -1,25 +1,25 @@
 import React, { useEffect } from 'react'
-import { ServicesComponent } from '../../../Components'
+import { AboutComponent } from '../../../Components'
 import pic from '../../../Assets/TSLimggroup.jpg'
 import content from '../../../Constants/ServicesContent'
 
-import '../ServicePages.scss'
+import '../AboutPages.scss'
 
-const Group = () => {
+const Cardiovascular = () => {
   useEffect(() => {
     window.scrollTo(0, 0)
   }, [])
 
   return (
     <>
-      <ServicesComponent
-        title={'Group Training'}
+      <AboutComponent
+        title={'Cardiovascular Fitness'}
         pic={pic}
-        className={'app__servicepages'}
+        className={'app__aboutpages'}
         content={content}
       />
     </>
   )
 }
 
-export default Group
+export default Cardiovascular

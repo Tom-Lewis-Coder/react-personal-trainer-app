@@ -1,9 +1,11 @@
-import React from 'react'
+import React, { useRef } from 'react'
 import { useNavigate } from 'react-router'
-import { Header, Button } from '.'
+import { Header, Button, Calendly } from '.'
 import PropTypes from 'prop-types'
 
 const AboutComponent = ({ title, className, pic, content }) => {
+  const windowSize = useRef([window.innerWidth])
+
   const navigate = useNavigate()
 
   const goBack = () => {
@@ -28,6 +30,11 @@ const AboutComponent = ({ title, className, pic, content }) => {
       <div className={className + '-divider'} />
       {contentSplit}
       <div className={className + '-divider'} />
+      <Calendly
+        text={
+          windowSize.current[0] > 768 ? 'Click to book a free consultation' : 'Free consultation'
+        }
+      />
     </div>
   )
 }

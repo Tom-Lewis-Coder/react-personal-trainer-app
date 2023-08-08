@@ -20,7 +20,7 @@ const About = () => {
             <span>Fat Loss</span>
             <br />
             <br />
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit.{' '}
+            Achieve long term fat loss results with our fast and effective programmes.{' '}
           </p>
           <Link to="./fatloss" className="app__about-link">
             Learn More
@@ -32,7 +32,7 @@ const About = () => {
             <span>Health and Wellbeing</span>
             <br />
             <br />
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit.{' '}
+            Our 5 point holisitc approach can help you lead a healthier, balanced lifestyle.{' '}
           </p>
           <Link to="./healthandwellbeing" className="app__about-link">
             Learn More
@@ -44,9 +44,21 @@ const About = () => {
             <span>Muscle Building</span>
             <br />
             <br />
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit.{' '}
+            Increase muscle mass quickly and safely with our expert knowledge and experience.{' '}
           </p>
           <Link to="./musclebuilding" className="app__about-link">
+            Learn More
+          </Link>
+        </div>
+        <div className="app__about-box">
+          <div className="app__about-image-3"></div>
+          <p className="app__about-caption">
+            <span>Cardiovascular Fitness</span>
+            <br />
+            <br />
+            Increase stamina and endurance to help improve heart, health, and lung function..{' '}
+          </p>
+          <Link to="./Cardiovascular" className="app__about-link">
             Learn More
           </Link>
         </div>

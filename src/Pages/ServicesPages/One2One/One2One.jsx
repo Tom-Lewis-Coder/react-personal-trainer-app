@@ -3,7 +3,7 @@ import { ServicesComponent } from '../../../Components'
 import pic from '../../../Assets/TSLimg121.jpg'
 import content from '../../../Constants/ServicesContent'
 
-import './One2One.scss'
+import '../ServicePages.scss'
 
 const One2One = () => {
   useEffect(() => {
@@ -15,7 +15,7 @@ const One2One = () => {
       <ServicesComponent
         title={'121 Training'}
         pic={pic}
-        className={'app__one2one'}
+        className={'app__servicepages'}
         content={content}
       />
     </>

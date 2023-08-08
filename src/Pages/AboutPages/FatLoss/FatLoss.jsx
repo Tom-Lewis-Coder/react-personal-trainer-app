@@ -1,9 +1,9 @@
 import React, { useEffect } from 'react'
 import { AboutComponent } from '../../../Components'
-import pic from '../../../Assets/TSLimggroup.jpg'
+import pic from '../../../Assets/fatloss.jpg'
 import content from '../../../Constants/ServicesContent'
 
-import './FatLoss.scss'
+import '../AboutPages.scss'
 
 const FatLoss = () => {
   useEffect(() => {
@@ -12,7 +12,12 @@ const FatLoss = () => {
 
   return (
     <>
-      <AboutComponent title={'Fat Loss'} pic={pic} className={'app__fatLoss'} content={content} />
+      <AboutComponent
+        title={'Fat Loss'}
+        pic={pic}
+        className={'app__aboutpages'}
+        content={content}
+      />
     </>
   )
 }

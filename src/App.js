@@ -11,6 +11,7 @@ import {
   FatLoss,
   HealthAndWellbeing,
   MuscleBuilding,
+  Cardiovascular,
   One2One,
   Group,
   Online,
@@ -33,6 +34,7 @@ function App() {
           <Route exact path={'/fatloss'} element={<FatLoss />} />
           <Route exact path={'/healthandwellbeing'} element={<HealthAndWellbeing />} />
           <Route exact path={'/musclebuilding'} element={<MuscleBuilding />} />
+          <Route exact path={'/cardiovascular'} element={<Cardiovascular />} />
           <Route exact path={'/one2one'} element={<One2One />} />
           <Route exact path={'/group'} element={<Group />} />
           <Route exact path={'/online'} element={<Online />} />

@@ -17,17 +17,19 @@ const Services = () => {
         <Link to="./group" className="app__services-service">
           <div className="app__services-img-group"></div>
           <div className="app__services-desc">Group Training</div>
-          <p>Train in a group with friends or family for extra motivation.</p>
+          <p>Train in a group with friends or family for extra motivation and support.</p>
         </Link>
         <Link to="./online" className="app__services-service">
           <div className="app__services-img-online"></div>
           <div className="app__services-desc">Online coaching</div>
-          <p>Dedicated, bespoke support from your Personal Trainer.</p>
+          <p>Convenient, flexible, effective online sessions are only a few clicks away.</p>
         </Link>
         <Link to="./corporate" className="app__services-service">
           <div className="app__services-img-corporate"></div>
           <div className="app__services-desc">Corporate training</div>
-          <p>Dedicated, bespoke support from your Personal Trainer.</p>
+          <p>
+            Ensure you have a happy, healthy, motivated work environment with our corporate options.
+          </p>
         </Link>
       </div>
     </div>

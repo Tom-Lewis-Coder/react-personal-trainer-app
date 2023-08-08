@@ -3,7 +3,7 @@ import { ServicesComponent } from '../../../Components'
 import pic from '../../../Assets/videos.jpg'
 import content from '../../../Constants/ServicesContent'
 
-import './Online.scss'
+import '../ServicePages.scss'
 
 const Online = () => {
   useEffect(() => {
@@ -15,7 +15,7 @@ const Online = () => {
       <ServicesComponent
         title={'Online Training'}
         pic={pic}
-        className={'app__online'}
+        className={'app__servicepages'}
         content={content}
       />
     </>

@@ -3,7 +3,7 @@ import { AboutComponent } from '../../../Components'
 import pic from '../../../Assets/TSLimg121.jpg'
 import content from '../../../Constants/ServicesContent'
 
-import './HealthAndWellbeing.scss'
+import '../AboutPages.scss'
 
 const HealthAndWellbeing = () => {
   useEffect(() => {
@@ -15,7 +15,7 @@ const HealthAndWellbeing = () => {
       <AboutComponent
         title={'Health and Wellbeing'}
         pic={pic}
-        className={'app__healthAndWellbeing'}
+        className={'app__aboutpages'}
         content={content}
       />
     </>
