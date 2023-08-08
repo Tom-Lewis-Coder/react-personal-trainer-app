@@ -20,7 +20,7 @@ const About = () => {
             <span>Fat Loss</span>
             <br />
             <br />
-            Achieve long term fat loss results with our fast and effective programmes.{' '}
+            Achieve long term fat loss with our fast, fun, and effective bespoke programmes.{' '}
           </p>
           <Link to="./fatloss" className="app__about-link">
             Learn More
