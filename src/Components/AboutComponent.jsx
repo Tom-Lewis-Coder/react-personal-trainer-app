@@ -42,8 +42,8 @@ const AboutComponent = ({ title, className, pic, content }) => {
 AboutComponent.propTypes = {
   title: PropTypes.string,
   className: PropTypes.string,
-  pic: PropTypes.img,
-  content: PropTypes.string,
+  pic: PropTypes.string,
+  content: PropTypes.array,
   para: PropTypes.string
 }
 

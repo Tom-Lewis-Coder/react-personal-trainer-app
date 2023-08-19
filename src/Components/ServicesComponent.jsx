@@ -42,7 +42,7 @@ const ServicesComponent = ({ title, className, pic, content }) => {
 ServicesComponent.propTypes = {
   title: PropTypes.string,
   className: PropTypes.string,
-  pic: PropTypes.img,
+  pic: PropTypes.string,
   content: PropTypes.array,
   para: PropTypes.string
 }
