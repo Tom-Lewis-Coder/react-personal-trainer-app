@@ -47,7 +47,7 @@ const CalorieForm = () => {
 
   const handleForm2Submit = (e) => {
     e.preventDefault()
-    if (weightGoal === '' || timeFrame === '' || form1Result === '') {
+    if (weightGoal === '' || timeFrame === '' || form1Result === 0) {
       alert('Please ensure all fields are entered and the first form is completed')
     } else {
       let result2 = Math.round(((weightGoal - weight) * 7700) / (timeFrame * 30)) + form1Result
