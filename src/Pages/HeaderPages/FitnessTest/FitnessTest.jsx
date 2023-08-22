@@ -1,9 +1,9 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect, useState, useRef } from 'react'
 import { useNavigate } from 'react-router'
 import { HashLink } from 'react-router-hash-link'
 
 import './FitnessTest.scss'
-import { Button, Header } from '../../../Components'
+import { Button, Header, Calendly } from '../../../Components'
 
 const FitnessTest = () => {
   const [fitForm, setFitForm] = useState({
@@ -22,6 +22,8 @@ const FitnessTest = () => {
   })
   const [fitFormResult, setFitFormResult] = useState(0)
   const [caption, setCaption] = useState('')
+
+  const windowSize = useRef([window.innerWidth])
 
   const { q1, q2, q3, q4, q5, q6, q7, q8, q9, q10, q11, q12 } = fitForm
 
@@ -232,6 +234,11 @@ const FitnessTest = () => {
           )}
         </div>
       </form>
+      <Calendly
+        text={
+          windowSize.current[0] > 768 ? 'Click to book a free consultation' : 'Free consultation'
+        }
+      />
     </div>
   )
 }

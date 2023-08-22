@@ -1,6 +1,6 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState, useEffect, useRef } from 'react'
 import axios from 'axios'
-import { Video, Header, Button, Loading } from '../../../Components'
+import { Video, Header, Button, Loading, Calendly } from '../../../Components'
 import { useNavigate } from 'react-router-dom'
 
 import './Videos.scss'
@@ -10,6 +10,8 @@ let query = `https://youtube.googleapis.com/youtube/v3/search?part=snippet&chann
 export const Videos = () => {
   const [data, setData] = useState([])
   const [loading, setLoading] = useState(true)
+
+  const windowSize = useRef([window.innerWidth])
 
   const navigate = useNavigate()
 
@@ -49,6 +51,11 @@ export const Videos = () => {
           })
         )}
       </div>
+      <Calendly
+        text={
+          windowSize.current[0] > 768 ? 'Click to book a free consultation' : 'Free consultation'
+        }
+      />
     </div>
   )
 }

@@ -160,10 +160,10 @@
     backdrop-filter: blur(4px);
   }
 
-p:hover {
-  transform: scale(1.05);
-  transition: 350ms;
-}
+  p:hover {
+    transform: scale(1.05);
+    transition: 350ms;
+  }
 
   @media screen and (max-width: 768px) {
     width: 100%;

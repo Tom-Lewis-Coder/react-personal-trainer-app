@@ -1,11 +1,12 @@
-import React from 'react'
+import React, { useRef } from 'react'
 import { useLocation, useNavigate } from 'react-router-dom'
-import { Button, Header } from '../../../Components'
+import { Button, Header, Calendly } from '../../../Components'
 
 const VideoPlayer = () => {
   const location = useLocation()
   const { id } = location.state
 
+  const windowSize = useRef([window.innerWidth])
   const navigate = useNavigate()
 
   const goBack = () => {
@@ -26,6 +27,11 @@ const VideoPlayer = () => {
           sandbox="allow-scripts allow-same-origin allow-presentation"
         ></iframe>
       </div>
+      <Calendly
+        text={
+          windowSize.current[0] > 768 ? 'Click to book a free consultation' : 'Free consultation'
+        }
+      />
     </div>
   )
 }

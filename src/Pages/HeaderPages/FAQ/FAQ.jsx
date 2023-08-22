@@ -1,11 +1,12 @@
-import React, { useEffect } from 'react'
-import { Header, FAQuestion, Button } from '../../../Components'
+import React, { useEffect, useRef } from 'react'
+import { Header, FAQuestion, Button, Calendly } from '../../../Components'
 import questions from '../../../Constants/Questions.json'
 import { useNavigate } from 'react-router-dom'
 
 import './FAQ.scss'
 
 const FAQ = () => {
+  const windowSize = useRef([window.innerWidth])
   const navigate = useNavigate()
 
   const goBack = () => {
@@ -30,6 +31,11 @@ const FAQ = () => {
             )
           })}
         </div>
+        <Calendly
+          text={
+            windowSize.current[0] > 768 ? 'Click to book a free consultation' : 'Free consultation'
+          }
+        />
       </div>
     </>
   )
